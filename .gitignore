@@ -14,6 +14,10 @@
 *.pidb
 *.booproj
 
+# Inverse ignore some stuff
+!/ProjectSettings/
+!.gitignore
+
 # Unity3D generated meta files
 *.pidb.meta
 
