@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody myRigidBody;
     private Animator myAnimator;
+    float currentSpeed = 0.0f;
 
     // Use this for initialization
     void Start()
@@ -43,11 +44,29 @@ public class PlayerController : MonoBehaviour
             myRigidBody.transform.Rotate(0, moveVec.x * 50 * Time.deltaTime, 0);
         }
 
-        myAnimator.SetFloat("Speed", moveVec.z * moveForce);
+        if (moveVec.z > 0)
+        {
+            if (currentSpeed <= 2f)
+            {
+                currentSpeed += 0.1f;
+            }
+            myAnimator.SetFloat("Speed", currentSpeed);
+        }
+
+        else
+        {
+            if (currentSpeed >= 0)
+            {
+                currentSpeed -= 0.1f;
+            }
+            myAnimator.SetFloat("Speed", currentSpeed);
+        }
+
+        //myAnimator.SetFloat("Speed", moveVec.z * moveForce);
 
         //Debug.Log(moveVec);
         //Debug.Log(isBoosting.ToString());
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
 
         //myRigidBody.AddForce(moveVec * (isBoosting ? boostMultiplier : 1));
     }
@@ -69,15 +88,15 @@ public class PlayerController : MonoBehaviour
 
 
 
-    public void CollideWithEnemy(Collider other)
-    {
-        if (other.gameObject.tag == "Enemy")
-        {
-            EnemyHealth enemyHp = other.GetComponent<EnemyHealth>();
-            enemyHp.TakeDamage(10, new Vector3(0, 0, 0));
+    //public void CollideWithEnemy(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Enemy")
+    //    {
+    //        EnemyHealth enemyHp = other.GetComponent<EnemyHealth>();
+    //        enemyHp.TakeDamage(10);
 
-        }
+    //    }
 
-    }
+    //}
 
 }

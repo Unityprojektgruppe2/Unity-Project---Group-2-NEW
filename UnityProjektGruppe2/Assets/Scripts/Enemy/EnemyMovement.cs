@@ -3,7 +3,6 @@ using System.Collections;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField]
     Transform player;
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
@@ -12,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Awake ()
     {
-        //player = GameObject.FindGameObjectWithTag ("Player").transform;
+        player = GameObject.FindGameObjectWithTag ("Player").transform;
         playerHealth = player.GetComponent <PlayerHealth> ();
         enemyHealth = GetComponent <EnemyHealth> ();
         nav = GetComponent <NavMeshAgent> ();

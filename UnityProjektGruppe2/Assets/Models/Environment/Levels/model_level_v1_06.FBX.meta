@@ -1,0 +1,712 @@
+fileFormatVersion: 2
+guid: 831b669a5bd4a0549aad629c93860849
+timeCreated: 1446722425
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Box002
+    100002: Box016
+    100004: Cylinder001
+    100006: Cylinder002
+    100008: Cylinder003
+    100010: Cylinder004
+    100012: generator001
+    100014: generator002
+    100016: generator003
+    100018: //RootNode
+    100020: pillar001
+    100022: pillar002
+    100024: pillar003
+    100026: pillar004
+    100028: pillar006
+    100030: Plane009
+    100032: Plane011
+    100034: Plane012
+    100036: Plane013
+    100038: Plane014
+    100040: Plane015
+    100042: Plane016
+    100044: Plane017
+    100046: Plane018
+    100048: Plane019
+    100050: Plane020
+    100052: Plane021
+    100054: Plane022
+    100056: Plane023
+    100058: Plane024
+    100060: Plane025
+    100062: Plane026
+    100064: Plane027
+    100066: Plane028
+    100068: Plane029
+    100070: Plane030
+    100072: Plane031
+    100074: Plane032
+    100076: Plane033
+    100078: Plane034
+    100080: Plane035
+    100082: Plane036
+    100084: Plane037
+    100086: Plane038
+    100088: Plane039
+    100090: Plane040
+    100092: Plane041
+    100094: Plane042
+    100096: Plane043
+    100098: Plane044
+    100100: Plane045
+    100102: Plane046
+    100104: Plane047
+    100106: Plane048
+    100108: Plane049
+    100110: Plane050
+    100112: Plane051
+    100114: Plane052
+    100116: Plane053
+    100118: Plane054
+    100120: Plane055
+    100122: Plane056
+    100124: Plane058
+    100126: Plane059
+    100128: Plane060
+    100130: Plane062
+    100132: Plane063
+    100134: Plane064
+    100136: Plane065
+    100138: Plane066
+    100140: Plane067
+    100142: Plane068
+    100144: Plane069
+    100146: Plane070
+    100148: Plane071
+    100150: Plane072
+    100152: Plane073
+    100154: Plane075
+    100156: Plane076
+    100158: Plane077
+    100160: Plane078
+    100162: Plane079
+    100164: Plane080
+    100166: Plane081
+    100168: Plane083
+    100170: Plane084
+    100172: plateau
+    100174: terminal pillar
+    400000: Box002
+    400002: Box016
+    400004: Cylinder001
+    400006: Cylinder002
+    400008: Cylinder003
+    400010: Cylinder004
+    400012: generator001
+    400014: generator002
+    400016: generator003
+    400018: //RootNode
+    400020: pillar001
+    400022: pillar002
+    400024: pillar003
+    400026: pillar004
+    400028: pillar006
+    400030: Plane009
+    400032: Plane011
+    400034: Plane012
+    400036: Plane013
+    400038: Plane014
+    400040: Plane015
+    400042: Plane016
+    400044: Plane017
+    400046: Plane018
+    400048: Plane019
+    400050: Plane020
+    400052: Plane021
+    400054: Plane022
+    400056: Plane023
+    400058: Plane024
+    400060: Plane025
+    400062: Plane026
+    400064: Plane027
+    400066: Plane028
+    400068: Plane029
+    400070: Plane030
+    400072: Plane031
+    400074: Plane032
+    400076: Plane033
+    400078: Plane034
+    400080: Plane035
+    400082: Plane036
+    400084: Plane037
+    400086: Plane038
+    400088: Plane039
+    400090: Plane040
+    400092: Plane041
+    400094: Plane042
+    400096: Plane043
+    400098: Plane044
+    400100: Plane045
+    400102: Plane046
+    400104: Plane047
+    400106: Plane048
+    400108: Plane049
+    400110: Plane050
+    400112: Plane051
+    400114: Plane052
+    400116: Plane053
+    400118: Plane054
+    400120: Plane055
+    400122: Plane056
+    400124: Plane058
+    400126: Plane059
+    400128: Plane060
+    400130: Plane062
+    400132: Plane063
+    400134: Plane064
+    400136: Plane065
+    400138: Plane066
+    400140: Plane067
+    400142: Plane068
+    400144: Plane069
+    400146: Plane070
+    400148: Plane071
+    400150: Plane072
+    400152: Plane073
+    400154: Plane075
+    400156: Plane076
+    400158: Plane077
+    400160: Plane078
+    400162: Plane079
+    400164: Plane080
+    400166: Plane081
+    400168: Plane083
+    400170: Plane084
+    400172: plateau
+    400174: terminal pillar
+    2300000: Box002
+    2300002: Box016
+    2300004: Cylinder001
+    2300006: Cylinder002
+    2300008: Cylinder003
+    2300010: Cylinder004
+    2300012: generator001
+    2300014: generator002
+    2300016: generator003
+    2300018: pillar001
+    2300020: pillar002
+    2300022: pillar003
+    2300024: pillar004
+    2300026: pillar006
+    2300028: Plane009
+    2300030: Plane011
+    2300032: Plane012
+    2300034: Plane013
+    2300036: Plane014
+    2300038: Plane015
+    2300040: Plane016
+    2300042: Plane017
+    2300044: Plane018
+    2300046: Plane019
+    2300048: Plane020
+    2300050: Plane021
+    2300052: Plane022
+    2300054: Plane023
+    2300056: Plane024
+    2300058: Plane025
+    2300060: Plane026
+    2300062: Plane027
+    2300064: Plane028
+    2300066: Plane029
+    2300068: Plane030
+    2300070: Plane031
+    2300072: Plane032
+    2300074: Plane033
+    2300076: Plane034
+    2300078: Plane035
+    2300080: Plane036
+    2300082: Plane037
+    2300084: Plane038
+    2300086: Plane039
+    2300088: Plane040
+    2300090: Plane041
+    2300092: Plane042
+    2300094: Plane043
+    2300096: Plane044
+    2300098: Plane045
+    2300100: Plane046
+    2300102: Plane047
+    2300104: Plane048
+    2300106: Plane049
+    2300108: Plane050
+    2300110: Plane051
+    2300112: Plane052
+    2300114: Plane053
+    2300116: Plane054
+    2300118: Plane055
+    2300120: Plane056
+    2300122: Plane058
+    2300124: Plane059
+    2300126: Plane060
+    2300128: Plane062
+    2300130: Plane063
+    2300132: Plane064
+    2300134: Plane065
+    2300136: Plane066
+    2300138: Plane067
+    2300140: Plane068
+    2300142: Plane069
+    2300144: Plane070
+    2300146: Plane071
+    2300148: Plane072
+    2300150: Plane073
+    2300152: Plane075
+    2300154: Plane076
+    2300156: Plane077
+    2300158: Plane078
+    2300160: Plane079
+    2300162: Plane080
+    2300164: Plane081
+    2300166: Plane083
+    2300168: Plane084
+    2300170: plateau
+    2300172: terminal pillar
+    3300000: Box002
+    3300002: Box016
+    3300004: Cylinder001
+    3300006: Cylinder002
+    3300008: Cylinder003
+    3300010: Cylinder004
+    3300012: generator001
+    3300014: generator002
+    3300016: generator003
+    3300018: pillar001
+    3300020: pillar002
+    3300022: pillar003
+    3300024: pillar004
+    3300026: pillar006
+    3300028: Plane009
+    3300030: Plane011
+    3300032: Plane012
+    3300034: Plane013
+    3300036: Plane014
+    3300038: Plane015
+    3300040: Plane016
+    3300042: Plane017
+    3300044: Plane018
+    3300046: Plane019
+    3300048: Plane020
+    3300050: Plane021
+    3300052: Plane022
+    3300054: Plane023
+    3300056: Plane024
+    3300058: Plane025
+    3300060: Plane026
+    3300062: Plane027
+    3300064: Plane028
+    3300066: Plane029
+    3300068: Plane030
+    3300070: Plane031
+    3300072: Plane032
+    3300074: Plane033
+    3300076: Plane034
+    3300078: Plane035
+    3300080: Plane036
+    3300082: Plane037
+    3300084: Plane038
+    3300086: Plane039
+    3300088: Plane040
+    3300090: Plane041
+    3300092: Plane042
+    3300094: Plane043
+    3300096: Plane044
+    3300098: Plane045
+    3300100: Plane046
+    3300102: Plane047
+    3300104: Plane048
+    3300106: Plane049
+    3300108: Plane050
+    3300110: Plane051
+    3300112: Plane052
+    3300114: Plane053
+    3300116: Plane054
+    3300118: Plane055
+    3300120: Plane056
+    3300122: Plane058
+    3300124: Plane059
+    3300126: Plane060
+    3300128: Plane062
+    3300130: Plane063
+    3300132: Plane064
+    3300134: Plane065
+    3300136: Plane066
+    3300138: Plane067
+    3300140: Plane068
+    3300142: Plane069
+    3300144: Plane070
+    3300146: Plane071
+    3300148: Plane072
+    3300150: Plane073
+    3300152: Plane075
+    3300154: Plane076
+    3300156: Plane077
+    3300158: Plane078
+    3300160: Plane079
+    3300162: Plane080
+    3300164: Plane081
+    3300166: Plane083
+    3300168: Plane084
+    3300170: plateau
+    3300172: terminal pillar
+    4300000: Box002
+    4300002: Cylinder001
+    4300004: Cylinder002
+    4300006: Cylinder003
+    4300008: Cylinder004
+    4300010: Box016
+    4300012: Plane009
+    4300014: Plane011
+    4300016: Plane012
+    4300018: Plane013
+    4300020: Plane014
+    4300022: Plane015
+    4300024: Plane016
+    4300026: Plane017
+    4300028: Plane018
+    4300030: Plane019
+    4300032: Plane020
+    4300034: Plane021
+    4300036: Plane022
+    4300038: Plane023
+    4300040: Plane024
+    4300042: Plane025
+    4300044: Plane026
+    4300046: Plane027
+    4300048: Plane028
+    4300050: Plane029
+    4300052: Plane030
+    4300054: Plane031
+    4300056: Plane032
+    4300058: Plane033
+    4300060: Plane034
+    4300062: Plane035
+    4300064: Plane036
+    4300066: Plane037
+    4300068: Plane038
+    4300070: Plane039
+    4300072: Plane040
+    4300074: Plane041
+    4300076: Plane042
+    4300078: Plane043
+    4300080: Plane044
+    4300082: Plane045
+    4300084: Plane046
+    4300086: Plane047
+    4300088: Plane048
+    4300090: Plane049
+    4300092: Plane050
+    4300094: Plane051
+    4300096: Plane052
+    4300098: Plane053
+    4300100: Plane054
+    4300102: Plane055
+    4300104: Plane056
+    4300106: Plane058
+    4300108: Plane059
+    4300110: Plane060
+    4300112: Plane062
+    4300114: Plane063
+    4300116: Plane064
+    4300118: Plane065
+    4300120: Plane066
+    4300122: Plane067
+    4300124: Plane068
+    4300126: Plane069
+    4300128: Plane070
+    4300130: Plane071
+    4300132: Plane072
+    4300134: Plane073
+    4300136: Plane075
+    4300138: Plane076
+    4300140: Plane077
+    4300142: Plane078
+    4300144: Plane079
+    4300146: Plane080
+    4300148: Plane081
+    4300150: Plane083
+    4300152: Plane084
+    4300154: plateau
+    4300156: generator003
+    4300158: generator002
+    4300160: pillar006
+    4300162: pillar004
+    4300164: pillar003
+    4300166: pillar002
+    4300168: pillar001
+    4300170: generator001
+    4300172: terminal pillar
+    7400000: FanRotation
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: FanRotation
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Box002
+        weight: 1
+      - path: Box016
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      - path: Cylinder002
+        weight: 1
+      - path: Cylinder003
+        weight: 1
+      - path: Cylinder004
+        weight: 1
+      - path: generator001
+        weight: 1
+      - path: generator002
+        weight: 1
+      - path: generator003
+        weight: 1
+      - path: pillar001
+        weight: 1
+      - path: pillar002
+        weight: 1
+      - path: pillar003
+        weight: 1
+      - path: pillar004
+        weight: 1
+      - path: pillar006
+        weight: 1
+      - path: Plane009
+        weight: 1
+      - path: Plane011
+        weight: 1
+      - path: Plane012
+        weight: 1
+      - path: Plane013
+        weight: 1
+      - path: Plane014
+        weight: 1
+      - path: Plane015
+        weight: 1
+      - path: Plane016
+        weight: 1
+      - path: Plane017
+        weight: 1
+      - path: Plane018
+        weight: 1
+      - path: Plane019
+        weight: 1
+      - path: Plane020
+        weight: 1
+      - path: Plane021
+        weight: 1
+      - path: Plane022
+        weight: 1
+      - path: Plane023
+        weight: 1
+      - path: Plane024
+        weight: 1
+      - path: Plane025
+        weight: 1
+      - path: Plane026
+        weight: 1
+      - path: Plane027
+        weight: 1
+      - path: Plane028
+        weight: 1
+      - path: Plane029
+        weight: 1
+      - path: Plane030
+        weight: 1
+      - path: Plane031
+        weight: 1
+      - path: Plane032
+        weight: 1
+      - path: Plane033
+        weight: 1
+      - path: Plane034
+        weight: 1
+      - path: Plane035
+        weight: 1
+      - path: Plane036
+        weight: 1
+      - path: Plane037
+        weight: 1
+      - path: Plane038
+        weight: 1
+      - path: Plane039
+        weight: 1
+      - path: Plane040
+        weight: 1
+      - path: Plane041
+        weight: 1
+      - path: Plane042
+        weight: 1
+      - path: Plane043
+        weight: 1
+      - path: Plane044
+        weight: 1
+      - path: Plane045
+        weight: 1
+      - path: Plane046
+        weight: 1
+      - path: Plane047
+        weight: 1
+      - path: Plane048
+        weight: 1
+      - path: Plane049
+        weight: 1
+      - path: Plane050
+        weight: 1
+      - path: Plane051
+        weight: 1
+      - path: Plane052
+        weight: 1
+      - path: Plane053
+        weight: 1
+      - path: Plane054
+        weight: 1
+      - path: Plane055
+        weight: 1
+      - path: Plane056
+        weight: 1
+      - path: Plane058
+        weight: 1
+      - path: Plane059
+        weight: 1
+      - path: Plane060
+        weight: 1
+      - path: Plane062
+        weight: 1
+      - path: Plane063
+        weight: 1
+      - path: Plane064
+        weight: 1
+      - path: Plane065
+        weight: 1
+      - path: Plane066
+        weight: 1
+      - path: Plane067
+        weight: 1
+      - path: Plane068
+        weight: 1
+      - path: Plane069
+        weight: 1
+      - path: Plane070
+        weight: 1
+      - path: Plane071
+        weight: 1
+      - path: Plane072
+        weight: 1
+      - path: Plane073
+        weight: 1
+      - path: Plane075
+        weight: 1
+      - path: Plane076
+        weight: 1
+      - path: Plane077
+        weight: 1
+      - path: Plane078
+        weight: 1
+      - path: Plane079
+        weight: 1
+      - path: Plane080
+        weight: 1
+      - path: Plane081
+        weight: 1
+      - path: Plane083
+        weight: 1
+      - path: Plane084
+        weight: 1
+      - path: plateau
+        weight: 1
+      - path: terminal pillar
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
