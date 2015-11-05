@@ -8,7 +8,7 @@ public class WeaponAttack : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-        enemyHealth = GetComponent<EnemyHealth>();
+        
 	}
 	
 	// Update is called once per frame
@@ -18,12 +18,14 @@ public class WeaponAttack : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
-        if (other.gameObject == enemy)
+        //enemy = GameObject.FindGameObjectWithTag("Enemy");
+        if (other.gameObject.tag == "Enemy")
         {
+            enemy = other.gameObject;
+            enemyHealth = enemy.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(40);
+                enemyHealth.TakeDamage(100);
             }
         }
     }

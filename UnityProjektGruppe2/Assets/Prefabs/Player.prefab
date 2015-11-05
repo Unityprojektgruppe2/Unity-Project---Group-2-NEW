@@ -752,8 +752,10 @@ GameObject:
   - 33: {fileID: 3344930}
   - 23: {fileID: 2306582}
   - 65: {fileID: 6511786}
+  - 54: {fileID: 5464908}
+  - 114: {fileID: 11403610}
   m_Layer: 0
-  m_Name: swordTEST (1)
+  m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1699,7 +1701,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178038}
-  m_Mesh: {fileID: 4300002, guid: be84088983f043d46917d9b1b10fd188, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 1c6481d4e6f58154e90dbf1f510567d3, type: 3}
 --- !u!54 &5419682
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -1715,6 +1717,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!54 &5464908
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178038}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &6511786
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1722,8 +1739,8 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178038}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: .109212622, y: .0318769142, z: 7.58448219}
   m_Center: {x: -.00925451424, y: 1.5280213e-07, z: 2.42353058}
@@ -1784,6 +1801,17 @@ MonoBehaviour:
   currentHealth: 100
   timesMaxHealth: .100000001
   healthSlider: {fileID: 0}
+--- !u!114 &11403610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca2f91f7f9e9bc4f9ca4e9f40f63dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11419586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1797,6 +1825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveForce: 5
   boostMultiplier: 2
+  mySwordBoxCollider: {fileID: 6511786}
 --- !u!114 &11430886
 MonoBehaviour:
   m_ObjectHideFlags: 1

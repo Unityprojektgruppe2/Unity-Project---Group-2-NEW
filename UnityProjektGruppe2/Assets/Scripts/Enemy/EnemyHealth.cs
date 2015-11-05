@@ -58,7 +58,7 @@ public class EnemyHealth : MonoBehaviour
 		//hitParticles.transform.position = hitPoint;
 		
 		// And play the particles.
-		hitParticles.Play();
+		//hitParticles.Play();
 		
 		// If the current health is less than or equal to zero...
 		if(currentHealth <= 0)
@@ -79,10 +79,13 @@ public class EnemyHealth : MonoBehaviour
 		
 		// Tell the animator that the enemy is dead.
 		anim.SetTrigger ("Dead");
-		
-		// Change the audio clip of the audio source to the death clip and play it (this will stop the hurt clip playing).
-		//enemyAudio.clip = deathClip;
-		//enemyAudio.Play ();
+
+        // Change the audio clip of the audio source to the death clip and play it (this will stop the hurt clip playing).
+        //enemyAudio.clip = deathClip;
+        //enemyAudio.Play ();
+        StartSinking();
+        //gameObject.SetActive(false);
+        
 	}
 	
 	

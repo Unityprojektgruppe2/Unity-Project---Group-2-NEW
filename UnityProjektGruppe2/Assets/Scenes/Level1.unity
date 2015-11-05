@@ -145,7 +145,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1001 &202225952
 Prefab:
   m_ObjectHideFlags: 0
@@ -885,36 +885,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 969871896}
---- !u!1 &988278311 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 178038, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
-  m_PrefabInternal: {fileID: 2111493446}
---- !u!114 &988278316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 988278311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ca2f91f7f9e9bc4f9ca4e9f40f63dd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!54 &988278317
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 988278311}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1051983687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,7 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a2defa43ef6864ba35973c243b0f0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 414503816}
   restartDelay: 5
 --- !u!95 &1181215880
 Animator:
@@ -1729,7 +1699,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1001 &2111493446
 Prefab:
   m_ObjectHideFlags: 0
@@ -1767,16 +1737,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 469356, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11402052, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1383390271}
-    - target: {fileID: 6511786, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
   m_IsPrefabParent: 0

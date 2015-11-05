@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody myRigidBody;
     private Animator myAnimator;
+    [SerializeField]
+    public BoxCollider mySwordBoxCollider;
     float currentSpeed = 0.0f;
 
     // Use this for initialization
