@@ -183,7 +183,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 831b669a5bd4a0549aad629c93860849, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 831b669a5bd4a0549aad629c93860849, type: 3}
       propertyPath: m_LocalScale.x
@@ -677,7 +677,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &409945259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,6 +1743,22 @@ Prefab:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1383390271}
+    - target: {fileID: 6511786, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
+      propertyPath: m_Size.z
+      value: 9.52277374
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511786, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
+      propertyPath: m_Center.x
+      value: -.00928392448
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511786, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
+      propertyPath: m_Center.y
+      value: 6.69434157e-05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511786, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
+      propertyPath: m_Center.z
+      value: 3.39264846
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
   m_IsPrefabParent: 0
