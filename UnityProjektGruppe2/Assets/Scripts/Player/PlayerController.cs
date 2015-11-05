@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
         if (moveVec.x != 0)
         {
-            myRigidBody.transform.Rotate(0, moveVec.x * 50 * Time.deltaTime, 0);
+            myRigidBody.transform.Rotate(0, moveVec.x * 25 * Time.deltaTime, 0);
         }
 
         if (moveVec.z > 0)
