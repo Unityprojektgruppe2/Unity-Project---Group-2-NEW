@@ -1,0 +1,1069 @@
+fileFormatVersion: 2
+guid: f37abf272981ad54e81f4a1faea65c4b
+timeCreated: 1446715778
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: body_TEST
+    100002: MainChar_rig
+    100004: MainChar_rigHub001
+    100006: MainChar_rigHub002
+    100008: MainChar_rigHub003
+    100010: MainChar_rigLArm1
+    100012: MainChar_rigLArm2
+    100014: MainChar_rigLArmCollarbone
+    100016: MainChar_rigLArmDigit11
+    100018: MainChar_rigLArmDigit12
+    100020: MainChar_rigLArmDigit13
+    100022: MainChar_rigLArmDigit21
+    100024: MainChar_rigLArmDigit22
+    100026: MainChar_rigLArmDigit23
+    100028: MainChar_rigLArmDigit31
+    100030: MainChar_rigLArmDigit32
+    100032: MainChar_rigLArmDigit33
+    100034: MainChar_rigLArmDigit41
+    100036: MainChar_rigLArmDigit42
+    100038: MainChar_rigLArmDigit43
+    100040: MainChar_rigLArmPalm
+    100042: MainChar_rigLLeg1
+    100044: MainChar_rigLLeg2
+    100046: MainChar_rigLLegAnkle
+    100048: MainChar_rigLLegDigit11
+    100050: MainChar_rigLLegDigit12
+    100052: MainChar_rigLLegPlatform
+    100054: MainChar_rigRArm1
+    100056: MainChar_rigRArm2
+    100058: MainChar_rigRArmCollarbone
+    100060: MainChar_rigRArmDigit11
+    100062: MainChar_rigRArmDigit12
+    100064: MainChar_rigRArmDigit13
+    100066: MainChar_rigRArmDigit21
+    100068: MainChar_rigRArmDigit22
+    100070: MainChar_rigRArmDigit23
+    100072: MainChar_rigRArmDigit31
+    100074: MainChar_rigRArmDigit32
+    100076: MainChar_rigRArmDigit33
+    100078: MainChar_rigRArmDigit41
+    100080: MainChar_rigRArmDigit42
+    100082: MainChar_rigRArmDigit43
+    100084: MainChar_rigRArmPalm
+    100086: MainChar_rigRLeg1
+    100088: MainChar_rigRLeg2
+    100090: MainChar_rigRLegAnkle
+    100092: MainChar_rigRLegDigit11
+    100094: MainChar_rigRLegDigit12
+    100096: MainChar_rigRLegPlatform
+    100098: MainChar_rigSpine1
+    100100: MainChar_rigSpine1 1
+    100102: MainChar_rigSpine2
+    100104: MainChar_rigSpine2 1
+    100106: MainChar_rigSpine3
+    100108: //RootNode
+    400000: body_TEST
+    400002: MainChar_rig
+    400004: MainChar_rigHub001
+    400006: MainChar_rigHub002
+    400008: MainChar_rigHub003
+    400010: MainChar_rigLArm1
+    400012: MainChar_rigLArm2
+    400014: MainChar_rigLArmCollarbone
+    400016: MainChar_rigLArmDigit11
+    400018: MainChar_rigLArmDigit12
+    400020: MainChar_rigLArmDigit13
+    400022: MainChar_rigLArmDigit21
+    400024: MainChar_rigLArmDigit22
+    400026: MainChar_rigLArmDigit23
+    400028: MainChar_rigLArmDigit31
+    400030: MainChar_rigLArmDigit32
+    400032: MainChar_rigLArmDigit33
+    400034: MainChar_rigLArmDigit41
+    400036: MainChar_rigLArmDigit42
+    400038: MainChar_rigLArmDigit43
+    400040: MainChar_rigLArmPalm
+    400042: MainChar_rigLLeg1
+    400044: MainChar_rigLLeg2
+    400046: MainChar_rigLLegAnkle
+    400048: MainChar_rigLLegDigit11
+    400050: MainChar_rigLLegDigit12
+    400052: MainChar_rigLLegPlatform
+    400054: MainChar_rigRArm1
+    400056: MainChar_rigRArm2
+    400058: MainChar_rigRArmCollarbone
+    400060: MainChar_rigRArmDigit11
+    400062: MainChar_rigRArmDigit12
+    400064: MainChar_rigRArmDigit13
+    400066: MainChar_rigRArmDigit21
+    400068: MainChar_rigRArmDigit22
+    400070: MainChar_rigRArmDigit23
+    400072: MainChar_rigRArmDigit31
+    400074: MainChar_rigRArmDigit32
+    400076: MainChar_rigRArmDigit33
+    400078: MainChar_rigRArmDigit41
+    400080: MainChar_rigRArmDigit42
+    400082: MainChar_rigRArmDigit43
+    400084: MainChar_rigRArmPalm
+    400086: MainChar_rigRLeg1
+    400088: MainChar_rigRLeg2
+    400090: MainChar_rigRLegAnkle
+    400092: MainChar_rigRLegDigit11
+    400094: MainChar_rigRLegDigit12
+    400096: MainChar_rigRLegPlatform
+    400098: MainChar_rigSpine1
+    400100: MainChar_rigSpine1 1
+    400102: MainChar_rigSpine2
+    400104: MainChar_rigSpine2 1
+    400106: MainChar_rigSpine3
+    400108: //RootNode
+    4300000: body_TEST
+    7400000: Idle
+    7400002: Run
+    7400004: Attack
+    9500000: //RootNode
+    13700000: body_TEST
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 1
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nInbetween bone default rotation found in this file
+      is different from the one found in the source avatar:\n\t'MainChar_rigSpine3'
+      : rotation error = 8.441841 deg\n\t'MainChar_rigHub002' : rotation error = 1.467739
+      deg\n\nClip 'Take 001' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'MainChar_rigLLegAnkle'
+      has scale animation that will be discarded.\n\t'MainChar_rigLLegDigit11' is
+      inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigLLegDigit11'
+      has scale animation that will be discarded.\n\t'MainChar_rigLLegDigit12' has
+      scale animation that will be discarded.\n\t'MainChar_rigSpine3' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigHub002'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigRLegAnkle'
+      has scale animation that will be discarded.\n\t'MainChar_rigRLegDigit11' is
+      inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigRLegDigit11'
+      has scale animation that will be discarded.\n\t'MainChar_rigRLegDigit12' has
+      scale animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body_TEST
+        weight: 0
+      - path: MainChar_rig
+        weight: 0
+      - path: MainChar_rigHub001
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2/MainChar_rigLLegAnkle
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2/MainChar_rigLLegAnkle/MainChar_rigLLegDigit11
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2/MainChar_rigLLegAnkle/MainChar_rigLLegDigit11/MainChar_rigLLegDigit12
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2/MainChar_rigRLegAnkle
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2/MainChar_rigRLegAnkle/MainChar_rigRLegDigit11
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2/MainChar_rigRLegAnkle/MainChar_rigRLegDigit11/MainChar_rigRLegDigit12
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit11
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit11/MainChar_rigLArmDigit12
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit11/MainChar_rigLArmDigit12/MainChar_rigLArmDigit13
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit21
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit21/MainChar_rigLArmDigit22
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit21/MainChar_rigLArmDigit22/MainChar_rigLArmDigit23
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit31
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit31/MainChar_rigLArmDigit32
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit31/MainChar_rigLArmDigit32/MainChar_rigLArmDigit33
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit41
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit41/MainChar_rigLArmDigit42
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit41/MainChar_rigLArmDigit42/MainChar_rigLArmDigit43
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit11
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit11/MainChar_rigRArmDigit12
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit11/MainChar_rigRArmDigit12/MainChar_rigRArmDigit13
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit21
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit21/MainChar_rigRArmDigit22
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit21/MainChar_rigRArmDigit22/MainChar_rigRArmDigit23
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit31
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit31/MainChar_rigRArmDigit32
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit31/MainChar_rigRArmDigit32/MainChar_rigRArmDigit33
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit41
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit41/MainChar_rigRArmDigit42
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit41/MainChar_rigRArmDigit42/MainChar_rigRArmDigit43
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigSpine1
+          1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigSpine1
+          1/MainChar_rigSpine2 1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigSpine1
+          1/MainChar_rigSpine2 1/MainChar_rigHub003
+        weight: 1
+      - path: MainChar_rigLLegPlatform
+        weight: 0
+      - path: MainChar_rigRLegPlatform
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body_TEST
+        weight: 0
+      - path: MainChar_rig
+        weight: 0
+      - path: MainChar_rigHub001
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2/MainChar_rigLLegAnkle
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2/MainChar_rigLLegAnkle/MainChar_rigLLegDigit11
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2/MainChar_rigLLegAnkle/MainChar_rigLLegDigit11/MainChar_rigLLegDigit12
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2/MainChar_rigRLegAnkle
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2/MainChar_rigRLegAnkle/MainChar_rigRLegDigit11
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2/MainChar_rigRLegAnkle/MainChar_rigRLegDigit11/MainChar_rigRLegDigit12
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit11
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit11/MainChar_rigLArmDigit12
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit11/MainChar_rigLArmDigit12/MainChar_rigLArmDigit13
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit21
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit21/MainChar_rigLArmDigit22
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit21/MainChar_rigLArmDigit22/MainChar_rigLArmDigit23
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit31
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit31/MainChar_rigLArmDigit32
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit31/MainChar_rigLArmDigit32/MainChar_rigLArmDigit33
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit41
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit41/MainChar_rigLArmDigit42
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit41/MainChar_rigLArmDigit42/MainChar_rigLArmDigit43
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit11
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit11/MainChar_rigRArmDigit12
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit11/MainChar_rigRArmDigit12/MainChar_rigRArmDigit13
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit21
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit21/MainChar_rigRArmDigit22
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit21/MainChar_rigRArmDigit22/MainChar_rigRArmDigit23
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit31
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit31/MainChar_rigRArmDigit32
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit31/MainChar_rigRArmDigit32/MainChar_rigRArmDigit33
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit41
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit41/MainChar_rigRArmDigit42
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit41/MainChar_rigRArmDigit42/MainChar_rigRArmDigit43
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigSpine1
+          1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigSpine1
+          1/MainChar_rigSpine2 1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigSpine1
+          1/MainChar_rigSpine2 1/MainChar_rigHub003
+        weight: 1
+      - path: MainChar_rigLLegPlatform
+        weight: 0
+      - path: MainChar_rigRLegPlatform
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body_TEST
+        weight: 0
+      - path: MainChar_rig
+        weight: 0
+      - path: MainChar_rigHub001
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2/MainChar_rigLLegAnkle
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2/MainChar_rigLLegAnkle/MainChar_rigLLegDigit11
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigLLeg1/MainChar_rigLLeg2/MainChar_rigLLegAnkle/MainChar_rigLLegDigit11/MainChar_rigLLegDigit12
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2/MainChar_rigRLegAnkle
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2/MainChar_rigRLegAnkle/MainChar_rigRLegDigit11
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigRLeg1/MainChar_rigRLeg2/MainChar_rigRLegAnkle/MainChar_rigRLegDigit11/MainChar_rigRLegDigit12
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit11
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit11/MainChar_rigLArmDigit12
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit11/MainChar_rigLArmDigit12/MainChar_rigLArmDigit13
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit21
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit21/MainChar_rigLArmDigit22
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit21/MainChar_rigLArmDigit22/MainChar_rigLArmDigit23
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit31
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit31/MainChar_rigLArmDigit32
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit31/MainChar_rigLArmDigit32/MainChar_rigLArmDigit33
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit41
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit41/MainChar_rigLArmDigit42
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigLArmCollarbone/MainChar_rigLArm1/MainChar_rigLArm2/MainChar_rigLArmPalm/MainChar_rigLArmDigit41/MainChar_rigLArmDigit42/MainChar_rigLArmDigit43
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit11
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit11/MainChar_rigRArmDigit12
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit11/MainChar_rigRArmDigit12/MainChar_rigRArmDigit13
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit21
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit21/MainChar_rigRArmDigit22
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit21/MainChar_rigRArmDigit22/MainChar_rigRArmDigit23
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit31
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit31/MainChar_rigRArmDigit32
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit31/MainChar_rigRArmDigit32/MainChar_rigRArmDigit33
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit41
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit41/MainChar_rigRArmDigit42
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm/MainChar_rigRArmDigit41/MainChar_rigRArmDigit42/MainChar_rigRArmDigit43
+        weight: 0
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigSpine1
+          1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigSpine1
+          1/MainChar_rigSpine2 1
+        weight: 1
+      - path: MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigSpine1
+          1/MainChar_rigSpine2 1/MainChar_rigHub003
+        weight: 1
+      - path: MainChar_rigLLegPlatform
+        weight: 0
+      - path: MainChar_rigRLegPlatform
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: MainChar_rigHub001
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigLLeg1
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigRLeg1
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigLLeg2
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigRLeg2
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigLLegAnkle
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigRLegAnkle
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigSpine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigSpine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigSpine1 1
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigSpine2 1
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigLArmCollarbone
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigRArmCollarbone
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigLArm1
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigRArm1
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigLArm2
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigRArm2
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigLArmPalm
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigRArmPalm
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigLLegDigit12
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigRLegDigit12
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MainChar_rigHub003
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: MainCharacter_TEST_05(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: body_TEST
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MainChar_rigLLegPlatform
+      position: {x: -.361848146, y: -4.86544582e-09, z: .200471714}
+      rotation: {x: .50000006, y: -.49999994, z: -.49999994, w: .50000006}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MainChar_rigRLegPlatform
+      position: {x: .317196071, y: -4.86545737e-09, z: -.27575621}
+      rotation: {x: .298836291, y: -.298836201, z: -.640856326, w: .640856445}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: MainChar_rig
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: .50000006, y: -.50000006, z: -.499999911, w: .5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MainChar_rigHub001
+      position: {x: 5.57065482e-14, y: .870177329, z: -.0298640691}
+      rotation: {x: .50000006, y: -.50000006, z: -.499999911, w: .5}
+      scale: {x: 1, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: MainChar_rigLLeg1
+      position: {x: -0, y: 2.38418574e-09, z: .0705385804}
+      rotation: {x: -.0751452968, y: .988679349, z: .0543067046, w: .117970921}
+      scale: {x: 1.00000143, y: 1.00000024, z: .999998927}
+      transformModified: 1
+    - name: MainChar_rigLLeg2
+      position: {x: -.35084632, y: -1.37329096e-06, z: -1.83105465e-06}
+      rotation: {x: .000567287207, y: .0613629073, z: .199202463, w: .978035152}
+      scale: {x: .99999547, y: .999999404, z: 1.00000513}
+      transformModified: 1
+    - name: MainChar_rigLLegAnkle
+      position: {x: -.377690256, y: 0, z: 0}
+      rotation: {x: .0400833152, y: .0165702533, z: -.363806605, w: .930464089}
+      scale: {x: .999998212, y: 1.00000191, z: .99999994}
+      transformModified: 1
+    - name: MainChar_rigLLegDigit11
+      position: {x: -.163048148, y: -3.81469718e-08, z: -3.81469718e-08}
+      rotation: {x: -.0232158005, y: .0413614884, z: -.509302497, w: .859279573}
+      scale: {x: .999998212, y: 1.00000143, z: .999999642}
+      transformModified: 1
+    - name: MainChar_rigLLegDigit12
+      position: {x: -.0769746155, y: 0, z: 0}
+      rotation: {x: 2.22305685e-09, y: 5.96046306e-08, z: -1.81162445e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MainChar_rigRLeg1
+      position: {x: -0, y: 2.38418574e-09, z: -.0705385804}
+      rotation: {x: -.0751411691, y: .988681078, z: -.0542866476, w: -.117968567}
+      scale: {x: 1.00000107, y: 1, z: .999999225}
+      transformModified: 1
+    - name: MainChar_rigRLeg2
+      position: {x: -.35084641, y: -1.37329096e-06, z: 1.86920158e-06}
+      rotation: {x: -.000491246523, y: -.061383076, z: .19920598, w: .978033185}
+      scale: {x: 1.00001359, y: 1.00000203, z: .999984562}
+      transformModified: 1
+    - name: MainChar_rigRLegAnkle
+      position: {x: -.377690256, y: 1.90734859e-08, z: 0}
+      rotation: {x: -.040055871, y: -.0163466632, z: -.363885909, w: .93043828}
+      scale: {x: 1.00000572, y: .999994576, z: 1.00000012}
+      transformModified: 1
+    - name: MainChar_rigRLegDigit11
+      position: {x: -.163048148, y: 1.90734859e-08, z: 0}
+      rotation: {x: .0233372599, y: -.0415598974, z: -.509233594, w: .859307468}
+      scale: {x: 1.00000751, y: .999992132, z: 1.00000024}
+      transformModified: 1
+    - name: MainChar_rigRLegDigit12
+      position: {x: -.0769746304, y: 0, z: 0}
+      rotation: {x: -1.02891349e-08, y: -2.93082908e-15, z: -5.30191855e-08, w: 1}
+      scale: {x: .999999762, y: 1, z: .999999821}
+      transformModified: 1
+    - name: MainChar_rigSpine1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -2.98023224e-08, y: -2.98023224e-08, z: .00182215869, w: .999998391}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: MainChar_rigSpine2
+      position: {x: -.162139282, y: 2.38418574e-09, z: 0}
+      rotation: {x: 2.98023188e-08, y: -2.98023188e-08, z: .00155898905, w: .999998808}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: MainChar_rigSpine3
+      position: {x: -.162139431, y: 2.38418574e-09, z: 1.19209287e-09}
+      rotation: {x: -4.470348e-08, y: -4.470348e-08, z: -.00155900395, w: .999998808}
+      scale: {x: .999999762, y: .99999994, z: .999999642}
+      transformModified: 1
+    - name: MainChar_rigHub002
+      position: {x: -.162139356, y: -2.38418574e-09, z: 0}
+      rotation: {x: -1.49011594e-08, y: 1.04308114e-07, z: -.00182218826, w: .999998331}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: MainChar_rigLArmCollarbone
+      position: {x: -0, y: 2.38418574e-09, z: .0807363689}
+      rotation: {x: .207120225, y: .730477095, z: .200823843, w: .619010687}
+      scale: {x: 1.00000012, y: 1.00000036, z: 1.00000024}
+      transformModified: 1
+    - name: MainChar_rigLArm1
+      position: {x: -.135562494, y: 4.76837148e-09, z: 7.62939436e-08}
+      rotation: {x: -.00513295317, y: .0878909007, z: -.277830303, w: .956587315}
+      scale: {x: 1.0000006, y: .999999762, z: 1.00000024}
+      transformModified: 1
+    - name: MainChar_rigLArm2
+      position: {x: -.319196045, y: -1.90734859e-08, z: 0}
+      rotation: {x: -.649330497, y: -.0762334317, z: -.106171273, w: .749190331}
+      scale: {x: 1.00000095, y: 1.00000083, z: 1.00000119}
+      transformModified: 1
+    - name: MainChar_rigLArmPalm
+      position: {x: -.25352779, y: -1.90734859e-08, z: 0}
+      rotation: {x: -.00121465302, y: .103090942, z: -.093901746, w: .990228891}
+      scale: {x: .999998927, y: 1.00000143, z: 1}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit21
+      position: {x: -.11904905, y: -.00459689135, z: .0539345555}
+      rotation: {x: -7.91624188e-08, y: -7.10133463e-08, z: .198711619, w: .980058074}
+      scale: {x: 1.00000107, y: .999999583, z: .99999994}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit22
+      position: {x: -.0479720682, y: -3.81469718e-08, z: 0}
+      rotation: {x: -1.15483999e-07, y: -1.03376806e-07, z: .198711947, w: .980058014}
+      scale: {x: 1.00000095, y: 1, z: .999999821}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit23
+      position: {x: -.047972057, y: -1.90734859e-08, z: 0}
+      rotation: {x: -4.47034864e-07, y: -1.84401884e-07, z: .198711768, w: .980058014}
+      scale: {x: 1.00000191, y: .999998748, z: 1.00000012}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit11
+      position: {x: -.0200889967, y: -.0327357873, z: .0569595322}
+      rotation: {x: -.147917956, y: .307409793, z: .326595336, w: .881450593}
+      scale: {x: 1.0000006, y: 1, z: .999999702}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit12
+      position: {x: -.044345092, y: 1.90734859e-08, z: -7.62939436e-08}
+      rotation: {x: 6.78673314e-05, y: -.142454222, z: -.00579560688, w: .989784479}
+      scale: {x: 1.0000006, y: .999998868, z: 1.00000107}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit13
+      position: {x: -.0427963249, y: 1.90734859e-08, z: 7.62939436e-08}
+      rotation: {x: 5.96046306e-08, y: -.0655403733, z: -1.58324802e-08, w: .997849882}
+      scale: {x: 1.00000072, y: .999999225, z: 1.00000131}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit31
+      position: {x: -.118920743, y: .00440474506, z: 0}
+      rotation: {x: -9.49948884e-08, y: -7.04312626e-08, z: .201627672, w: .979462206}
+      scale: {x: 1.00000143, y: .999999821, z: .99999994}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit32
+      position: {x: -.0514896773, y: -5.72204577e-08, z: 0}
+      rotation: {x: -2.79396772e-08, y: -1.13621354e-07, z: .20162794, w: .979462206}
+      scale: {x: 1.00000036, y: .999999464, z: .999999702}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit33
+      position: {x: -.0514896847, y: 0, z: 7.62939436e-08}
+      rotation: {x: -5.62518778e-07, y: -1.24797211e-07, z: .201627955, w: .979462147}
+      scale: {x: 1.00000143, y: .999999404, z: 1.00000024}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit41
+      position: {x: -.12007042, y: .00158395758, z: -.0496922284}
+      rotation: {x: -9.12695981e-08, y: -2.52621213e-08, z: .172145635, w: .98507148}
+      scale: {x: 1.00000131, y: .999999344, z: 1}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit42
+      position: {x: -.0428625271, y: 0, z: -7.62939436e-08}
+      rotation: {x: .0623330772, y: -.0377396382, z: -.0642660707, w: .995268881}
+      scale: {x: 1.00000167, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit43
+      position: {x: -.0428625271, y: 5.72204577e-08, z: 0}
+      rotation: {x: -3.20374994e-07, y: -5.5879358e-08, z: .172145799, w: .98507148}
+      scale: {x: 1.00000131, y: .999999344, z: .99999994}
+      transformModified: 1
+    - name: MainChar_rigRArmCollarbone
+      position: {x: -0, y: -2.38418574e-09, z: -.0807363689}
+      rotation: {x: -.142666951, y: -.745749176, z: .146108985, w: .634158194}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: MainChar_rigRArm1
+      position: {x: -.135562479, y: -1.19209282e-08, z: 0}
+      rotation: {x: -.0138167422, y: .0876327083, z: .198465809, w: -.97608453}
+      scale: {x: 1, y: .99999994, z: .999999821}
+      transformModified: 1
+    - name: MainChar_rigRArm2
+      position: {x: -.319196016, y: -3.81469718e-08, z: 1.52587887e-07}
+      rotation: {x: .649154067, y: .0716667846, z: -.109257892, w: .74935019}
+      scale: {x: 1.00000012, y: .999999881, z: 1}
+      transformModified: 1
+    - name: MainChar_rigRArmPalm
+      position: {x: -.253527761, y: 0, z: 0}
+      rotation: {x: .000949016889, y: -.103876859, z: -.0945097059, w: .990089178}
+      scale: {x: .999999106, y: 1.00000131, z: 1.00000024}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit11
+      position: {x: -.0200890731, y: -.0327357091, z: -.0569595322}
+      rotation: {x: .147918999, y: -.307410568, z: .32659331, w: .881450772}
+      scale: {x: .999997556, y: 1.00000322, z: .999999404}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit12
+      position: {x: -.044345092, y: 0, z: 3.81469718e-08}
+      rotation: {x: -6.81728125e-05, y: .142455608, z: -.00579425693, w: .9897843}
+      scale: {x: .999999881, y: 1.00000143, z: .999999106}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit13
+      position: {x: -.0427963994, y: 3.81469718e-08, z: 0}
+      rotation: {x: 1.34110437e-07, y: .065540418, z: -2.68220873e-07, w: .997849941}
+      scale: {x: .999999702, y: 1.00000107, z: .999998927}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit31
+      position: {x: -.118920706, y: .00440473529, z: 0}
+      rotation: {x: 2.60770339e-08, y: -1.82073578e-07, z: .201627612, w: .979462266}
+      scale: {x: .999998748, y: 1.00000167, z: .999999821}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit32
+      position: {x: -.0514897145, y: -3.81469718e-08, z: 0}
+      rotation: {x: -1.73225985e-07, y: -1.28522501e-07, z: .201627225, w: .979462326}
+      scale: {x: .999998033, y: 1.00000286, z: .999999881}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit33
+      position: {x: -.0514896773, y: 3.81469718e-08, z: 0}
+      rotation: {x: -5.17815295e-07, y: -2.79396744e-07, z: .201627195, w: .979462385}
+      scale: {x: .999996424, y: 1.00000393, z: 1.00000036}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit41
+      position: {x: -.120070338, y: .00158395758, z: .0496920757}
+      rotation: {x: 4.63332981e-08, y: -1.84285454e-07, z: .172145575, w: .985071599}
+      scale: {x: .999998987, y: 1.00000155, z: 1.00000012}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit42
+      position: {x: -.0428624712, y: 3.81469718e-08, z: 0}
+      rotation: {x: -.0628064945, y: .0363820344, z: -.0637703687, w: .995321631}
+      scale: {x: .999998033, y: 1.00000262, z: 1.00000012}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit43
+      position: {x: -.0428625084, y: 1.90734859e-08, z: 0}
+      rotation: {x: -1.37835727e-07, y: -2.66358228e-07, z: .172145352, w: .985071599}
+      scale: {x: .999997199, y: 1.00000322, z: .999999762}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit21
+      position: {x: -.119049035, y: -.00459684338, z: -.0539344773}
+      rotation: {x: -4.65661232e-10, y: -1.57859162e-07, z: .198711395, w: .980058014}
+      scale: {x: .999999166, y: 1.00000191, z: 1.00000024}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit22
+      position: {x: -.0479721054, y: -3.81469718e-08, z: 0}
+      rotation: {x: -1.24797211e-07, y: -1.54599533e-07, z: .198711365, w: .980058074}
+      scale: {x: .999997914, y: 1.0000025, z: .999999642}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit23
+      position: {x: -.0479721054, y: 0, z: 0}
+      rotation: {x: -5.25265932e-07, y: -2.4959445e-07, z: .198711276, w: .980058074}
+      scale: {x: .999999821, y: 1.0000006, z: .99999994}
+      transformModified: 1
+    - name: MainChar_rigSpine1 1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -1.4901163e-08, y: -5.96046519e-08, z: -.136927009, w: .990581155}
+      scale: {x: .999999762, y: .999999583, z: .999999821}
+      transformModified: 1
+    - name: MainChar_rigSpine2 1
+      position: {x: -.123027034, y: 0, z: -1.19209287e-09}
+      rotation: {x: 1.34110437e-07, y: 8.94069601e-08, z: 0, w: 1}
+      scale: {x: 1.00000024, y: 1.0000006, z: 1}
+      transformModified: 1
+    - name: MainChar_rigHub003
+      position: {x: -.123027191, y: 0, z: 0}
+      rotation: {x: -2.98023224e-08, y: 0, z: .136927068, w: .990581155}
+      scale: {x: 1.00000012, y: 1, z: 1.00000036}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
