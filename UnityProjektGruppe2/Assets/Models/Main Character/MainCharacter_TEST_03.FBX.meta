@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: be84088983f043d46917d9b1b10fd188
-timeCreated: 1446550763
+timeCreated: 1446721160
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -135,28 +135,14 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
-    animationImportWarnings: "\nInbetween bone default rotation found in this file
-      is different from the one found in the source avatar:\n\t'MainChar_rigSpine3'
-      : rotation error = 8.441841 deg\n\t'MainChar_rigHub002' : rotation error = 1.467739
-      deg\n\nClip 'Take 001' has import animation warnings that might lower retargeting
-      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'MainChar_rigLLegAnkle'
-      has scale animation that will be discarded.\n\t'MainChar_rigLLegDigit11' is
-      inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigLLegDigit11'
-      has scale animation that will be discarded.\n\t'MainChar_rigLLegDigit12' has
-      scale animation that will be discarded.\n\t'MainChar_rigSpine3' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigHub002'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigLArmCollarbone'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigLArmDigit41'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigLArmDigit42'
-      has scale animation that will be discarded.\n\t'MainChar_rigRArmCollarbone'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigRArmDigit41'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigRArmDigit42'
-      has scale animation that will be discarded.\n\t'MainChar_rigRLegAnkle' has scale
-      animation that will be discarded.\n\t'MainChar_rigRLegDigit11' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigRLegDigit11'
-      has scale animation that will be discarded.\n\t'MainChar_rigRLegDigit12' has
-      scale animation that will be discarded.\n"
+    animationImportErrors: '
+
+      Imported file ''MainCharacter_TEST_03'' conversion failed: Found duplicate transform
+      ''MainChar_rigLArm1'' for human bone ''RightUpperArm'' and ''LeftUpperArm''
+
+
+'
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -672,7 +658,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigSpine1
+    - boneName: MainChar_rigSpine3
       humanName: Spine
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -704,7 +690,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigLArm1
+    - boneName: MainChar_rigLArmCollarbone
       humanName: LeftShoulder
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -712,7 +698,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigRArm1
+    - boneName: MainChar_rigRArmCollarbone
       humanName: RightShoulder
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -720,7 +706,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigLArm2
+    - boneName: MainChar_rigLArm1
       humanName: LeftUpperArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -728,7 +714,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigRArm2
+    - boneName: MainChar_rigLArm1
       humanName: RightUpperArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -736,7 +722,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigLArmPalm
+    - boneName: MainChar_rigLArm2
       humanName: LeftLowerArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -744,7 +730,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigRArmPalm
+    - boneName: MainChar_rigRArm2
       humanName: RightLowerArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -752,7 +738,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigLArmDigit42
+    - boneName: MainChar_rigLArmPalm
       humanName: LeftHand
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -760,7 +746,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigRArmDigit42
+    - boneName: MainChar_rigRArmPalm
       humanName: RightHand
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -794,7 +780,7 @@ ModelImporter:
         modified: 0
     skeleton:
     - name: MainCharacter_TEST_03(Clone)
-      position: {x: 0, y: 0, z: 0}
+      position: {x: -1.15199995, y: .345999986, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
@@ -802,16 +788,6 @@ ModelImporter:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: MainChar_rigLLegPlatform
-      position: {x: -.361848146, y: -4.86544582e-09, z: .200471714}
-      rotation: {x: .50000006, y: -.49999994, z: -.49999994, w: .50000006}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: MainChar_rigRLegPlatform
-      position: {x: .317196071, y: -4.86545737e-09, z: -.27575621}
-      rotation: {x: .298836291, y: -.298836201, z: -.640856326, w: .640856445}
-      scale: {x: 1, y: 1, z: .99999994}
       transformModified: 1
     - name: MainChar_rig
       position: {x: 0, y: 0, z: 0}
@@ -835,7 +811,7 @@ ModelImporter:
       transformModified: 1
     - name: MainChar_rigLLegAnkle
       position: {x: -.377690256, y: 0, z: 0}
-      rotation: {x: .0400833152, y: .0165702533, z: -.363806605, w: .930464089}
+      rotation: {x: .0400833189, y: .0165702552, z: -.363806635, w: .930464149}
       scale: {x: .999998212, y: 1.00000191, z: .99999994}
       transformModified: 1
     - name: MainChar_rigLLegDigit11
@@ -913,6 +889,21 @@ ModelImporter:
       rotation: {x: -.00121465302, y: .103090942, z: -.093901746, w: .990228891}
       scale: {x: .999998927, y: 1.00000143, z: 1}
       transformModified: 1
+    - name: MainChar_rigLArmDigit11
+      position: {x: -.0200889967, y: -.0327357873, z: .0569595322}
+      rotation: {x: -.147917956, y: .307409793, z: .326595336, w: .881450593}
+      scale: {x: 1.0000006, y: 1, z: .999999702}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit12
+      position: {x: -.044345092, y: 1.90734859e-08, z: -7.62939436e-08}
+      rotation: {x: 6.78673314e-05, y: -.142454222, z: -.00579560688, w: .989784479}
+      scale: {x: 1.0000006, y: .999998868, z: 1.00000107}
+      transformModified: 1
+    - name: MainChar_rigLArmDigit13
+      position: {x: -.0427963249, y: 1.90734859e-08, z: 7.62939436e-08}
+      rotation: {x: 5.96046341e-08, y: -.0655403808, z: -1.5832482e-08, w: .997849941}
+      scale: {x: 1.00000072, y: .999999225, z: 1.00000131}
+      transformModified: 1
     - name: MainChar_rigLArmDigit21
       position: {x: -.11904905, y: -.00459689135, z: .0539345555}
       rotation: {x: -7.91624188e-08, y: -7.10133463e-08, z: .198711619, w: .980058074}
@@ -928,24 +919,9 @@ ModelImporter:
       rotation: {x: -4.47034864e-07, y: -1.84401884e-07, z: .198711768, w: .980058014}
       scale: {x: 1.00000191, y: .999998748, z: 1.00000012}
       transformModified: 1
-    - name: MainChar_rigLArmDigit11
-      position: {x: -.0200889967, y: -.0327357873, z: .0569595322}
-      rotation: {x: -.147917956, y: .307409793, z: .326595336, w: .881450593}
-      scale: {x: 1.0000006, y: 1, z: .999999702}
-      transformModified: 1
-    - name: MainChar_rigLArmDigit12
-      position: {x: -.044345092, y: 1.90734859e-08, z: -7.62939436e-08}
-      rotation: {x: 6.78673314e-05, y: -.142454222, z: -.00579560688, w: .989784479}
-      scale: {x: 1.0000006, y: .999998868, z: 1.00000107}
-      transformModified: 1
-    - name: MainChar_rigLArmDigit13
-      position: {x: -.0427963249, y: 1.90734859e-08, z: 7.62939436e-08}
-      rotation: {x: 5.96046306e-08, y: -.0655403733, z: -1.58324802e-08, w: .997849882}
-      scale: {x: 1.00000072, y: .999999225, z: 1.00000131}
-      transformModified: 1
     - name: MainChar_rigLArmDigit31
       position: {x: -.118920743, y: .00440474506, z: 0}
-      rotation: {x: -9.49948884e-08, y: -7.04312626e-08, z: .201627672, w: .979462206}
+      rotation: {x: -9.49948955e-08, y: -7.04312697e-08, z: .201627687, w: .979462266}
       scale: {x: 1.00000143, y: .999999821, z: .99999994}
       transformModified: 1
     - name: MainChar_rigLArmDigit32
@@ -955,12 +931,12 @@ ModelImporter:
       transformModified: 1
     - name: MainChar_rigLArmDigit33
       position: {x: -.0514896847, y: 0, z: 7.62939436e-08}
-      rotation: {x: -5.62518778e-07, y: -1.24797211e-07, z: .201627955, w: .979462147}
+      rotation: {x: -5.62518835e-07, y: -1.24797225e-07, z: .20162797, w: .979462206}
       scale: {x: 1.00000143, y: .999999404, z: 1.00000024}
       transformModified: 1
     - name: MainChar_rigLArmDigit41
       position: {x: -.12007042, y: .00158395758, z: -.0496922284}
-      rotation: {x: -9.12695981e-08, y: -2.52621213e-08, z: .172145635, w: .98507148}
+      rotation: {x: -9.12696052e-08, y: -2.52621231e-08, z: .17214565, w: .98507154}
       scale: {x: 1.00000131, y: .999999344, z: 1}
       transformModified: 1
     - name: MainChar_rigLArmDigit42
@@ -993,11 +969,6 @@ ModelImporter:
       rotation: {x: .000949016889, y: -.103876859, z: -.0945097059, w: .990089178}
       scale: {x: .999999106, y: 1.00000131, z: 1.00000024}
       transformModified: 1
-    - name: swordTEST
-      position: {x: -.0902363583, y: -.0297065545, z: .00539772026}
-      rotation: {x: .941851258, y: .32778424, z: -.0664378926, w: .032552965}
-      scale: {x: 3.03893614, y: 3.03892851, z: .217570037}
-      transformModified: 1
     - name: MainChar_rigRArmDigit11
       position: {x: -.0200890731, y: -.0327357091, z: -.0569595322}
       rotation: {x: .147918999, y: -.307410568, z: .32659331, w: .881450772}
@@ -1012,6 +983,21 @@ ModelImporter:
       position: {x: -.0427963994, y: 3.81469718e-08, z: 0}
       rotation: {x: 1.34110437e-07, y: .065540418, z: -2.68220873e-07, w: .997849941}
       scale: {x: .999999702, y: 1.00000107, z: .999998927}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit21
+      position: {x: -.119049035, y: -.00459684338, z: -.0539344773}
+      rotation: {x: -4.6566126e-10, y: -1.57859176e-07, z: .19871141, w: .980058074}
+      scale: {x: .999999166, y: 1.00000191, z: 1.00000024}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit22
+      position: {x: -.0479721054, y: -3.81469718e-08, z: 0}
+      rotation: {x: -1.24797211e-07, y: -1.54599533e-07, z: .198711365, w: .980058074}
+      scale: {x: .999997914, y: 1.0000025, z: .999999642}
+      transformModified: 1
+    - name: MainChar_rigRArmDigit23
+      position: {x: -.0479721054, y: 0, z: 0}
+      rotation: {x: -5.25265932e-07, y: -2.4959445e-07, z: .198711276, w: .980058074}
+      scale: {x: .999999821, y: 1.0000006, z: .99999994}
       transformModified: 1
     - name: MainChar_rigRArmDigit31
       position: {x: -.118920706, y: .00440473529, z: 0}
@@ -1043,20 +1029,10 @@ ModelImporter:
       rotation: {x: -1.37835727e-07, y: -2.66358228e-07, z: .172145352, w: .985071599}
       scale: {x: .999997199, y: 1.00000322, z: .999999762}
       transformModified: 1
-    - name: MainChar_rigRArmDigit21
-      position: {x: -.119049035, y: -.00459684338, z: -.0539344773}
-      rotation: {x: -4.65661232e-10, y: -1.57859162e-07, z: .198711395, w: .980058014}
-      scale: {x: .999999166, y: 1.00000191, z: 1.00000024}
-      transformModified: 1
-    - name: MainChar_rigRArmDigit22
-      position: {x: -.0479721054, y: -3.81469718e-08, z: 0}
-      rotation: {x: -1.24797211e-07, y: -1.54599533e-07, z: .198711365, w: .980058074}
-      scale: {x: .999997914, y: 1.0000025, z: .999999642}
-      transformModified: 1
-    - name: MainChar_rigRArmDigit23
-      position: {x: -.0479721054, y: 0, z: 0}
-      rotation: {x: -5.25265932e-07, y: -2.4959445e-07, z: .198711276, w: .980058074}
-      scale: {x: .999999821, y: 1.0000006, z: .99999994}
+    - name: swordTEST
+      position: {x: -.0902363583, y: -.0297065545, z: .00539772026}
+      rotation: {x: .941851258, y: .32778424, z: -.0664378926, w: .032552965}
+      scale: {x: 3.03893614, y: 3.03892851, z: .217570037}
       transformModified: 1
     - name: MainChar_rigSpine1 1
       position: {x: 0, y: 0, z: 0}
@@ -1072,6 +1048,16 @@ ModelImporter:
       position: {x: -.123027191, y: 0, z: 0}
       rotation: {x: -2.98023224e-08, y: 0, z: .136927068, w: .990581155}
       scale: {x: 1.00000012, y: 1, z: 1.00000036}
+      transformModified: 1
+    - name: MainChar_rigLLegPlatform
+      position: {x: -.361848146, y: -4.86544582e-09, z: .200471714}
+      rotation: {x: .50000006, y: -.49999994, z: -.49999994, w: .50000006}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: MainChar_rigRLegPlatform
+      position: {x: .317196071, y: -4.86545737e-09, z: -.27575621}
+      rotation: {x: .298836291, y: -.298836201, z: -.640856326, w: .640856445}
+      scale: {x: 1, y: 1, z: .99999994}
       transformModified: 1
     armTwist: .5
     foreArmTwist: .5
