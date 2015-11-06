@@ -1759,6 +1759,14 @@ Prefab:
       propertyPath: m_Center.z
       value: 3.39264846
       objectReference: {fileID: 0}
+    - target: {fileID: 6511786, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
+      propertyPath: m_Size.x
+      value: .159212604
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511786, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
+      propertyPath: m_Size.y
+      value: .131876916
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b296e7c0750fbd646919ba89f07e1b63, type: 2}
   m_IsPrefabParent: 0
