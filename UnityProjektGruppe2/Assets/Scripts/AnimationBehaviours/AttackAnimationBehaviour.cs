@@ -21,7 +21,7 @@ public class AttackAnimationBehaviour : StateMachineBehaviour {
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         myBoxCollider.enabled = false;
-        animator.SetBool("testAttack", false);
+        animator.SetBool("dAttackSecurity", false);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here
