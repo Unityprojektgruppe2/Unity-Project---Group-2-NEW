@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 99e74a75dff82ab41b669a6e194f1c96
-timeCreated: 1446546188
+guid: 65c1c69ceec32fb4796e36d4d6ae4f22
+timeCreated: 1446799790
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -66,95 +66,19 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    optimizeGameObjects: 1
+    optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Take 001
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 100
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Box004
-        weight: 1
-      - path: CATRigHub001
-        weight: 1
-      - path: CATRigHub001/CATRigLLeg1
-        weight: 1
-      - path: CATRigHub001/CATRigLLeg1/CATRigLLeg2
-        weight: 1
-      - path: CATRigHub001/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
-        weight: 1
-      - path: CATRigHub001/CATRigRLeg1
-        weight: 1
-      - path: CATRigHub001/CATRigRLeg1/CATRigRLeg2
-        weight: 1
-      - path: CATRigHub001/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002/CATRigLArmCollarbone
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002/CATRigLArmCollarbone/CATRigLArm1
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002/CATRigLArmCollarbone/CATRigLArm1/CATRigLArm2/CATRigLArmPalm
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002/CATRigRArmCollarbone
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002/CATRigRArmCollarbone/CATRigRArm1/CATRigRArm2/CATRigRArmPalm
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002/CATRigSpine
-        weight: 1
-      - path: CATRigHub001/CATRigSpine1/CATRigSpine2/CATRigHub002/CATRigSpine/CATRigHub003
-        weight: 1
-      - path: CATRigLLegPlatform
-        weight: 1
-      - path: CATRigRLegPlatform
-        weight: 1
-      - path: Character001
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
