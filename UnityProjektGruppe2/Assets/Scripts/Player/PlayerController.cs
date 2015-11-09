@@ -36,17 +36,35 @@ public class PlayerController : MonoBehaviour
 
     void Movement()
     {
+        //http://answers.unity3d.com/questions/307150/rotate-an-object-toward-the-direction-the-joystick.html
+        //Fix of rotation to and move in the direction of joystick
+
+        float joyX = CrossPlatformInputManager.GetAxis("Horizontal");
+        float joyY = CrossPlatformInputManager.GetAxis("Vertical");
+
+        
+
         Vector3 moveVec = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0, CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
-        //bool isBoosting = CrossPlatformInputManager.GetButton("LeButton");
-        bool isBoosting = false;
+        ////bool isBoosting = CrossPlatformInputManager.GetButton("LeButton");
+        //bool isBoosting = false;
 
 
-        if (moveVec.x != 0)
+        if (moveVec.x != 0 && moveVec.z != 0)
         {
-            myRigidBody.transform.Rotate(0, moveVec.x * 25 * Time.deltaTime, 0);
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(-joyX, -joyY) * Mathf.Rad2Deg, transform.eulerAngles.z);
+            
+            //myRigidBody.transform.Rotate(0, moveVec.x * 25 * Time.deltaTime, 0);
         }
 
         if (moveVec.z > 0)
+        {
+            if (currentSpeed <= 2f)
+            {
+                currentSpeed += 0.1f;
+            }
+            myAnimator.SetFloat("Speed", currentSpeed);
+        }
+        else if (moveVec.z < 0)
         {
             if (currentSpeed <= 2f)
             {
@@ -63,7 +81,7 @@ public class PlayerController : MonoBehaviour
             }
             myAnimator.SetFloat("Speed", currentSpeed);
         }
-
+        //
         //myAnimator.SetFloat("Speed", moveVec.z * moveForce);
 
         //Debug.Log(moveVec);
@@ -76,14 +94,17 @@ public class PlayerController : MonoBehaviour
     void Attack()
     {
         isAttacking = CrossPlatformInputManager.GetButton("LeButton");
-
+        
         if (isAttacking)
         {
+            myAnimator.SetBool("testAttack", true);
             isAttacking = false;
-            //myRigidBody.transform.Rotate(0, 3 * 100 * Time.deltaTime, 0);
             myAnimator.SetTrigger("Attack");
         }
+        
     }
+
+
 
 
 
