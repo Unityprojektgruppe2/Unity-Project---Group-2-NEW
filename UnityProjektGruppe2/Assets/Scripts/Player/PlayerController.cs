@@ -16,8 +16,6 @@ public class PlayerController : MonoBehaviour
     public BoxCollider mySwordBoxCollider;
     float currentSpeed = 0.0f;
 
-    public bool invulnerable = false;
-
     //Whirlwind Variables
     float rotationleft = 0;
     float rotationspeed = 1440; //rotation speed
