@@ -15,10 +15,16 @@ public class PlayerHealth : MonoBehaviour
 
     GameObject enemy;
     EnemyAttack enemyAttack;
+    Animator myAnimator;
 
     #endregion
 
     #region methods
+
+    void Start()
+    {
+        myAnimator = GetComponent<Animator>();
+    }
 
     #region Awake method
     //sets the variables and find tag.
@@ -35,8 +41,12 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        currentHealth -= amount;
-        healthSlider.value = currentHealth;
+        if (!myAnimator.GetBool("Whirlwinding"))
+        {
+            currentHealth -= amount;
+            healthSlider.value = currentHealth;
+        }
+        
     }
     #endregion
 
@@ -71,7 +81,13 @@ public class PlayerHealth : MonoBehaviour
     #region Gameover (empty script)
     public void GameOver()
     {
-        Application.LoadLevel("Level1");
+        if (myAnimator.GetBool("Alive"))
+        {
+            myAnimator.SetBool("Alive", false);
+            myAnimator.SetTrigger("Death");
+        }
+        //Application.LoadLevel("Level1");
+        
     }
 
     #endregion
