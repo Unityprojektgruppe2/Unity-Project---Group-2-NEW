@@ -772,7 +772,7 @@ GameObject:
   - 114: {fileID: 11458404}
   - 114: {fileID: 11458234}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerNewOLD
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1719,6 +1719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveForce: 5
   boostMultiplier: 2
+  myAnimator: {fileID: 0}
   mySwordBoxCollider: {fileID: 6538258}
 --- !u!114 &11458404
 MonoBehaviour:

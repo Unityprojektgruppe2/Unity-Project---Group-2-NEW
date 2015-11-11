@@ -227,7 +227,7 @@ public class Spawner : MonoBehaviour
         int spawnPointIndex = Random.Range(0, spawnPoints.Length);
         GameObject Enemy = (GameObject)Instantiate(Enemies[enemyLevel], spawnPoints[spawnPointIndex].position, Quaternion.identity);
         //
-        Enemy.SendMessage("setName", SpawnID);
+        //Enemy.SendMessage("setName", SpawnID);
         // Increase the total number of enemies spawned and the number of spawned enemies
         numEnemy++;
         spawnedEnemy++;

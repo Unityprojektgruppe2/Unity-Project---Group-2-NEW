@@ -141,9 +141,15 @@ ModelImporter:
       has scale animation that will be discarded.\n\t'MainChar_rigLLegDigit12' has
       scale animation that will be discarded.\n\t'MainChar_rigSpine3' is inbetween
       humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigHub002'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigRLegAnkle'
-      has scale animation that will be discarded.\n\t'MainChar_rigRLegDigit11' is
-      inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigRLegDigit11'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigLArmCollarbone'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigLArmDigit41'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigLArmDigit42'
+      has scale animation that will be discarded.\n\t'MainChar_rigRArmCollarbone'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigRArmDigit41'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigRArmDigit42'
+      has scale animation that will be discarded.\n\t'MainChar_rigRLegAnkle' has scale
+      animation that will be discarded.\n\t'MainChar_rigRLegDigit11' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'MainChar_rigRLegDigit11'
       has scale animation that will be discarded.\n\t'MainChar_rigRLegDigit12' has
       scale animation that will be discarded.\n"
     animationRetargetingWarnings: 
@@ -153,7 +159,8 @@ ModelImporter:
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
-    extraExposedTransformPaths: []
+    extraExposedTransformPaths:
+    - MainChar_rigHub001/MainChar_rigSpine1/MainChar_rigSpine2/MainChar_rigSpine3/MainChar_rigHub002/MainChar_rigRArmCollarbone/MainChar_rigRArm1/MainChar_rigRArm2/MainChar_rigRArmPalm
     clipAnimations:
     - serializedVersion: 16
       name: Idle
@@ -687,7 +694,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigLArmCollarbone
+    - boneName: MainChar_rigLArm1
       humanName: LeftShoulder
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -695,7 +702,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigRArmCollarbone
+    - boneName: MainChar_rigRArm1
       humanName: RightShoulder
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -703,7 +710,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigLArm1
+    - boneName: MainChar_rigLArm2
       humanName: LeftUpperArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -711,7 +718,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigRArm1
+    - boneName: MainChar_rigRArm2
       humanName: RightUpperArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -719,7 +726,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigLArm2
+    - boneName: MainChar_rigLArmPalm
       humanName: LeftLowerArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -727,7 +734,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigRArm2
+    - boneName: MainChar_rigRArmPalm
       humanName: RightLowerArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -735,7 +742,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigLArmPalm
+    - boneName: MainChar_rigLArmDigit42
       humanName: LeftHand
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -743,7 +750,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MainChar_rigRArmPalm
+    - boneName: MainChar_rigRArmDigit42
       humanName: RightHand
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -776,7 +783,7 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: MainCharacter_TEST_05(Clone)
+    - name: MainCharacter_TEST_05(Clone)(Clone)
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}

@@ -11,18 +11,17 @@ public class PlayerController : MonoBehaviour
     bool whirlwinding = false;
 
     Rigidbody myRigidBody;
-    private Animator myAnimator;
+    public Animator myAnimator;
     [SerializeField]
     public BoxCollider mySwordBoxCollider;
     float currentSpeed = 0.0f;
 
-
     //Whirlwind Variables
     float rotationleft = 0;
-    float rotationspeed = 720; //rotation speed
+    float rotationspeed = 1440; //rotation speed
     Vector3 angleBeforeWhirlwind;
     float whirlwindRange = 0.2f;
-    float saveY;
+    float whirlwindSaveY; //Saves current Y before whirlwind to resume this (2-25 degree bug fix)
 
     // Use this for initialization
     void Start()
@@ -110,10 +109,10 @@ public class PlayerController : MonoBehaviour
         {
             whirlwinding = true;
             angleBeforeWhirlwind = Vector3.Normalize(transform.forward);
-            saveY =  transform.eulerAngles.y;
+            whirlwindSaveY =  transform.eulerAngles.y;
 
-            rotationleft = 720;
-            myAnimator.SetBool("Whirlwind", true);
+            rotationleft = 1440;
+            myAnimator.SetTrigger("Whirlwind");
         }
 
         if (whirlwinding)
@@ -131,13 +130,13 @@ public class PlayerController : MonoBehaviour
                 rotation = rotationleft;
                 rotationleft = 0;
                 whirlwinding = false;
-                myAnimator.SetBool("Whirlwind", false);
-                transform.rotation = Quaternion.Euler(transform.rotation.x, saveY, transform.rotation.z);
+                myAnimator.SetTrigger("WhirlwindStanceEnd");
+                transform.rotation = Quaternion.Euler(transform.rotation.x, whirlwindSaveY, transform.rotation.z);
             }
             if (rotateMe)
             {
                 transform.parent.Translate(angleBeforeWhirlwind * whirlwindRange);   
-                transform.Rotate(0, rotation, 0);
+                transform.Rotate(0, -rotation, 0);
                 
             }
 

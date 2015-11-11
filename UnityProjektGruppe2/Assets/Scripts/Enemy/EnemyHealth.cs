@@ -95,7 +95,7 @@ public class EnemyHealth : MonoBehaviour
 		GetComponent <NavMeshAgent> ().enabled = false;
 		
 		// Find the rigidbody component and make it kinematic (since we use Translate to sink the enemy).
-		GetComponent <Rigidbody> ().isKinematic = true;
+		//GetComponent <Rigidbody> ().isKinematic = true;
 		
 		// The enemy should no sink.
 		isSinking = true;
