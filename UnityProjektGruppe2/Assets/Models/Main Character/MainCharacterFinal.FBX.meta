@@ -120,11 +120,13 @@ ModelImporter:
     7400002: Run
     7400004: Attack
     7400006: Walk
-    7400008: Dash
+    7400008: Dash -Engage
     7400010: Whirlwind -Engage
     7400012: Whirlwind -Stop
     7400014: Death
     7400016: Whirlwind -Stance
+    7400018: Dash -Stance
+    7400020: Dash -Stop
     9500000: //RootNode
     13700000: body_TEST
   materials:
@@ -752,10 +754,10 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Dash
+      name: Dash -Engage
       takeName: Take 001
       firstFrame: 320
-      lastFrame: 350
+      lastFrame: 327
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -763,7 +765,7 @@ ModelImporter:
       loop: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
@@ -908,9 +910,9 @@ ModelImporter:
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
-      heightFromFeet: 0
+      heightFromFeet: 1
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
@@ -1328,6 +1330,288 @@ ModelImporter:
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body_TEST
+        weight: 0
+      - path: TrianglePlatform
+        weight: 0
+      - path: MainChar_LeftLeg_LegPlatform
+        weight: 0
+      - path: MainChar_RightLeg_LegPlatform
+        weight: 0
+      - path: MainChar_Pelvis
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_LeftLeg_Thigh
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_LeftLeg_Thigh/MainChar_LeftLeg_Lowerleg
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_LeftLeg_Thigh/MainChar_LeftLeg_Lowerleg/MainChar_LeftLeg_Ankle
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_LeftLeg_Thigh/MainChar_LeftLeg_Lowerleg/MainChar_LeftLeg_Ankle/MainChar_LeftLeg_Foot01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_LeftLeg_Thigh/MainChar_LeftLeg_Lowerleg/MainChar_LeftLeg_Ankle/MainChar_LeftLeg_Foot01/MainChar_LeftLeg_Foot02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_Neck01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_Neck01/MainChar_Neck02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_Neck01/MainChar_Neck02/MainChar_Head
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Thumb01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Thumb01/MainChar_LeftArm_Thumb02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Thumb01/MainChar_LeftArm_Thumb02/MainChar_LeftArm_Thumbs03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Index01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Index01/MainChar_LeftArm_Index02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Index01/MainChar_LeftArm_Index02/MainChar_LeftArm_Index03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_MidFinger01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_MidFinger01/MainChar_LeftArm_MidFinger02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_MidFinger01/MainChar_LeftArm_MidFinger02/MainChar_LeftArm_MidFinger03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Pinky01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Pinky01/MainChar_LeftArm_Pinky02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Pinky01/MainChar_LeftArm_Pinky02/MainChar_LeftArm_Pinky03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Thumb01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Thumb01/MainChar_RightArm_Thumb02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Thumb01/MainChar_RightArm_Thumb02/MainChar_RightArm_Thumb03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01/MainChar_RightArm_Pinky02
+          1
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01/MainChar_RightArm_Pinky02
+          1/MainChar_RightArm_Pinky03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_MidFinger01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_MidFinger01/MainChar_RightArm_Midfinger02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_MidFinger01/MainChar_RightArm_Midfinger02/MainChar_RightArm_MidFinger03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01
+          1
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01
+          1/MainChar_RightArm_Pinky02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01
+          1/MainChar_RightArm_Pinky02/MainChar_RightArm_Pinky03 1
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_RightLeg_Thigh
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_RightLeg_Thigh/MainChar_RightLeg_LowerLeg
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_RightLeg_Thigh/MainChar_RightLeg_LowerLeg/MainChar_RightLeg_Ankle
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_RightLeg_Thigh/MainChar_RightLeg_LowerLeg/MainChar_RightLeg_Ankle/MainChar_RightLeg_Foot01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_RightLeg_Thigh/MainChar_RightLeg_LowerLeg/MainChar_RightLeg_Ankle/MainChar_RightLeg_Foot01/MainChar_RightLeg_Foot02
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Dash -Stance
+      takeName: Take 001
+      firstFrame: 327
+      lastFrame: 328
+      wrapMode: 0
+      orientationOffsetY: -15
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body_TEST
+        weight: 0
+      - path: TrianglePlatform
+        weight: 0
+      - path: MainChar_LeftLeg_LegPlatform
+        weight: 0
+      - path: MainChar_RightLeg_LegPlatform
+        weight: 0
+      - path: MainChar_Pelvis
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_LeftLeg_Thigh
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_LeftLeg_Thigh/MainChar_LeftLeg_Lowerleg
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_LeftLeg_Thigh/MainChar_LeftLeg_Lowerleg/MainChar_LeftLeg_Ankle
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_LeftLeg_Thigh/MainChar_LeftLeg_Lowerleg/MainChar_LeftLeg_Ankle/MainChar_LeftLeg_Foot01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_LeftLeg_Thigh/MainChar_LeftLeg_Lowerleg/MainChar_LeftLeg_Ankle/MainChar_LeftLeg_Foot01/MainChar_LeftLeg_Foot02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_Neck01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_Neck01/MainChar_Neck02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_Neck01/MainChar_Neck02/MainChar_Head
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Thumb01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Thumb01/MainChar_LeftArm_Thumb02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Thumb01/MainChar_LeftArm_Thumb02/MainChar_LeftArm_Thumbs03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Index01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Index01/MainChar_LeftArm_Index02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Index01/MainChar_LeftArm_Index02/MainChar_LeftArm_Index03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_MidFinger01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_MidFinger01/MainChar_LeftArm_MidFinger02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_MidFinger01/MainChar_LeftArm_MidFinger02/MainChar_LeftArm_MidFinger03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Pinky01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Pinky01/MainChar_LeftArm_Pinky02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_LeftArm_Collarbone/MainChar_LeftArm_UpperArm/MainChar_LeftArm_LowerArm/MainChar_LeftArm_Hand/MainChar_LeftArm_Pinky01/MainChar_LeftArm_Pinky02/MainChar_LeftArm_Pinky03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Thumb01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Thumb01/MainChar_RightArm_Thumb02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Thumb01/MainChar_RightArm_Thumb02/MainChar_RightArm_Thumb03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01/MainChar_RightArm_Pinky02
+          1
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01/MainChar_RightArm_Pinky02
+          1/MainChar_RightArm_Pinky03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_MidFinger01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_MidFinger01/MainChar_RightArm_Midfinger02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_MidFinger01/MainChar_RightArm_Midfinger02/MainChar_RightArm_MidFinger03
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01
+          1
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01
+          1/MainChar_RightArm_Pinky02
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_Torso01/MainChar_Torso02/MainChar_Torso03/MainChar_Chest/MainChar_RightArm_Collarbone/MainChar_RightArm_UpperArm/MainChar_RightArm_LowerArm/MainChar_RightArm_Hand/MainChar_RightArm_Pinky01
+          1/MainChar_RightArm_Pinky02/MainChar_RightArm_Pinky03 1
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_RightLeg_Thigh
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_RightLeg_Thigh/MainChar_RightLeg_LowerLeg
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_RightLeg_Thigh/MainChar_RightLeg_LowerLeg/MainChar_RightLeg_Ankle
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_RightLeg_Thigh/MainChar_RightLeg_LowerLeg/MainChar_RightLeg_Ankle/MainChar_RightLeg_Foot01
+        weight: 1
+      - path: MainChar_Pelvis/MainChar_RightLeg_Thigh/MainChar_RightLeg_LowerLeg/MainChar_RightLeg_Ankle/MainChar_RightLeg_Foot01/MainChar_RightLeg_Foot02
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Dash -Stop
+      takeName: Take 001
+      firstFrame: 328
+      lastFrame: 350
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
