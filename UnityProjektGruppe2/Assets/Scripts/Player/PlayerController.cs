@@ -252,8 +252,8 @@ public class PlayerController : MonoBehaviour
             powergiven = true;
             weaponAttack.damage += 20;
             Debug.Log(weaponAttack.damage);
+            Destroy(other.gameObject);
         }
-        Destroy(other.gameObject);
     }
 
 
