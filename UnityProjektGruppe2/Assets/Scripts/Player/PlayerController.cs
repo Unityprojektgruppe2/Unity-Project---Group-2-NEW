@@ -4,7 +4,11 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
-
+    WeaponAttack weaponAttack;
+    GameObject weapon;
+    private bool juggernaut = false;
+    private bool powergiven = false;
+    private float powerTime = 30;
     public float moveForce = 5, boostMultiplier = 2; //Old code?
     bool attackBtnPressed = false;
 
@@ -45,12 +49,14 @@ public class PlayerController : MonoBehaviour
         myRigidBody = this.GetComponent<Rigidbody>();
         Input.multiTouchEnabled = true;
         myAnimator = GetComponent<Animator>();
+        weapon = GameObject.FindGameObjectWithTag("Weapon");
+        weaponAttack = weapon.GetComponent<WeaponAttack>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        PowerUp();
     }
 
     void FixedUpdate()
@@ -102,7 +108,7 @@ public class PlayerController : MonoBehaviour
 
         else
         {
-            if (currentSpeed >= 0)
+                myAnalogStick.alpha = 0.3f;
             {
                 myAnalogStick.alpha = 1.0f;
                 currentSpeed -= 0.1f; //Slowly speeds down (Animation Wise) for blending
@@ -220,6 +226,38 @@ public class PlayerController : MonoBehaviour
                 //transform.Rotate(0, -rotation, 0); //Rotates the player object
 
             }
+        }
+    }
+
+    void PowerUp()
+    {
+        if (juggernaut == true)
+        {
+            powerTime -= Time.deltaTime;
+            Debug.Log(powerTime);
+        }
+        if (powerTime <= 0)
+        {
+            powerTime = 30;
+            weaponAttack.damage -= 20;
+            Debug.Log(weaponAttack.damage);
+            juggernaut = false;
+            powergiven = false;
+        }
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "PowerUp")
+        {
+            juggernaut = true;
+
+        }
+        if (juggernaut == true && powergiven == false)
+        {
+            powergiven = true;
+            weaponAttack.damage += 20;
+            Debug.Log(weaponAttack.damage);
+            Destroy(other.gameObject);
         }
     }
 

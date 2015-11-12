@@ -14,7 +14,7 @@ public class PlayerHealth : MonoBehaviour
     private int tempscore2 = 0;
     public static int maxHealth = 100;
     public float currentHealth = 100;
-    public float timesMaxHealth = 0.1f;
+    public float timesMaxHealth = 0.2f;
     public Slider healthSlider;   // Reference to the UI's health bar.
 
     GameObject enemy;
