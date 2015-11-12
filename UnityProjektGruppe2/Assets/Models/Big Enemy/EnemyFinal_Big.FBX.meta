@@ -1,0 +1,733 @@
+fileFormatVersion: 2
+guid: 5ccd48c9f4e00c343a7e593ab731d627
+timeCreated: 1447332878
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: CATRig_Abs
+    100002: CATRig_Chest
+    100004: CATRig_Head
+    100006: CATRig_LeftArm_CollarBone
+    100008: CATRig_LeftArm_Hand
+    100010: CATRig_LeftArm_LowerArm
+    100012: CATRig_LeftArm_UpperArm
+    100014: CATRig_LeftLeg_Ankle
+    100016: CATRig_LeftLeg_Foot01
+    100018: CATRig_LeftLeg_Foot02
+    100020: CATRig_LeftLeg_LegPlatform
+    100022: CATRig_LeftLeg_LowerLeg
+    100024: CATRig_LeftLeg_Thigh
+    100026: CATRig_Neck
+    100028: CATRig_Pelvis
+    100030: CATRig_Right_UpperArm
+    100032: CATRig_RightArm_CollarBone
+    100034: CATRig_RightArm_Hand
+    100036: CATRig_RightArm_LowerArm
+    100038: CATRig_RightLeg_Ankle
+    100040: CATRig_RightLeg_Foot01
+    100042: CATRig_RightLeg_Foot02
+    100044: CATRig_RightLeg_LegPlatform
+    100046: CATRig_RightLeg_LowerLeg
+    100048: CATRig_RightLeg_Thigh
+    100050: CATRig_Torso
+    100052: //RootNode
+    100054: Mesh
+    100056: TrianglePlatform
+    400000: CATRig_Abs
+    400002: CATRig_Chest
+    400004: CATRig_Head
+    400006: CATRig_LeftArm_CollarBone
+    400008: CATRig_LeftArm_Hand
+    400010: CATRig_LeftArm_LowerArm
+    400012: CATRig_LeftArm_UpperArm
+    400014: CATRig_LeftLeg_Ankle
+    400016: CATRig_LeftLeg_Foot01
+    400018: CATRig_LeftLeg_Foot02
+    400020: CATRig_LeftLeg_LegPlatform
+    400022: CATRig_LeftLeg_LowerLeg
+    400024: CATRig_LeftLeg_Thigh
+    400026: CATRig_Neck
+    400028: CATRig_Pelvis
+    400030: CATRig_Right_UpperArm
+    400032: CATRig_RightArm_CollarBone
+    400034: CATRig_RightArm_Hand
+    400036: CATRig_RightArm_LowerArm
+    400038: CATRig_RightLeg_Ankle
+    400040: CATRig_RightLeg_Foot01
+    400042: CATRig_RightLeg_Foot02
+    400044: CATRig_RightLeg_LegPlatform
+    400046: CATRig_RightLeg_LowerLeg
+    400048: CATRig_RightLeg_Thigh
+    400050: CATRig_Torso
+    400052: //RootNode
+    400054: Mesh
+    400056: TrianglePlatform
+    4300000: Mesh
+    7400000: Run
+    7400002: Attack 1(Big)
+    7400004: Death
+    7400006: Attack 2(Big)
+    7400008: Idle(Big)
+    7400010: Idle(Small)
+    7400012: Attack(Small)
+    9500000: //RootNode
+    13700000: Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 1
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'CATRig_Chest' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'CATRig_LeftArm_LowerArm'
+      has scale animation that will be discarded.\n\t'CATRig_RightArm_Hand' has scale
+      animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths:
+    - CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm/CATRig_RightArm_Hand
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: TrianglePlatform
+        weight: 1
+      - path: CATRig_Pelvis
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01/CATRig_LeftLeg_Foot02
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm/CATRig_LeftArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm/CATRig_RightArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck/CATRig_Head
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01/CATRig_RightLeg_Foot02
+        weight: 1
+      - path: CATRig_LeftLeg_LegPlatform
+        weight: 1
+      - path: CATRig_RightLeg_LegPlatform
+        weight: 1
+      - path: Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 210
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRig_LeftLeg_LegPlatform
+        weight: 0
+      - path: CATRig_Pelvis
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm/CATRig_LeftArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck/CATRig_Head
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm/CATRig_RightArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01/CATRig_LeftLeg_Foot02
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01/CATRig_RightLeg_Foot02
+        weight: 0
+      - path: CATRig_RightLeg_LegPlatform
+        weight: 0
+      - path: Mesh
+        weight: 0
+      - path: TrianglePlatform
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack 1(Big)
+      takeName: Take 001
+      firstFrame: 250
+      lastFrame: 295
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRig_LeftLeg_LegPlatform
+        weight: 0
+      - path: CATRig_Pelvis
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm/CATRig_LeftArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck/CATRig_Head
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm/CATRig_RightArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01/CATRig_LeftLeg_Foot02
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01/CATRig_RightLeg_Foot02
+        weight: 0
+      - path: CATRig_RightLeg_LegPlatform
+        weight: 0
+      - path: Mesh
+        weight: 0
+      - path: TrianglePlatform
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack 2(Big)
+      takeName: Take 001
+      firstFrame: 305
+      lastFrame: 355
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRig_LeftLeg_LegPlatform
+        weight: 0
+      - path: CATRig_Pelvis
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm/CATRig_LeftArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck/CATRig_Head
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm/CATRig_RightArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01/CATRig_LeftLeg_Foot02
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01/CATRig_RightLeg_Foot02
+        weight: 0
+      - path: CATRig_RightLeg_LegPlatform
+        weight: 0
+      - path: Mesh
+        weight: 0
+      - path: TrianglePlatform
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle(Big)
+      takeName: Take 001
+      firstFrame: 365
+      lastFrame: 400
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRig_LeftLeg_LegPlatform
+        weight: 0
+      - path: CATRig_Pelvis
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm/CATRig_LeftArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck/CATRig_Head
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm/CATRig_RightArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01/CATRig_LeftLeg_Foot02
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01/CATRig_RightLeg_Foot02
+        weight: 0
+      - path: CATRig_RightLeg_LegPlatform
+        weight: 0
+      - path: Mesh
+        weight: 0
+      - path: TrianglePlatform
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle(Small)
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRig_LeftLeg_LegPlatform
+        weight: 0
+      - path: CATRig_Pelvis
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm/CATRig_LeftArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck/CATRig_Head
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm/CATRig_RightArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01/CATRig_LeftLeg_Foot02
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01/CATRig_RightLeg_Foot02
+        weight: 0
+      - path: CATRig_RightLeg_LegPlatform
+        weight: 0
+      - path: Mesh
+        weight: 0
+      - path: TrianglePlatform
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack(Small)
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRig_LeftLeg_LegPlatform
+        weight: 0
+      - path: CATRig_Pelvis
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_LeftArm_CollarBone/CATRig_LeftArm_UpperArm/CATRig_LeftArm_LowerArm/CATRig_LeftArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_Neck/CATRig_Head
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_Abs/CATRig_Torso/CATRig_Chest/CATRig_RightArm_CollarBone/CATRig_Right_UpperArm/CATRig_RightArm_LowerArm/CATRig_RightArm_Hand
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_LeftLeg_Thigh/CATRig_LeftLeg_LowerLeg/CATRig_LeftLeg_Ankle/CATRig_LeftLeg_Foot01/CATRig_LeftLeg_Foot02
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle
+        weight: 1
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01
+        weight: 0
+      - path: CATRig_Pelvis/CATRig_RightLeg_Thigh/CATRig_RightLeg_LowerLeg/CATRig_RightLeg_Ankle/CATRig_RightLeg_Foot01/CATRig_RightLeg_Foot02
+        weight: 0
+      - path: CATRig_RightLeg_LegPlatform
+        weight: 0
+      - path: Mesh
+        weight: 0
+      - path: TrianglePlatform
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

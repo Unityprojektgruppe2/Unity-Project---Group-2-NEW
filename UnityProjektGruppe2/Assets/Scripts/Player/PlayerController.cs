@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody myRigidBody;
     public Animator myAnimator;
+
+    [SerializeField]
+    CanvasGroup myAnalogStick;
+
     [SerializeField]
     public BoxCollider mySwordBoxCollider; //Needed for enabling the boxCollider when starting/ending attack/s animation/s
     float currentSpeed = 0.0f;
@@ -46,15 +50,21 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
 
     void FixedUpdate()
     {
-        if (!whirlwinding) //Prevents player to move while whirlwinding
+        if (myAnimator.GetBool("Alive"))
         {
-            Movement();
+
+            if (!whirlwinding) //Prevents player to move while whirlwinding
+            {
+                Movement();
+            }
+            Attack();
         }
-        Attack();
+
     }
 
     void Movement()
@@ -76,21 +86,15 @@ public class PlayerController : MonoBehaviour
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(-moveVec.x, -moveVec.z) * Mathf.Rad2Deg, transform.eulerAngles.z);
 
             //myRigidBody.transform.Rotate(0, moveVec.x * 25 * Time.deltaTime, 0);
+            
         }
 
         //Sets the player in forward moving, if joystick is being dragged
-        if (moveVec.z > 0)
+        if (moveVec.z != 0 || moveVec.z != 0)
         {
             if (currentSpeed <= 2f)
             {
-                currentSpeed += 0.1f; //Slowly speeds up (Animation Wise) for blending
-            }
-            myAnimator.SetFloat("Speed", currentSpeed);
-        }
-        else if (moveVec.z < 0)
-        {
-            if (currentSpeed <= 2f)
-            {
+                myAnalogStick.alpha = 0.3f;
                 currentSpeed += 0.1f; //Slowly speeds up (Animation Wise) for blending
             }
             myAnimator.SetFloat("Speed", currentSpeed);
@@ -100,6 +104,7 @@ public class PlayerController : MonoBehaviour
         {
             if (currentSpeed >= 0)
             {
+                myAnalogStick.alpha = 1.0f;
                 currentSpeed -= 0.1f; //Slowly speeds down (Animation Wise) for blending
             }
             myAnimator.SetFloat("Speed", currentSpeed);
@@ -184,8 +189,8 @@ public class PlayerController : MonoBehaviour
 
             rotationleft = 1440; //Rotate left for 1440 degrees
             myAnimator.SetTrigger("Dash"); //Set the animationtrigger Whirlwind
-            //transform.rotation = Quaternion.Euler(transform.rotation.x, AttackMoveSaveY, transform.rotation.z); //Fixes a potential rotation bug with a degree of 10-30
-            
+                                           //transform.rotation = Quaternion.Euler(transform.rotation.x, AttackMoveSaveY, transform.rotation.z); //Fixes a potential rotation bug with a degree of 10-30
+
         }
 
         if (dashing)
@@ -209,6 +214,7 @@ public class PlayerController : MonoBehaviour
             }
             if (moveMe)
             {
+                //myRigidBody.AddForce(transform.forward.x * 30 * rotation,transform.forward.y,transform.forward.z * 30 * rotation);
                 //myParentsRigidBody.AddForce(400, transform.forward.y, 400);
                 transform.parent.Translate(angleBeforeAttackMove * dashRange); //Moves the parent object in the direction the player was pointing before dashing (To make the player move)
                 //transform.Rotate(0, -rotation, 0); //Rotates the player object
