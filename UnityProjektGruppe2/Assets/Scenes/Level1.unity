@@ -1199,6 +1199,10 @@ Prefab:
       propertyPath: myAnalogStick
       value: 
       objectReference: {fileID: 1511734191}
+    - target: {fileID: 174886, guid: 83bfc0a52b38cfb4ab48006520f82bd5, type: 2}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83bfc0a52b38cfb4ab48006520f82bd5, type: 2}
   m_IsPrefabParent: 0

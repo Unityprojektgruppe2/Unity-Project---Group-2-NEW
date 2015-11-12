@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //Sets the player in forward moving, if joystick is being dragged
-        if (moveVec.z != 0 || moveVec.z != 0)
+        if (moveVec.x != 0 || moveVec.z != 0)
         {
             if (currentSpeed <= 2f)
             {
@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour
 
         else
         {
-                myAnalogStick.alpha = 0.3f;
+            if (currentSpeed > 0f)
             {
                 myAnalogStick.alpha = 1.0f;
                 currentSpeed -= 0.1f; //Slowly speeds down (Animation Wise) for blending
