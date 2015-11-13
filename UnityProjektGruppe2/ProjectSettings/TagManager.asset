@@ -4,9 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
-  - PowerUp
-  - Weapon
+  - canButton
+  - StatShop
   layers:
   - Default
   - TransparentFX
@@ -16,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - Floor
-  - Shootable
+  - 
+  - 
   - 
   - 
   - 
@@ -42,7 +41,10 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 1932348919
+    uniqueID: 2692669327
+    locked: 0
+  - name: SpaceStation
+    uniqueID: 651054915
     locked: 0
   - name: Default
     uniqueID: 0
