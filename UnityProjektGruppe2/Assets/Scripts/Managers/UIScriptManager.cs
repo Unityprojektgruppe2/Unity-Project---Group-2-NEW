@@ -16,7 +16,7 @@ public class UIScriptManager : MonoBehaviour {
 
     public void NewGameClicked()
     {
-        Application.LoadLevel("Level1");
+        Application.LoadLevel("City");
     }
     public void ExitGameClicked()
     {
