@@ -124,6 +124,17 @@ public class PlayerController : MonoBehaviour
         DashAttack();
     }
 
+    private void MeleeAttack()
+    {
+        attackBtnPressed = CrossPlatformInputManager.GetButtonDown("Attack");
+
+        if (attackBtnPressed && myAnimator.GetBool("Alive")) //If button pressed and Alive
+        {
+            myAnimator.SetBool("dAttackSecurity", true); //fixes a doubble attack bug, ensures only one attack as dAttackSecurity will be set to false when leaving attackState -> AttackAnimationBehaviour.cs
+            myAnimator.SetTrigger("Attack"); //Starts the Attack move
+        }
+    }
+
 
     /// <summary>
     /// Whirlwind Attack
@@ -167,17 +178,6 @@ public class PlayerController : MonoBehaviour
 
             }
 
-        }
-    }
-
-    private void MeleeAttack()
-    {
-        attackBtnPressed = CrossPlatformInputManager.GetButtonDown("LeButton");
-
-        if (attackBtnPressed && myAnimator.GetBool("Alive")) //If button pressed and Alive
-        {
-            myAnimator.SetBool("dAttackSecurity", true); //fixes a doubble attack bug, ensures only one attack as dAttackSecurity will be set to false when leaving attackState -> AttackAnimationBehaviour.cs
-            myAnimator.SetTrigger("Attack"); //Starts the Attack move
         }
     }
 

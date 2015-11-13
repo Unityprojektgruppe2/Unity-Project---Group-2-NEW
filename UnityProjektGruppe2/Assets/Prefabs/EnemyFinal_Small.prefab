@@ -92,8 +92,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   currentHealth: 0
-  sinkSpeed: 2.5
+  sinkSpeed: .100000001
   scoreValue: 10
+  isDead: 0
 --- !u!114 &11457472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,6 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: .5
   attackDamage: 10
+  attacking: 0
+  amountOfDifferentAttacks: 1
 --- !u!114 &11468544
 MonoBehaviour:
   m_ObjectHideFlags: 1
