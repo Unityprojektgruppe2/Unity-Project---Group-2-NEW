@@ -18,6 +18,11 @@ public class UIScriptManager : MonoBehaviour {
     {
         Application.LoadLevel("Level1");
     }
+    public void ExitGameClicked()
+    {
+        Application.Quit();
+    }
+
     private void onClick()
     {
 
