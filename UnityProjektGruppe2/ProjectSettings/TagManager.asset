@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - StatShop
+  - canButton
   layers:
   - Default
   - TransparentFX
@@ -39,6 +41,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 378742513
+    locked: 0
+  - name: Sun
+    uniqueID: 4219779707
+    locked: 0
+  - name: By_Dome
+    uniqueID: 3033951447
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
