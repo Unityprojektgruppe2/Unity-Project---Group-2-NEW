@@ -62,6 +62,7 @@ public class PlayerHealth : MonoBehaviour
         if (other.gameObject.tag == "PickUpHealth")
         {
             currentHealth += (maxHealth * timesMaxHealth);
+            healthSlider.value = currentHealth;
         }
 
     }
