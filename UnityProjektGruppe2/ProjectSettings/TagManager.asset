@@ -5,9 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+<<<<<<< HEAD
+  - StatShop
+  - canButton
+=======
   - PowerUp
   - Weapon
+<<<<<<< HEAD
   - PickUpHealth
+=======
+>>>>>>> 632c979229d5b9389a837123063ccdbaa8392df8
+>>>>>>> abf3c24824d66efae48139872b8ed50ad3c05bd9
   layers:
   - Default
   - TransparentFX
@@ -42,8 +50,19 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+<<<<<<< HEAD
+  - name: BackGround
+    uniqueID: 378742513
+    locked: 0
+  - name: Sun
+    uniqueID: 4219779707
+    locked: 0
+  - name: By_Dome
+    uniqueID: 3033951447
+=======
   - name: Background
     uniqueID: 1932348919
+>>>>>>> 632c979229d5b9389a837123063ccdbaa8392df8
     locked: 0
   - name: Default
     uniqueID: 0

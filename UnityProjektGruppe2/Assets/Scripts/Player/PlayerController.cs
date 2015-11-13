@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
     {
         attackBtnPressed = CrossPlatformInputManager.GetButtonDown("Attack");
 
-        if (attackBtnPressed && myAnimator.GetBool("Alive")) //If button pressed and Alive
+        if (attackBtnPressed && myAnimator.GetBool("Alive") && !myAnimator.GetBool("dAttackSecurity")) //If button pressed and Alive
         {
             myAnimator.SetBool("dAttackSecurity", true); //fixes a doubble attack bug, ensures only one attack as dAttackSecurity will be set to false when leaving attackState -> AttackAnimationBehaviour.cs
             myAnimator.SetTrigger("Attack"); //Starts the Attack move
