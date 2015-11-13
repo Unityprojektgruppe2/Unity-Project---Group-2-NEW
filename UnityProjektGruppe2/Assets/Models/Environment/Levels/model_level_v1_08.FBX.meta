@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 7cff63c9240650944a8c93c66498591c
+timeCreated: 1447326223
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Cylinder003
+    100002: Cylinder005
+    100004: Cylinder007
+    100006: Cylinder008
+    100008: Cylinder009
+    100010: floor
+    100012: largeobstacle001
+    100014: largeobstacle003
+    100016: largeobstacle004
+    100018: Line028
+    100020: Line029
+    100022: Line030
+    100024: Line031
+    100026: //RootNode
+    100028: pillar019
+    100030: pillar020
+    100032: pillar021
+    100034: pillar022
+    100036: pillar023
+    100038: pillar024
+    100040: pillar025
+    100042: pillar026
+    100044: plateau
+    100046: Power Generator
+    100048: Power Generator001
+    100050: Power Generator002
+    100052: Power Generator003
+    100054: Power Generator008
+    100056: Power Generator009
+    100058: Power Generator010
+    100060: Power Generator011
+    100062: Power Generator012
+    100064: Power Generator013
+    100066: Power Generator014
+    100068: Power Generator015
+    100070: Power Generator016
+    100072: straps_pillar
+    100074: straps_pillar001
+    100076: straps_pillar002
+    100078: straps_pillar003
+    100080: straps_pillar004
+    100082: straps_pillar005
+    100084: straps_pillar006
+    100086: straps_pillar007
+    100088: terminal pillar
+    100090: terminal pillar001
+    100092: terminal pillar003
+    100094: terminal pillar004
+    100096: walls
+    100098: walls_flipped
+    400000: Cylinder003
+    400002: Cylinder005
+    400004: Cylinder007
+    400006: Cylinder008
+    400008: Cylinder009
+    400010: floor
+    400012: largeobstacle001
+    400014: largeobstacle003
+    400016: largeobstacle004
+    400018: Line028
+    400020: Line029
+    400022: Line030
+    400024: Line031
+    400026: //RootNode
+    400028: pillar019
+    400030: pillar020
+    400032: pillar021
+    400034: pillar022
+    400036: pillar023
+    400038: pillar024
+    400040: pillar025
+    400042: pillar026
+    400044: plateau
+    400046: Power Generator
+    400048: Power Generator001
+    400050: Power Generator002
+    400052: Power Generator003
+    400054: Power Generator008
+    400056: Power Generator009
+    400058: Power Generator010
+    400060: Power Generator011
+    400062: Power Generator012
+    400064: Power Generator013
+    400066: Power Generator014
+    400068: Power Generator015
+    400070: Power Generator016
+    400072: straps_pillar
+    400074: straps_pillar001
+    400076: straps_pillar002
+    400078: straps_pillar003
+    400080: straps_pillar004
+    400082: straps_pillar005
+    400084: straps_pillar006
+    400086: straps_pillar007
+    400088: terminal pillar
+    400090: terminal pillar001
+    400092: terminal pillar003
+    400094: terminal pillar004
+    400096: walls
+    400098: walls_flipped
+    2300000: Cylinder003
+    2300002: Cylinder005
+    2300004: Cylinder007
+    2300006: Cylinder008
+    2300008: Cylinder009
+    2300010: floor
+    2300012: largeobstacle001
+    2300014: largeobstacle003
+    2300016: largeobstacle004
+    2300018: Line028
+    2300020: Line029
+    2300022: Line030
+    2300024: Line031
+    2300026: pillar019
+    2300028: pillar020
+    2300030: pillar021
+    2300032: pillar022
+    2300034: pillar023
+    2300036: pillar024
+    2300038: pillar025
+    2300040: pillar026
+    2300042: plateau
+    2300044: Power Generator
+    2300046: Power Generator001
+    2300048: Power Generator002
+    2300050: Power Generator003
+    2300052: Power Generator008
+    2300054: Power Generator009
+    2300056: Power Generator010
+    2300058: Power Generator011
+    2300060: Power Generator012
+    2300062: Power Generator013
+    2300064: Power Generator014
+    2300066: Power Generator015
+    2300068: Power Generator016
+    2300070: straps_pillar
+    2300072: straps_pillar001
+    2300074: straps_pillar002
+    2300076: straps_pillar003
+    2300078: straps_pillar004
+    2300080: straps_pillar005
+    2300082: straps_pillar006
+    2300084: straps_pillar007
+    2300086: terminal pillar
+    2300088: terminal pillar001
+    2300090: terminal pillar003
+    2300092: terminal pillar004
+    2300094: walls
+    2300096: walls_flipped
+    3300000: Cylinder003
+    3300002: Cylinder005
+    3300004: Cylinder007
+    3300006: Cylinder008
+    3300008: Cylinder009
+    3300010: floor
+    3300012: largeobstacle001
+    3300014: largeobstacle003
+    3300016: largeobstacle004
+    3300018: Line028
+    3300020: Line029
+    3300022: Line030
+    3300024: Line031
+    3300026: pillar019
+    3300028: pillar020
+    3300030: pillar021
+    3300032: pillar022
+    3300034: pillar023
+    3300036: pillar024
+    3300038: pillar025
+    3300040: pillar026
+    3300042: plateau
+    3300044: Power Generator
+    3300046: Power Generator001
+    3300048: Power Generator002
+    3300050: Power Generator003
+    3300052: Power Generator008
+    3300054: Power Generator009
+    3300056: Power Generator010
+    3300058: Power Generator011
+    3300060: Power Generator012
+    3300062: Power Generator013
+    3300064: Power Generator014
+    3300066: Power Generator015
+    3300068: Power Generator016
+    3300070: straps_pillar
+    3300072: straps_pillar001
+    3300074: straps_pillar002
+    3300076: straps_pillar003
+    3300078: straps_pillar004
+    3300080: straps_pillar005
+    3300082: straps_pillar006
+    3300084: straps_pillar007
+    3300086: terminal pillar
+    3300088: terminal pillar001
+    3300090: terminal pillar003
+    3300092: terminal pillar004
+    3300094: walls
+    3300096: walls_flipped
+    4300000: largeobstacle001
+    4300002: terminal pillar
+    4300004: pillar019
+    4300006: Cylinder003
+    4300008: Cylinder005
+    4300010: Cylinder007
+    4300012: floor
+    4300014: walls
+    4300016: walls_flipped
+    4300018: plateau
+    4300020: Line028
+    4300022: Power Generator
+    4300024: Power Generator001
+    4300026: Power Generator002
+    4300028: Power Generator003
+    4300030: Power Generator008
+    4300032: Power Generator009
+    4300034: Power Generator010
+    4300036: Line029
+    4300038: straps_pillar
+    4300040: pillar020
+    4300042: straps_pillar001
+    4300044: pillar021
+    4300046: straps_pillar002
+    4300048: pillar022
+    4300050: straps_pillar003
+    4300052: terminal pillar001
+    4300054: largeobstacle003
+    4300056: Power Generator011
+    4300058: Power Generator012
+    4300060: Power Generator013
+    4300062: Power Generator014
+    4300064: Power Generator015
+    4300066: Power Generator016
+    4300068: terminal pillar003
+    4300070: terminal pillar004
+    4300072: largeobstacle004
+    4300074: Cylinder008
+    4300076: Line030
+    4300078: Line031
+    4300080: Cylinder009
+    4300082: straps_pillar004
+    4300084: pillar023
+    4300086: straps_pillar005
+    4300088: pillar024
+    4300090: straps_pillar006
+    4300092: pillar025
+    4300094: pillar026
+    4300096: straps_pillar007
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

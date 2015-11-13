@@ -5,6 +5,7 @@ public class WeaponAttack : MonoBehaviour {
 
     EnemyHealth enemyHealth;
     GameObject enemy;
+    public int damage = 100;
 
 	// Use this for initialization
 	void Awake () {
@@ -25,7 +26,7 @@ public class WeaponAttack : MonoBehaviour {
             enemyHealth = enemy.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(100);
+                enemyHealth.TakeDamage(damage);
             }
         }
     }

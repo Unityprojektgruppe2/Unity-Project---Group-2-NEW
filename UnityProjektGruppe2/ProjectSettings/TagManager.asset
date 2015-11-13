@@ -5,8 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+<<<<<<< HEAD
   - StatShop
   - canButton
+=======
+  - PowerUp
+  - Weapon
+>>>>>>> 632c979229d5b9389a837123063ccdbaa8392df8
   layers:
   - Default
   - TransparentFX
@@ -41,6 +46,7 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+<<<<<<< HEAD
   - name: BackGround
     uniqueID: 378742513
     locked: 0
@@ -49,6 +55,10 @@ TagManager:
     locked: 0
   - name: By_Dome
     uniqueID: 3033951447
+=======
+  - name: Background
+    uniqueID: 1932348919
+>>>>>>> 632c979229d5b9389a837123063ccdbaa8392df8
     locked: 0
   - name: Default
     uniqueID: 0

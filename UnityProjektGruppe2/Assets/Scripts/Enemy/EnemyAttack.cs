@@ -6,9 +6,12 @@ public class EnemyAttack : MonoBehaviour
 {
 	public float timeBetweenAttacks = 0.5f;     // The time in seconds between each attack.
 	public int attackDamage = 10;               // The amount of health taken away per attack.
+    public bool attacking = false;
+    [SerializeField]
+    private int amountOfDifferentAttacks = 1;
 	
 	
-	Animator anim;                              // Reference to the animator component.
+	Animator myAnimator;                              // Reference to the animator component.
 	GameObject player;                          // Reference to the player GameObject.
 	PlayerHealth playerHealth;                  // Reference to the player's health.
 	EnemyHealth enemyHealth;                    // Reference to this enemy's health.
@@ -22,7 +25,7 @@ public class EnemyAttack : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag ("Player");
 		playerHealth = player.GetComponent <PlayerHealth> ();
 		enemyHealth = GetComponent<EnemyHealth>();
-		anim = GetComponent <Animator> ();
+		myAnimator = GetComponent <Animator> ();
 	}
 	
 	
@@ -54,15 +57,17 @@ public class EnemyAttack : MonoBehaviour
 		timer += Time.deltaTime;
 		
 		// If the timer exceeds the time between attacks, the player is in range and this enemy is alive...
-		if(timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0)
+		if(timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0 && attacking == false)
 		{
+            attacking = true;
 			// ... attack.
-			Attack ();
+			Attack();
 		}
 		
 		// If the player has zero or less health...
 		if(playerHealth.currentHealth <= 0)
 		{
+            myAnimator.SetBool("Run", false);
 			// ... tell the animator the player is dead.
 			//anim.SetTrigger ("PlayerDead");
 		}
@@ -77,6 +82,11 @@ public class EnemyAttack : MonoBehaviour
 		// If the player has health to lose...
 		if(playerHealth.currentHealth > 0)
 		{
+            int MaxAttackMoves = Random.Range(1, amountOfDifferentAttacks + 1);
+
+            myAnimator.SetFloat("AttackMove", MaxAttackMoves);
+
+            myAnimator.SetTrigger("Attack");
             // ... damage the player.
             playerHealth.TakeDamage(attackDamage);
 		}
