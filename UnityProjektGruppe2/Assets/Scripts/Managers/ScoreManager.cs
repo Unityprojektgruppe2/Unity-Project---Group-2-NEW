@@ -53,13 +53,13 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
-        text.text = "Score: " + score;
+        text.text = "" + score;
     }
     /// <summary>
     /// To save the Score call this Method when switching to the town Scene
     /// </summary>
     void SaveScore()
     {
-        PlayerPrefs.SetInt("Score", score);
+        PlayerPrefs.SetInt("", score);
     }
 }
