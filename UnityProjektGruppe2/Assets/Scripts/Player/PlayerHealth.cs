@@ -143,7 +143,7 @@ public class PlayerHealth : MonoBehaviour
             }
 
             scoreSet = true;
-            ScoreManager.score = 0;
+           // ScoreManager.score = 0;
 
         }
     }

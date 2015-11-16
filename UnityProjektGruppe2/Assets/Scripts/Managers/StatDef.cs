@@ -10,6 +10,7 @@ public class StatDef : MonoBehaviour {
     // Use this for initialization
     void Awake()
     {
+        text = GetComponent<Text>();
         def = PlayerPrefs.GetInt("Defence");
     }
 
@@ -21,6 +22,7 @@ public class StatDef : MonoBehaviour {
 
     public void DefStat()
     {
+        def = PlayerPrefs.GetInt("Defence");
         text.text = "Defence: " + def;
     }
 }

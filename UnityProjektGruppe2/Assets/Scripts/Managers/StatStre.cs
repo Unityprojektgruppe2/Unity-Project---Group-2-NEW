@@ -9,6 +9,7 @@ public class StatStre : MonoBehaviour {
     // Use this for initialization
     void Awake()
     {
+        text = GetComponent<Text>();
         stre = PlayerPrefs.GetInt("Strength");
     }
 
@@ -19,6 +20,7 @@ public class StatStre : MonoBehaviour {
     }
     public void StrStat()
     {
+        stre = PlayerPrefs.GetInt("Strength");
         text.text = "Strength: " + stre;
     }
 }
