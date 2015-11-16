@@ -6,6 +6,12 @@ TagManager:
   tags:
   - canButton
   - StatShop
+  - Enemy
+  - PowerUp
+  - PickUpHealth
+  - Weapon
+  - Cube
+  - EnviromentToOpacity
   layers:
   - Default
   - TransparentFX
