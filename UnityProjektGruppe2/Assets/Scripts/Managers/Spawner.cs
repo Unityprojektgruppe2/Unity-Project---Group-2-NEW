@@ -33,6 +33,8 @@ using System.Collections.Generic;
 
 public class Spawner : MonoBehaviour
 {
+    public int enemiesInScene;
+
     // Color of the gizmo
     public Color gizmoColor = Color.red;
 
@@ -127,6 +129,8 @@ public class Spawner : MonoBehaviour
     }
     void Update()
     {
+        enemiesInScene = GameObject.FindGameObjectsWithTag("Enemy").Length;
+
         if (playerHealth.currentHealth <= 0f)
         {
             return;
@@ -218,6 +222,10 @@ public class Spawner : MonoBehaviour
                     Spawn = false;
                 }
             }
+        }
+        if (numWaves > totalWaves && enemiesInScene == 0)
+        {
+            Application.LoadLevel("City");
         }
     }
     // spawns an enemy based on the enemy level that you selected
