@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &144640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 452230}
+  - 108: {fileID: 10813692}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &145054
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,13 +109,26 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145054}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: -9.61999989, y: .0149999997, z: 27.3899994}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 454448}
   - {fileID: 491730}
+  - {fileID: 452230}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &452230
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144640}
+  m_LocalRotation: {x: -1.15202326e-07, y: .707106709, z: -.707106829, w: -1.15202312e-07}
+  m_LocalPosition: {x: .0841274634, y: 4.61000013, z: .121999711}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 433376}
+  m_RootOrder: 2
 --- !u!4 &454448
 Transform:
   m_ObjectHideFlags: 1
@@ -159,7 +188,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 45438f9a977d25f4c953ff1584ffab63, type: 2}
+  - {fileID: 2100000, guid: 0b4db38ad579993428d2819e31b555d5, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -232,8 +261,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: .618902028, y: .396871984, z: 2.50149012}
-  m_Center: {x: -.0281231441, y: -1.92641551e-06, z: .527287185}
+  m_Size: {x: .618902028, y: .396871984, z: 1.4988122}
+  m_Center: {x: -.026899755, y: .00112847984, z: .858032107}
 --- !u!95 &9575568
 Animator:
   serializedVersion: 3
@@ -268,6 +297,38 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!108 &10813692
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144640}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 1, g: .817241371, b: .220588207, a: 1}
+  m_Intensity: 3
+  m_Range: 9.43999958
+  m_SpotAngle: 128.5
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &11445560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -281,6 +342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 100
   timesMaxHealth: .100000001
+  defensestat: 0
   healthSlider: {fileID: 0}
 --- !u!114 &11478190
 MonoBehaviour:
