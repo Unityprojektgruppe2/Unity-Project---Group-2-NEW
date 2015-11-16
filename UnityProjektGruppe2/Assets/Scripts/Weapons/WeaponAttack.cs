@@ -5,11 +5,11 @@ public class WeaponAttack : MonoBehaviour {
 
     EnemyHealth enemyHealth;
     GameObject enemy;
-    public int damage = 100;
+    public int damage = 20;
 
 	// Use this for initialization
 	void Awake () {
-        
+        damage = PlayerPrefs.GetInt("Strength");
 	}
 	
 	// Update is called once per frame
