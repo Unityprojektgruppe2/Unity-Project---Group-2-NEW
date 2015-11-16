@@ -39,9 +39,9 @@ public class StatIncrease : MonoBehaviour {
         _addDef = 10;
 
         //For Tests!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        PlayerPrefs.SetInt("Strength", 10);
-        PlayerPrefs.SetInt("Agility", 10);
-        PlayerPrefs.SetInt("Defence", 10);
+        //PlayerPrefs.SetInt("Strength", 10);
+        //PlayerPrefs.SetInt("Agility", 10);
+        //PlayerPrefs.SetInt("Defence", 10);
     }
 	
 	// Update is called once per frame

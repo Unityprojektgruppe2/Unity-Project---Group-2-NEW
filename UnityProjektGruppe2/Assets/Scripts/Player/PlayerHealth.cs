@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
     public static int maxHealth = 100;
     public float currentHealth = 100;
     public float timesMaxHealth = 0.2f;
+    public int defensestat;
     public Slider healthSlider;   // Reference to the UI's health bar.
 
     GameObject enemy;
@@ -36,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
     {
         enemy = GameObject.FindGameObjectWithTag("Enemy");
         enemyAttack = enemy.GetComponent <EnemyAttack> ();
+        defensestat = PlayerPrefs.GetInt("Defence");
     }
     #endregion
 
@@ -47,6 +49,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (!myAnimator.GetBool("Whirlwinding"))
         {
+            amount -= defensestat;
             currentHealth -= amount;
             healthSlider.value = currentHealth;
         }
@@ -140,7 +143,7 @@ public class PlayerHealth : MonoBehaviour
             }
 
             scoreSet = true;
-            ScoreManager.score = 0;
+           // ScoreManager.score = 0;
 
         }
     }
