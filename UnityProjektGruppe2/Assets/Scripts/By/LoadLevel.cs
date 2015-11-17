@@ -24,24 +24,24 @@ public class LoadLevel : MonoBehaviour {
 
     public void SwapScreen()
     {
-        Debug.Log("Im running!!!!!!!!!11");
+        //Debug.Log("Im running!!!!!!!!!11");
         if (gameObject.tag == "canButton" && buttonPressed == false)
         {
             //Sets buttonPressed to true, so it only accepts 1 input at a time
             buttonPressed = true;
 
-            Debug.Log("Button pressed");
+            //Debug.Log("Button pressed");
 
             //Looks for every Button in the gameObject with a tag "StatShop"
             foreach (GameObject Button in GameObject.FindGameObjectsWithTag("canButton"))
             {
-                Debug.Log(Button + " : Was the button pressed");
-                Debug.Log("It found some buttons!");
+                //Debug.Log(Button + " : Was the button pressed");
+                //Debug.Log("It found some buttons!");
 
                 //Runs through the Buttons children's text transforms.
                 foreach (Transform text in transform)
                 {
-                    Debug.Log("They even had some Texts attached!?");
+                    //Debug.Log("They even had some Texts attached!?");
 
                     //If's checks which Button was pressed, by its name
                     if (text.name == "Exit" && hasRunned == false)
@@ -49,7 +49,7 @@ public class LoadLevel : MonoBehaviour {
                         //Sets hasRunned to true, so it only applies this 1 time
                         hasRunned = true;
 
-                        Debug.Log("Should go to the Main Menu!");
+                        //Debug.Log("Should go to the Main Menu!");
 
                         Application.LoadLevel("MainMenu");
                     }
@@ -59,9 +59,9 @@ public class LoadLevel : MonoBehaviour {
                         //Sets hasRunned to true, so it only applies this 1 time
                         hasRunned = true;
 
-                        Debug.Log("Should go to the next level!");
+                        //Debug.Log("Should go to the next level!");
 
-                        Application.LoadLevel("Level1");
+                        Application.LoadLevel("LoadingScreen");
                         //Application.LoadLevel("Level" + PlayerPrefs.GetInt("curLevel") + 1);
                         PlayerPrefs.SetInt("curLevel", PlayerPrefs.GetInt("curLevel") + 1);
                     }
@@ -70,7 +70,7 @@ public class LoadLevel : MonoBehaviour {
         }
         else
         {
-            Debug.Log("Didn't find any button!!?");
+            //Debug.Log("Didn't find any button!!?");
         }
 
         hasRunned = false;
