@@ -20,6 +20,8 @@ public class ScoreManager : MonoBehaviour
     {
         text = GetComponent<Text>();
 
+        score = PlayerPrefs.GetInt("Score");
+
         if (PlayerPrefs.HasKey("Score"))
         {
             //If its lvl 1
@@ -60,6 +62,6 @@ public class ScoreManager : MonoBehaviour
     /// </summary>
     void SaveScore()
     {
-        PlayerPrefs.SetInt("", score);
+        PlayerPrefs.SetInt("Score", score);
     }
 }

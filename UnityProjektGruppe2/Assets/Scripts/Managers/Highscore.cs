@@ -7,19 +7,33 @@ public class Highscore : MonoBehaviour {
     private int highscore1;
     private int highscore2;
     private int highscore3;
-    Text text;
+    [SerializeField]
+    Text text1;
+    [SerializeField]
+    Text text2;
+    [SerializeField]
+    Text text3;
 	// Use this for initialization
 	void Awake () {
-        highscore1 = PlayerPrefs.GetInt("Highscore");
-        highscore2 = PlayerPrefs.GetInt("Highscore2");
-        highscore3 = PlayerPrefs.GetInt("Highscore3");
-        text = GetComponent<Text>();
-	}
+
+    }
+    void Start()
+    {
+        LoadScores();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        text.text = "Highscore1: " + highscore1;
-        text.text = "Highscore2: " + highscore2;
-        text.text = "Highscore3: " + highscore3;
+        
 	}
+
+    public void LoadScores()
+    {
+        highscore1 = PlayerPrefs.GetInt("Highscore");
+        highscore2 = PlayerPrefs.GetInt("Highscore2");
+        highscore3 = PlayerPrefs.GetInt("Highscore3");
+        text1.text = "Highscore1: " + highscore1;
+        text2.text = "Highscore2: " + highscore2;
+        text3.text = "Highscore3: " + highscore3;
+    }
 }

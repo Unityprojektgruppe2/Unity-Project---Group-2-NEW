@@ -6,6 +6,7 @@ public class LoadLevel : MonoBehaviour {
     private bool buttonPressed; //Used to check, if the button has been pressed
     private bool hasRunned; //Used to check if the stat has runned
     public int currentHealth = 100;
+    public int enemyDamageModifier = 10;
 
 
     public void Awake()
@@ -20,6 +21,7 @@ public class LoadLevel : MonoBehaviour {
 
         //For Test!!!
         PlayerPrefs.SetInt("curLevel", 1);
+        PlayerPrefs.SetInt("enemyDmgModifier", enemyDamageModifier);
     }
 	
 	// Update is called once per frame
@@ -73,7 +75,8 @@ public class LoadLevel : MonoBehaviour {
                         currentHealth += 10;
                         Spawner.enemyStrengthSize++;
                         PlayerPrefs.SetInt("EnemyHealth", currentHealth);
-                        
+                        PlayerPrefs.SetInt("enemyDmgModifier", PlayerPrefs.GetInt("enemyDmgModifier") + enemyDamageModifier);
+
                     }
                 }
             }

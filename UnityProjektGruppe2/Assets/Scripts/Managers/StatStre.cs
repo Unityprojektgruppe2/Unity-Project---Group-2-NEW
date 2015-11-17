@@ -11,6 +11,7 @@ public class StatStre : MonoBehaviour {
     {
         text = GetComponent<Text>();
         stre = PlayerPrefs.GetInt("Strength");
+        StrStat();
     }
 
     // Update is called once per frame

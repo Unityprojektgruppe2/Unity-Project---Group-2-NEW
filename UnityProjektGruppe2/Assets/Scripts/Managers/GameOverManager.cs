@@ -35,7 +35,7 @@ public class GameOverManager : MonoBehaviour
             if (restartTimer >= restartDelay)
             {
                 // .. then reload the currently loaded level.
-                Application.LoadLevel("City");
+                Application.LoadLevel("MainMenu");
             }
         }
     }

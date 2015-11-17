@@ -11,6 +11,7 @@ public class StatAgi : MonoBehaviour
     {
         text = GetComponent<Text>();
         agi = PlayerPrefs.GetInt("Agility");
+        AgiStat();
     }
 
     // Update is called once per frame

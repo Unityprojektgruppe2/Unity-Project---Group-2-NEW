@@ -273,7 +273,7 @@ public class PlayerController : MonoBehaviour
         if (powerTime <= 0)
         {
             powerTime = 30;
-            weaponAttack.damage -= 20;
+            weaponAttack.damage -= 40;
             Debug.Log(weaponAttack.damage);
             juggernaut = false;
             powergiven = false;
@@ -289,7 +289,7 @@ public class PlayerController : MonoBehaviour
         if (juggernaut == true && powergiven == false)
         {
             powergiven = true;
-            weaponAttack.damage += 20;
+            weaponAttack.damage += 40;
             Debug.Log(weaponAttack.damage);
             Destroy(other.gameObject);
         }

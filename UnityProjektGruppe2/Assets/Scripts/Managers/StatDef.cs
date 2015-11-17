@@ -12,6 +12,7 @@ public class StatDef : MonoBehaviour
     {
         text = GetComponent<Text>();
         def = PlayerPrefs.GetInt("Defence");
+        DefStat();
     }
 
     // Update is called once per frame

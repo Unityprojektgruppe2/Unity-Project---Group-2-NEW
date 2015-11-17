@@ -32,9 +32,11 @@ public class StatIncrease : MonoBehaviour {
     {
         //For Tests!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         //Also resets the stats, if running in debug in unity! Run these ones, and they are reset
-        //PlayerPrefs.SetInt("Strength", 10);
-        //PlayerPrefs.SetInt("Agility", 10);
-        //PlayerPrefs.SetInt("Defence", 10);
+        //PlayerPrefs.GetInt("Strength");
+        //PlayerPrefs.GetInt("Agility");
+        //PlayerPrefs.GetInt("Defence");
+        //PlayerPrefs.GetInt("Score");
+
     }
 
     // Use this for initialization
@@ -173,53 +175,53 @@ public class StatIncrease : MonoBehaviour {
                         //Runs the function ChangeScore, in the ScoreScript.
                         _myScore.ChangeScore();
                         //Old calc and score Increase
-                        #region
-                        if (text.name == "Agility" && hasRunned == false)
-                        {
-                            //Sets hasRunned to true, so it only applies this 1 time
-                            hasRunned = true;
+                        //#region
+                        //if (text.name == "Agility" && hasRunned == false)
+                        //{
+                        //    //Sets hasRunned to true, so it only applies this 1 time
+                        //    hasRunned = true;
 
-                            //Debug.Log("Agility Shop, has been clicked");
+                        //    //Debug.Log("Agility Shop, has been clicked");
 
-                            //Gets the current Agility from the player, and stores it in a variable currentStat
-                            currentStat = PlayerPrefs.GetInt("Agility");
+                        //    //Gets the current Agility from the player, and stores it in a variable currentStat
+                        //    currentStat = PlayerPrefs.GetInt("Agility");
 
-                            Debug.Log("Player's current Agility is " + currentStat);
+                        //    Debug.Log("Player's current Agility is " + currentStat);
 
-                            //Runs the functions AddIncrease, and stores the added values in the variable newStat
-                            newStat = AddIncrease(currentStat, _addAgi);
+                        //    //Runs the functions AddIncrease, and stores the added values in the variable newStat
+                        //    newStat = AddIncrease(currentStat, _addAgi);
 
-                            //Debug.Log("Stat is increased to " + newStat);
+                        //    //Debug.Log("Stat is increased to " + newStat);
 
-                            //Sets the newStat for the player
-                            PlayerPrefs.SetInt("Agility", newStat);
+                        //    //Sets the newStat for the player
+                        //    PlayerPrefs.SetInt("Agility", newStat);
 
-                            Debug.Log((PlayerPrefs.GetInt("Agility") + " is now the players Agility"));
-                        }
+                        //    Debug.Log((PlayerPrefs.GetInt("Agility") + " is now the players Agility"));
+                        //}
 
-                        if (text.name == "Defence" && hasRunned == false)
-                        {
-                            //Sets hasRunned to true, so it only applies this 1 time
-                            hasRunned = true;
+                        //if (text.name == "Defence" && hasRunned == false)
+                        //{
+                        //    //Sets hasRunned to true, so it only applies this 1 time
+                        //    hasRunned = true;
 
-                            //Debug.Log("Defence Shop, has been clicked");
+                        //    //Debug.Log("Defence Shop, has been clicked");
 
-                            //Gets the current Defence from the player, and stores it in a variable currentStat
-                            currentStat = PlayerPrefs.GetInt("Defence");
+                        //    //Gets the current Defence from the player, and stores it in a variable currentStat
+                        //    currentStat = PlayerPrefs.GetInt("Defence");
 
-                            Debug.Log("Player's current Defence is " + currentStat);
+                        //    Debug.Log("Player's current Defence is " + currentStat);
 
-                            //Runs the functions AddIncrease, and stores the added values in the variable newStat
-                            newStat = AddIncrease(currentStat, _addDef);
+                        //    //Runs the functions AddIncrease, and stores the added values in the variable newStat
+                        //    newStat = AddIncrease(currentStat, _addDef);
 
-                            //Debug.Log("Stat is increased to " + newStat);
+                        //    //Debug.Log("Stat is increased to " + newStat);
 
-                            //Sets the newStat for the player
-                            PlayerPrefs.SetInt("Defence", newStat);
+                        //    //Sets the newStat for the player
+                        //    PlayerPrefs.SetInt("Defence", newStat);
 
-                            Debug.Log((PlayerPrefs.GetInt("Defence") + " is now the players Defence"));
-                        }
-                        #endregion
+                        //    Debug.Log((PlayerPrefs.GetInt("Defence") + " is now the players Defence"));
+                        //}
+                        //#endregion
                     }
                 }
             }

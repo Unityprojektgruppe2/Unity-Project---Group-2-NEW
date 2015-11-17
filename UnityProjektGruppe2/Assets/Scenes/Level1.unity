@@ -42,7 +42,7 @@ LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
   m_GIWorkflowMode: 1
-  m_LightmapsMode: 0
+  m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,7 +66,7 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightmapSnapshot: {fileID: 112000037, guid: 62ddcb0a64bcda446b4e284bc21745d7,
+  m_LightmapSnapshot: {fileID: 112000052, guid: 62ddcb0a64bcda446b4e284bc21745d7,
     type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
@@ -757,6 +757,48 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 464079026}
+--- !u!1001 &508239166
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -159.899994
+      objectReference: {fileID: 0}
+    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &539769490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,7 +1140,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 685365530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -196.600006, y: .211999997, z: -15.1700001}
+  m_LocalPosition: {x: -196.600006, y: .211999997, z: -.910000026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1967,48 +2009,6 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!1001 &1200822103
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -159.899994
-      objectReference: {fileID: 0}
-    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 411596, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: ba17167c44e656a4e8ce0cd8918270ee, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1203520471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,6 +2502,14 @@ Prefab:
       propertyPath: dashSnd
       value: 
       objectReference: {fileID: 235194394}
+    - target: {fileID: 8284528, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e2ac8f8a58b5fa14988b0eb44e73ff4a, type: 3}
+    - target: {fileID: 8284528, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
   m_IsPrefabParent: 0
@@ -2527,7 +2535,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1746097764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -184, y: .211999997, z: 7}
+  m_LocalPosition: {x: -120.970001, y: .211999997, z: -.0900000036}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2787,14 +2795,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2013992457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1d2c5caf5c03ba4d8fbdf490d877732, type: 3}
+  m_Script: {fileID: 11500000, guid: 3335d51414917ef47b802a2cf8c30ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesInScene: 0
   gizmoColor: {r: 1, g: 0, b: 0, a: 1}
   enemyLevel: 0
   EasyEnemy: {fileID: 123854, guid: f6816a2072ac36c41b5768d3cc97c1ee, type: 2}
-  MediumEnemy: {fileID: 123854, guid: f6816a2072ac36c41b5768d3cc97c1ee, type: 2}
+  MediumEnemy: {fileID: 103384, guid: 8c81604d45f04cb48b249f901d7f3c4e, type: 2}
   HardEnemy: {fileID: 123854, guid: f6816a2072ac36c41b5768d3cc97c1ee, type: 2}
   BossEnemy: {fileID: 123854, guid: f6816a2072ac36c41b5768d3cc97c1ee, type: 2}
   playerHealth: {fileID: 648243043}

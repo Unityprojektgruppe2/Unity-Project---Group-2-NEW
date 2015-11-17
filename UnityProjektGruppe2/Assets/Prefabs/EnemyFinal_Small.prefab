@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   sinkSpeed: .100000001
   scoreValue: 10
   isDead: 0
@@ -198,7 +198,10 @@ MonoBehaviour:
   attacking: 0
   amountOfDifferentAttacks: 1
   enemyAudio: {fileID: 8253518}
-  clipAttack: {fileID: 8300000, guid: eb434d3cfa11bba40b4062373242b594, type: 3}
+  clipAttack:
+  - {fileID: 8300000, guid: 29b8dacccef603c4a848d809e63de8af, type: 3}
+  - {fileID: 8300000, guid: adfabfcc81bb0684bbd1964451cdedeb, type: 3}
+  - {fileID: 8300000, guid: 6b715fe6efd96cd43b72438d7c72951d, type: 3}
 --- !u!114 &11468544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -288,6 +291,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: clipAttack.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Constraints
       value: 80
       objectReference: {fileID: 0}
@@ -315,6 +322,22 @@ Prefab:
       propertyPath: clipLaugh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: currentHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: clipAttack.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 29b8dacccef603c4a848d809e63de8af, type: 3}
+    - target: {fileID: 0}
+      propertyPath: clipAttack.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: adfabfcc81bb0684bbd1964451cdedeb, type: 3}
+    - target: {fileID: 0}
+      propertyPath: clipAttack.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b715fe6efd96cd43b72438d7c72951d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123854}

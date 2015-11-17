@@ -4,8 +4,9 @@ using System.Collections;
 
 public class EnemyAttack : MonoBehaviour
 {
-	public float timeBetweenAttacks = 0.5f;     // The time in seconds between each attack.
+	public float timeBetweenAttacks = 1.5f;     // The time in seconds between each attack.
 	public int attackDamage = 10;               // The amount of health taken away per attack.
+    private int attackModifier;
     public bool attacking = false;
     [SerializeField]
     private int amountOfDifferentAttacks = 1;
@@ -14,7 +15,7 @@ public class EnemyAttack : MonoBehaviour
     private AudioSource enemyAudio;
 
     [SerializeField]
-    private AudioClip clipAttack;
+    private AudioClip[] clipAttack = new AudioClip[2];
 
 	private Animator myAnimator;                        // Reference to the animator component.
     private GameObject player;                          // Reference to the player GameObject.
@@ -32,6 +33,7 @@ public class EnemyAttack : MonoBehaviour
 		playerHealth = player.GetComponent <PlayerHealth> ();
 		enemyHealth = GetComponent<EnemyHealth>();
 		myAnimator = GetComponent <Animator> ();
+        attackModifier = PlayerPrefs.GetInt("enemyDmgModifier");
 	}
 	
 	
@@ -88,14 +90,16 @@ public class EnemyAttack : MonoBehaviour
 		// If the player has health to lose...
 		if(playerHealth.currentHealth > 0)
 		{
-            enemyAudio.PlayOneShot(clipAttack);
+
+            enemyAudio.PlayOneShot(clipAttack[Random.Range(0,clipAttack.Length)]);
+
             int MaxAttackMoves = Random.Range(1, amountOfDifferentAttacks + 1);
 
             myAnimator.SetFloat("AttackMove", MaxAttackMoves);
 
             myAnimator.SetTrigger("Attack");
             // ... damage the player.
-            playerHealth.TakeDamage(attackDamage);
+            playerHealth.TakeDamage(attackDamage + attackModifier);
 		}
 	}
 }
