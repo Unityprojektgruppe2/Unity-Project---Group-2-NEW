@@ -29,6 +29,15 @@ public class PlayerController : MonoBehaviour
     Rigidbody myRigidBody;
     public Animator myAnimator;
 
+    //Sounds
+    [SerializeField]
+    private AudioSource attackSnd;
+    [SerializeField]
+    private AudioSource whirlwindSnd;
+    [SerializeField]
+    private AudioSource dashSnd;
+
+
     [SerializeField]
     CanvasGroup myAnalogStick;
 
@@ -101,7 +110,7 @@ public class PlayerController : MonoBehaviour
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(-moveVec.x, -moveVec.z) * Mathf.Rad2Deg, transform.eulerAngles.z);
 
             //myRigidBody.transform.Rotate(0, moveVec.x * 25 * Time.deltaTime, 0);
-            
+
         }
 
         //Sets the player in forward moving, if joystick is being dragged
@@ -139,6 +148,7 @@ public class PlayerController : MonoBehaviour
 
         if (attackBtnPressed && myAnimator.GetBool("Alive") && !myAnimator.GetBool("dAttackSecurity")) //If button pressed and Alive
         {
+            attackSnd.Play();
             myAnimator.SetBool("dAttackSecurity", true); //fixes a doubble attack bug, ensures only one attack as dAttackSecurity will be set to false when leaving attackState -> AttackAnimationBehaviour.cs
             myAnimator.SetTrigger("Attack"); //Starts the Attack move
         }
@@ -154,43 +164,45 @@ public class PlayerController : MonoBehaviour
         whirlwindBtnPressed = CrossPlatformInputManager.GetButtonDown("Whirlwind"); //Button Check if pressed
         if (canWhirl == true)
         {
-        if (whirlwindBtnPressed && !whirlwinding && !dashing && myAnimator.GetBool("Alive")) //If btn is pressed, not whirlwinding and alive
-        {
+            if (whirlwindBtnPressed && !whirlwinding && !dashing && myAnimator.GetBool("Alive")) //If btn is pressed, not whirlwinding and alive
+            {
                 imbool = false;
                 whirlCD.fillAmount = 1;
-            whirlwinding = true; //Now currently Whirlwinding
-            angleBeforeAttackMove = Vector3.Normalize(transform.forward); //Save the character view angle (Where he is pointing) for later reference
-            AttackMoveSaveY = transform.eulerAngles.y; //Save the Y axe specificly
+                whirlwinding = true; //Now currently Whirlwinding
+                angleBeforeAttackMove = Vector3.Normalize(transform.forward); //Save the character view angle (Where he is pointing) for later reference
+                AttackMoveSaveY = transform.eulerAngles.y; //Save the Y axe specificly
 
-            rotationleft = 1440; //Rotate left for 1440 degrees
-            myAnimator.SetTrigger("Whirlwind"); //Set the animationtrigger Whirlwind
-        }
-
-        if (whirlwinding)
-        {
-            float rotation = rotationspeed * Time.deltaTime; //Get the amount of rotation
-            bool rotateMe = false; //Defaults the rotateMe to false, for check if/not to rotate more
-            if (rotationleft > rotation)
-            {
-                rotationleft -= rotation; //rotationLeft decreases as player rotates
-                rotateMe = true; //Player will be rotated
+                rotationleft = 1440; //Rotate left for 1440 degrees
+                myAnimator.SetTrigger("Whirlwind"); //Set the animationtrigger Whirlwind
+                whirlwindSnd.Play();
             }
-            else //Will cease the whirlwinding
+
+            if (whirlwinding)
             {
-                rotateMe = false; //Not going to rotate
-                rotation = rotationleft;
-                rotationleft = 0;
-                whirlwinding = false; //Sets player out of whirlwind action
-                myAnimator.SetTrigger("WhirlwindStanceEnd"); //Starts the end animation for Whirlwind
-                transform.rotation = Quaternion.Euler(transform.rotation.x, AttackMoveSaveY, transform.rotation.z); //Fixes a potential rotation bug with a degree of 10-30
+                float rotation = rotationspeed * Time.deltaTime; //Get the amount of rotation
+                bool rotateMe = false; //Defaults the rotateMe to false, for check if/not to rotate more
+                if (rotationleft > rotation)
+                {
+                    rotationleft -= rotation; //rotationLeft decreases as player rotates
+                    rotateMe = true; //Player will be rotated
+                }
+                else //Will cease the whirlwinding
+                {
+                    rotateMe = false; //Not going to rotate
+                    rotation = rotationleft;
+                    rotationleft = 0;
+                    whirlwinding = false; //Sets player out of whirlwind action
+                    myAnimator.SetTrigger("WhirlwindStanceEnd"); //Starts the end animation for Whirlwind
+                    whirlwindSnd.Stop();
+                    transform.rotation = Quaternion.Euler(transform.rotation.x, AttackMoveSaveY, transform.rotation.z); //Fixes a potential rotation bug with a degree of 10-30
                     StartCoroutine(CanAbility1()); // Sets the Cooldown for the whirlwind
-            }
-            if (rotateMe)
-            {
-                transform.parent.Translate(angleBeforeAttackMove * whirlwindRange); //Moves the parent object in the direction the player was pointing before whirlwind (To make the player move)
-                transform.Rotate(0, -rotation, 0); //Rotates the player object
+                }
+                if (rotateMe)
+                {
+                    transform.parent.Translate(angleBeforeAttackMove * whirlwindRange); //Moves the parent object in the direction the player was pointing before whirlwind (To make the player move)
+                    transform.Rotate(0, -rotation, 0); //Rotates the player object
 
-            }
+                }
             }
         }
     }
@@ -203,46 +215,47 @@ public class PlayerController : MonoBehaviour
         dashBtnPressed = CrossPlatformInputManager.GetButtonDown("Dash"); //Button Check if pressed
         if (canDash == true)
         {
-        if (dashBtnPressed && !whirlwinding && !dashing && myAnimator.GetBool("Alive")) //If btn is pressed, not whirlwinding and alive
-        {
+            if (dashBtnPressed && !whirlwinding && !dashing && myAnimator.GetBool("Alive")) //If btn is pressed, not whirlwinding and alive
+            {
                 imbool2 = false;
                 dashCD.fillAmount = 1;
-            dashing = true; //Now currently Dashing
-            angleBeforeAttackMove = Vector3.Normalize(transform.forward); //Save the character view angle (Where he is pointing) for later reference
-            AttackMoveSaveY = transform.eulerAngles.y; //Save the Y axe specificly
+                dashing = true; //Now currently Dashing
+                angleBeforeAttackMove = Vector3.Normalize(transform.forward); //Save the character view angle (Where he is pointing) for later reference
+                AttackMoveSaveY = transform.eulerAngles.y; //Save the Y axe specificly
 
-            rotationleft = 1440; //Rotate left for 1440 degrees
-            myAnimator.SetTrigger("Dash"); //Set the animationtrigger Whirlwind
-                                           //transform.rotation = Quaternion.Euler(transform.rotation.x, AttackMoveSaveY, transform.rotation.z); //Fixes a potential rotation bug with a degree of 10-30
-
-        }
-
-        if (dashing)
-        {
-            float rotation = rotationspeed * Time.deltaTime; //Get the amount of rotation
-            bool moveMe = false; //Defaults the moveMe to false, for check if/not to move more
-            if (rotationleft > rotation)
-            {
-                rotationleft -= rotation; //rotationLeft decreases as player rotates
-                moveMe = true; //Player will be rotated
-
+                rotationleft = 1440; //Rotate left for 1440 degrees
+                myAnimator.SetTrigger("Dash"); //Set the animationtrigger Whirlwind
+                                               //transform.rotation = Quaternion.Euler(transform.rotation.x, AttackMoveSaveY, transform.rotation.z); //Fixes a potential rotation bug with a degree of 10-30
+                dashSnd.Play();
             }
-            else //Will cease the dashing
+
+            if (dashing)
             {
-                moveMe = false; //Not going to move
-                rotation = rotationleft;
-                rotationleft = 0;
-                myAnimator.SetTrigger("DashStanceEnd"); //Starts the end animation for Whirlwind
-                dashing = false; //Sets player out of dashing action
-                transform.rotation = Quaternion.Euler(transform.rotation.x, AttackMoveSaveY, transform.rotation.z); //Fixes a potential rotation bug with a degree of 10-30
+                float rotation = rotationspeed * Time.deltaTime; //Get the amount of rotation
+                bool moveMe = false; //Defaults the moveMe to false, for check if/not to move more
+                if (rotationleft > rotation)
+                {
+                    rotationleft -= rotation; //rotationLeft decreases as player rotates
+                    moveMe = true; //Player will be rotated
+
+                }
+                else //Will cease the dashing
+                {
+                    moveMe = false; //Not going to move
+                    rotation = rotationleft;
+                    rotationleft = 0;
+                    myAnimator.SetTrigger("DashStanceEnd"); //Starts the end animation for Whirlwind
+                    dashSnd.Stop();
+                    dashing = false; //Sets player out of dashing action
+                    transform.rotation = Quaternion.Euler(transform.rotation.x, AttackMoveSaveY, transform.rotation.z); //Fixes a potential rotation bug with a degree of 10-30
                     StartCoroutine(CanAbility2()); // Sets the Cooldown for the Dash
-            }
-            if (moveMe)
-            {
-                //myRigidBody.AddForce(transform.forward.x * 30 * rotation,transform.forward.y,transform.forward.z * 30 * rotation);
-                //myParentsRigidBody.AddForce(400, transform.forward.y, 400);
-                transform.parent.Translate(angleBeforeAttackMove * dashRange); //Moves the parent object in the direction the player was pointing before dashing (To make the player move)
-                //transform.Rotate(0, -rotation, 0); //Rotates the player object
+                }
+                if (moveMe)
+                {
+                    //myRigidBody.AddForce(transform.forward.x * 30 * rotation,transform.forward.y,transform.forward.z * 30 * rotation);
+                    //myParentsRigidBody.AddForce(400, transform.forward.y, 400);
+                    transform.parent.Translate(angleBeforeAttackMove * dashRange); //Moves the parent object in the direction the player was pointing before dashing (To make the player move)
+                                                                                   //transform.Rotate(0, -rotation, 0); //Rotates the player object
 
                 }
             }

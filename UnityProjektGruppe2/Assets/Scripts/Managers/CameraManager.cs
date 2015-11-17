@@ -18,5 +18,6 @@ public class CameraManager : MonoBehaviour {
         Screen.autorotateToPortrait = false;
         Screen.autorotateToPortraitUpsideDown = false;
         Screen.orientation = ScreenOrientation.Landscape;
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
 }

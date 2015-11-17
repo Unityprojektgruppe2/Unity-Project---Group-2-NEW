@@ -26,10 +26,10 @@ public class LoadingScript : MonoBehaviour {
         if (async != null)
         {
             loadingBar.value = 100 * async.progress;
-            loadingText.text = "Loading... " + loadingBar.value + "%";
+            loadingText.text = "Loading... " + (int)loadingBar.value + "%";
         }
-        //loadingBar.value += 1.00f;
-        //loadingText.text = "Loading... " + loadingBar.value + "%";
+        //loadingBar.value += 0.05f;
+        //loadingText.text = "Loading... " + (int)loadingBar.value + "%";
 
     }
 }
