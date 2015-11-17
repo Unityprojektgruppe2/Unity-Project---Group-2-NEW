@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class LoadingScript : MonoBehaviour {
 
-
-    public Texture2D emptyProgressBar; // Set this in inspector.
-    public Texture2D fullProgressBar; // Set this in inspector.
+    [SerializeField]
+    private Slider loadingBar;
+    [SerializeField]
+    private Text loadingText;
 
     private AsyncOperation async = null; // When assigned, load is in progress.
     private IEnumerator LoadALevel(string levelName)
@@ -13,22 +15,21 @@ public class LoadingScript : MonoBehaviour {
         async = Application.LoadLevelAsync(levelName);
         yield return async;
     }
-    void OnGUI()
-    {
-        if (async != null)
-        {
-            GUI.DrawTexture(new Rect(0, 0, 100, 50), emptyProgressBar);
-            GUI.DrawTexture(new Rect(0, 0, 100 * async.progress, 50), fullProgressBar);
-        }
-    }
 
     // Use this for initialization
     void Start () {
-        LoadALevel("Level1");
-	}
+        StartCoroutine(LoadALevel("Level1"));
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        if (async != null)
+        {
+            loadingBar.value = 100 * async.progress;
+            loadingText.text = "Loading... " + loadingBar.value + "%";
+        }
+        //loadingBar.value += 1.00f;
+        //loadingText.text = "Loading... " + loadingBar.value + "%";
+
+    }
 }
