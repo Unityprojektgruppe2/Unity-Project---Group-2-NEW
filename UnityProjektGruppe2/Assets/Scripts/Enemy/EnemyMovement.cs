@@ -9,6 +9,12 @@ public class EnemyMovement : MonoBehaviour
     NavMeshAgent nav;
     Animator myAnimator;
 
+    [SerializeField]
+    private AudioSource enemyAudio;
+    
+    [SerializeField]
+    private AudioClip clipRun;
+
 
     void Awake ()
     {
@@ -25,6 +31,7 @@ public class EnemyMovement : MonoBehaviour
         if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
         {
             myAnimator.SetBool("Run", true);
+            //enemyAudio.PlayOneShot(clipRun);
             nav.SetDestination(player.position);
         }
         else

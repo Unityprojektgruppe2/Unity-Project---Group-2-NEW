@@ -33,8 +33,9 @@ using System.Collections.Generic;
 
 public class Spawner : MonoBehaviour
 {
+    EnemyHealth enemyhealth;
     public int enemiesInScene;
-
+    public static int enemyStrengthSize;
     // Color of the gizmo
     public Color gizmoColor = Color.red;
 
@@ -110,6 +111,15 @@ public class Spawner : MonoBehaviour
     //----------------------------------
     // End of Different Spawn states and ways of doing them
     //----------------------------------
+
+
+
+    public void Awake()
+    {
+    }
+
+
+
     void Start()
     {
         // sets a random number for the id of the spawner
@@ -210,6 +220,7 @@ public class Spawner : MonoBehaviour
                         numWaves++;
                         // A hack to get it to spawn the same number of enemies regardless of how many have been killed
                         numEnemy = 0;
+
                     }
                     if (numEnemy >= totalEnemy)
                     {
@@ -233,7 +244,16 @@ public class Spawner : MonoBehaviour
     {
         // Edited/ added by Nikolaj Sloth
         int spawnPointIndex = Random.Range(0, spawnPoints.Length);
-        GameObject Enemy = (GameObject)Instantiate(Enemies[enemyLevel], spawnPoints[spawnPointIndex].position, Quaternion.identity);
+        if (enemyStrengthSize >= 3)
+        {
+            enemyLevel = EnemyLevels.Medium;
+            GameObject Enemy = (GameObject)Instantiate(Enemies[enemyLevel], spawnPoints[spawnPointIndex].position, Quaternion.identity);
+        }
+        else
+        {
+            GameObject Enemy = (GameObject)Instantiate(Enemies[enemyLevel], spawnPoints[spawnPointIndex].position, Quaternion.identity);
+        }
+
         //
         //Enemy.SendMessage("setName", SpawnID);
         // Increase the total number of enemies spawned and the number of spawned enemies

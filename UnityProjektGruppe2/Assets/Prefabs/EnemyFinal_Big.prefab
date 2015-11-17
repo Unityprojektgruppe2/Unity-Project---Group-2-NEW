@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11440062}
   - 114: {fileID: 11437654}
   - 54: {fileID: 5423242}
+  - 82: {fileID: 8220190}
   m_Layer: 0
   m_Name: EnemyFinal_Big
   m_TagString: Enemy
@@ -167,6 +168,76 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!82 &8220190
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103384}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9509222
 Animator:
   serializedVersion: 3
@@ -199,6 +270,8 @@ MonoBehaviour:
   attackDamage: 10
   attacking: 0
   amountOfDifferentAttacks: 2
+  enemyAudio: {fileID: 8220190}
+  clipAttack: {fileID: 8300000, guid: eb434d3cfa11bba40b4062373242b594, type: 3}
 --- !u!114 &11437654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -210,6 +283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f6618a0da65fa45b24d5105d5d8422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyAudio: {fileID: 8220190}
+  clipRun: {fileID: 8300000, guid: 3bf2fb089d818394b8ad683ffc5e145e, type: 3}
 --- !u!114 &11440062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -218,7 +293,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 103384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f3cd55ea5548a544a836daf0806c091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
@@ -304,6 +379,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Constraints
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: enemyAudio
+      value: 
+      objectReference: {fileID: 8220190}
+    - target: {fileID: 0}
+      propertyPath: clipRun
+      value: 
+      objectReference: {fileID: 8300000, guid: 3bf2fb089d818394b8ad683ffc5e145e, type: 3}
+    - target: {fileID: 0}
+      propertyPath: clipAttack
+      value: 
+      objectReference: {fileID: 8300000, guid: eb434d3cfa11bba40b4062373242b594, type: 3}
+    - target: {fileID: 0}
+      propertyPath: clipLaugh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

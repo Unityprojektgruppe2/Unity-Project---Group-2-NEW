@@ -1,8 +1,14 @@
 fileFormatVersion: 2
 guid: e15099f5ee559584089d5851df572def
+timeCreated: 1447759647
+licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - enemyAudio: {fileID: 8253518, guid: f6816a2072ac36c41b5768d3cc97c1ee, type: 2}
+  - clip: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -85,7 +85,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123854}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 123854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f3cd55ea5548a544a836daf0806c091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
@@ -197,6 +197,8 @@ MonoBehaviour:
   attackDamage: 10
   attacking: 0
   amountOfDifferentAttacks: 1
+  enemyAudio: {fileID: 8253518}
+  clipAttack: {fileID: 8300000, guid: eb434d3cfa11bba40b4062373242b594, type: 3}
 --- !u!114 &11468544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -208,6 +210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f6618a0da65fa45b24d5105d5d8422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyAudio: {fileID: 8253518}
+  clipRun: {fileID: 8300000, guid: 3bf2fb089d818394b8ad683ffc5e145e, type: 3}
 --- !u!136 &13645922
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -290,6 +294,26 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: enemyAudio
+      value: 
+      objectReference: {fileID: 8253518}
+    - target: {fileID: 0}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: eb434d3cfa11bba40b4062373242b594, type: 3}
+    - target: {fileID: 0}
+      propertyPath: clipAttack
+      value: 
+      objectReference: {fileID: 8300000, guid: eb434d3cfa11bba40b4062373242b594, type: 3}
+    - target: {fileID: 0}
+      propertyPath: clipRun
+      value: 
+      objectReference: {fileID: 8300000, guid: 3bf2fb089d818394b8ad683ffc5e145e, type: 3}
+    - target: {fileID: 0}
+      propertyPath: clipLaugh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

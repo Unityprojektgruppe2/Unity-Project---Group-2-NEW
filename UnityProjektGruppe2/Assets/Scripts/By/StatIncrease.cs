@@ -11,6 +11,9 @@ public class StatIncrease : MonoBehaviour {
     [SerializeField]
     private GameObject _shopStrength;
 
+    [SerializeField]
+    private ScoreScript _myScore;
+
     //Takes the Current stat from the player and stores in a variable
     private int currentStat;
 
@@ -28,17 +31,20 @@ public class StatIncrease : MonoBehaviour {
     void Awake ()
     {
         //For Tests!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        PlayerPrefs.SetInt("Strength", 0);
-        PlayerPrefs.SetInt("Agility", 0);
-        PlayerPrefs.SetInt("Defence", 0);
+        //Also resets the stats, if running in debug in unity! Run these ones, and they are reset
+        //PlayerPrefs.SetInt("Strength", 10);
+        //PlayerPrefs.SetInt("Agility", 10);
+        //PlayerPrefs.SetInt("Defence", 10);
     }
 
     // Use this for initialization
     public void Start ()
     {
-        buttonPressed = false;
-        hasRunned = false;
+        buttonPressed = false; //Makes sure no button has been pressed
+        hasRunned = false; //Makes sure no statIncreases has been runned
 
+        //Shows the currentScore
+        _myScore.ChangeScore();
         _addStr = 10;
         _addAgi = 10;
         _addDef = 10;
@@ -48,111 +54,182 @@ public class StatIncrease : MonoBehaviour {
 	public void Update ()
     {
         //Debug.Log("Im runnnnnnnnning!!!!!");
-        //if (_shopStrength.GetComponent<)
-        //{
-        //}
-        //Increase();
         buttonPressed = false;
     }
 
     // Skal kører når der clickes på knappen !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11
     public void Increase()
     {
-        if (gameObject.tag == "StatShop" && buttonPressed == false)
+        //Checks that the players score is bigger than 0
+        if (PlayerPrefs.GetInt("Score") > 0)
         {
-            //Sets buttonPressed to true, so it only accepts 1 input at a time
-            buttonPressed = true;
-            
-            //Debug.Log("Button pressed");
-            
-            //Looks for every Button in the gameObject with a tag "StatShop"
-            foreach (GameObject Button in GameObject.FindGameObjectsWithTag("StatShop"))
+            //Checks if the player is click'ing on a button tagged "StatShop"
+            if (gameObject.tag == "StatShop" && buttonPressed == false)
             {
-                //Debug.Log(Button + " : Was the button pressed");
-                //Debug.Log("It found some buttons!");
+                //Sets buttonPressed to true, so it only accepts 1 input at a time
+                buttonPressed = true;
+
+                //Debug.Log("Button pressed");
                 
-                //Runs through the Buttons children's text transforms.
-                foreach (Transform text in transform)
+                //Looks for every Button in the gameObject with a tag "StatShop"
+                foreach (GameObject Button in GameObject.FindGameObjectsWithTag("StatShop"))
                 {
-                    //Debug.Log("They even had some Texts attached!?");
+                    //Debug.Log(Button + " : Was the button pressed");
+                    //Debug.Log("It found some buttons!");
 
-                    //If's checks which Button was pressed, by its name
-                    if (text.name == "Strength" && hasRunned == false)
+                    //Runs through the Buttons children's text transforms.
+                    foreach (Transform text in transform)
                     {
-                        //Sets hasRunned to true, so it only applies this 1 time
-                        hasRunned = true;
+                        //Debug.Log("They even had some Texts attached!?");
 
-                        //Debug.Log("Strenth Shop, has been clicked");
-                        //Gets the current Strength from the player, and stores it in a variable currentStat
-                        currentStat = PlayerPrefs.GetInt("Strength");
+                        //If's checks which Button was pressed, by its name
+                        if (text.name == "Strength" && hasRunned == false)
+                        {
+                            //Sets hasRunned to true, so it only applies this 1 time
+                            hasRunned = true;
 
-                        Debug.Log("Player's current Strength is " + currentStat);
+                            //Gets the current Strength from the player, and stores it in a variable currentStat
+                            currentStat = PlayerPrefs.GetInt("Strength");
 
-                        //Runs the functions AddIncrease, and stores the added values in the variable newStat
-                        newStat = AddIncrease(currentStat, _addStr);
+                            //Checks If the current stat is less or equal to the score_value
+                            if (currentStat <= PlayerPrefs.GetInt("Score"))
+                            {
+                                //Debug.Log("Strenth Shop, has been clicked");
+                                //Debug.Log("Player's current Strength is " + currentStat);
 
-                        //Debug.Log("Stat is increased to " + newStat);
+                                //Runs the functions AddIncrease, and stores the added values in the variable newStat
+                                newStat = AddIncrease(currentStat, _addStr);
 
-                        //Sets the newStat for the player
-                        PlayerPrefs.SetInt("Strength", newStat);
+                                //Debug.Log("Stat is increased to " + newStat);
 
-                        Debug.Log((PlayerPrefs.GetInt("Strength") + " is now the players Strength"));
-                    }
+                                //Subtracts the current Strength_value from the score
+                                PlayerPrefs.SetInt("Score", (PlayerPrefs.GetInt("Score") - currentStat));
 
-                    if (text.name == "Agility" && hasRunned == false)
-                    {
-                        //Sets hasRunned to true, so it only applies this 1 time
-                        hasRunned = true;
+                                //Sets the newStat for the player
+                                PlayerPrefs.SetInt("Strength", newStat);
 
-                        //Debug.Log("Agility Shop, has been clicked");
+                                //Debug.Log((PlayerPrefs.GetInt("Strength") + " is now the players Strength"));
+                            }
+                        }
+                        //If's checks which Button was pressed, by its name
+                        if (text.name == "Agility" && hasRunned == false)
+                        {
+                            //Sets hasRunned to true, so it only applies this 1 time
+                            hasRunned = true;
 
-                        //Gets the current Agility from the player, and stores it in a variable currentStat
-                        currentStat = PlayerPrefs.GetInt("Agility");
+                            //Gets the current Agility from the player, and stores it in a variable currentStat
+                            currentStat = PlayerPrefs.GetInt("Agility");
 
-                        Debug.Log("Player's current Agility is " + currentStat);
+                            //Checks If the current stat is less or equal to the score_value
+                            if (currentStat <= PlayerPrefs.GetInt("Score"))
+                            {
+                                //Debug.Log("Agility Shop, has been clicked");
+                                //Debug.Log("Player's current Agility is " + currentStat);
 
-                        //Runs the functions AddIncrease, and stores the added values in the variable newStat
-                        newStat = AddIncrease(currentStat, _addAgi);
+                                //Runs the functions AddIncrease, and stores the added values in the variable newStat
+                                newStat = AddIncrease(currentStat, _addAgi);
 
-                        //Debug.Log("Stat is increased to " + newStat);
+                                //Debug.Log("Stat is increased to " + newStat);
 
-                        //Sets the newStat for the player
-                        PlayerPrefs.SetInt("Agility", newStat);
+                                //Subtracts the current Agility_value from the score
+                                PlayerPrefs.SetInt("Score", (PlayerPrefs.GetInt("Score") - currentStat));
 
-                        Debug.Log((PlayerPrefs.GetInt("Agility") + " is now the players Agility"));
-                    }
+                                //Sets the newStat for the player
+                                PlayerPrefs.SetInt("Agility", newStat);
 
-                    if (text.name == "Defence" && hasRunned == false)
-                    {
-                        //Sets hasRunned to true, so it only applies this 1 time
-                        hasRunned = true;
+                                //Debug.Log((PlayerPrefs.GetInt("Agility") + " is now the players Agility"));
+                            }
+                        }
+                        //If's checks which Button was pressed, by its name
+                        if (text.name == "Defence" && hasRunned == false)
+                        {
+                            //Sets hasRunned to true, so it only applies this 1 time
+                            hasRunned = true;
 
-                        //Debug.Log("Defence Shop, has been clicked");
+                            //Gets the current Defence from the player, and stores it in a variable currentStat
+                            currentStat = PlayerPrefs.GetInt("Defence");
 
-                        //Gets the current Defence from the player, and stores it in a variable currentStat
-                        currentStat = PlayerPrefs.GetInt("Defence");
+                            //Checks If the current stat is less or equal to the score_value
+                            if (currentStat <= PlayerPrefs.GetInt("Score"))
+                            {
+                                //Debug.Log("Defence Shop, has been clicked");
+                                //Debug.Log("Player's current Defence is " + currentStat);
 
-                        Debug.Log("Player's current Defence is " + currentStat);
+                                //Runs the functions AddIncrease, and stores the added values in the variable newStat
+                                newStat = AddIncrease(currentStat, _addDef);
 
-                        //Runs the functions AddIncrease, and stores the added values in the variable newStat
-                        newStat = AddIncrease(currentStat, _addDef);
+                                //Debug.Log("Stat is increased to " + newStat);
 
-                        //Debug.Log("Stat is increased to " + newStat);
+                                //Subtracts the current Defence_value from the score
+                                PlayerPrefs.SetInt("Score", (PlayerPrefs.GetInt("Score") - currentStat));
 
-                        //Sets the newStat for the player
-                        PlayerPrefs.SetInt("Defence", newStat);
+                                //Sets the newStat for the player
+                                PlayerPrefs.SetInt("Defence", newStat);
 
-                        Debug.Log((PlayerPrefs.GetInt("Defence") + " is now the players Defence"));
+                                //Debug.Log((PlayerPrefs.GetInt("Defence") + " is now the players Defence"));
+                            }
+                        }
+
+                        //Runs the function ChangeScore, in the ScoreScript.
+                        _myScore.ChangeScore();
+                        //Old calc and score Increase
+                        #region
+                        if (text.name == "Agility" && hasRunned == false)
+                        {
+                            //Sets hasRunned to true, so it only applies this 1 time
+                            hasRunned = true;
+
+                            //Debug.Log("Agility Shop, has been clicked");
+
+                            //Gets the current Agility from the player, and stores it in a variable currentStat
+                            currentStat = PlayerPrefs.GetInt("Agility");
+
+                            Debug.Log("Player's current Agility is " + currentStat);
+
+                            //Runs the functions AddIncrease, and stores the added values in the variable newStat
+                            newStat = AddIncrease(currentStat, _addAgi);
+
+                            //Debug.Log("Stat is increased to " + newStat);
+
+                            //Sets the newStat for the player
+                            PlayerPrefs.SetInt("Agility", newStat);
+
+                            Debug.Log((PlayerPrefs.GetInt("Agility") + " is now the players Agility"));
+                        }
+
+                        if (text.name == "Defence" && hasRunned == false)
+                        {
+                            //Sets hasRunned to true, so it only applies this 1 time
+                            hasRunned = true;
+
+                            //Debug.Log("Defence Shop, has been clicked");
+
+                            //Gets the current Defence from the player, and stores it in a variable currentStat
+                            currentStat = PlayerPrefs.GetInt("Defence");
+
+                            Debug.Log("Player's current Defence is " + currentStat);
+
+                            //Runs the functions AddIncrease, and stores the added values in the variable newStat
+                            newStat = AddIncrease(currentStat, _addDef);
+
+                            //Debug.Log("Stat is increased to " + newStat);
+
+                            //Sets the newStat for the player
+                            PlayerPrefs.SetInt("Defence", newStat);
+
+                            Debug.Log((PlayerPrefs.GetInt("Defence") + " is now the players Defence"));
+                        }
+                        #endregion
                     }
                 }
             }
+            else
+            {
+                Debug.Log("Didn't find any StatShops!!?");
+            }
+            //Makes that statShop available again
+            hasRunned = false;
         }
-        else
-        {
-            Debug.Log("Didn't find any StatShops!!?");
-        }
-
-        hasRunned = false;
     }
 
     //Adds two variables(oldStat and the increaseVal) and returns the result addedStat
