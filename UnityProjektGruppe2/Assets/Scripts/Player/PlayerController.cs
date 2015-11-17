@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,7 +9,14 @@ public class PlayerController : MonoBehaviour
     GameObject weapon;
     private bool juggernaut = false;
     private bool powergiven = false;
+    private bool canWhirl = true;
+    private bool canDash = true;
     private float powerTime = 30;
+    private bool imbool = true;
+    private bool imbool2 = true;
+    public Image whirlCD;
+    public Image dashCD;
+    public float waitTime = 5f;
     public float moveForce = 5, boostMultiplier = 2; //Old code?
     bool attackBtnPressed = false;
 
@@ -57,6 +65,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         PowerUp();
+        HandleCD();
     }
 
     void FixedUpdate()
@@ -143,8 +152,12 @@ public class PlayerController : MonoBehaviour
     private void WhirlwindAttack()
     {
         whirlwindBtnPressed = CrossPlatformInputManager.GetButtonDown("Whirlwind"); //Button Check if pressed
+        if (canWhirl == true)
+        {
         if (whirlwindBtnPressed && !whirlwinding && !dashing && myAnimator.GetBool("Alive")) //If btn is pressed, not whirlwinding and alive
         {
+                imbool = false;
+                whirlCD.fillAmount = 1;
             whirlwinding = true; //Now currently Whirlwinding
             angleBeforeAttackMove = Vector3.Normalize(transform.forward); //Save the character view angle (Where he is pointing) for later reference
             AttackMoveSaveY = transform.eulerAngles.y; //Save the Y axe specificly
@@ -170,6 +183,7 @@ public class PlayerController : MonoBehaviour
                 whirlwinding = false; //Sets player out of whirlwind action
                 myAnimator.SetTrigger("WhirlwindStanceEnd"); //Starts the end animation for Whirlwind
                 transform.rotation = Quaternion.Euler(transform.rotation.x, AttackMoveSaveY, transform.rotation.z); //Fixes a potential rotation bug with a degree of 10-30
+                    StartCoroutine(CanAbility1()); // Sets the Cooldown for the whirlwind
             }
             if (rotateMe)
             {
@@ -177,7 +191,7 @@ public class PlayerController : MonoBehaviour
                 transform.Rotate(0, -rotation, 0); //Rotates the player object
 
             }
-
+            }
         }
     }
 
@@ -187,8 +201,12 @@ public class PlayerController : MonoBehaviour
         //If this can be optimized feel free!
 
         dashBtnPressed = CrossPlatformInputManager.GetButtonDown("Dash"); //Button Check if pressed
+        if (canDash == true)
+        {
         if (dashBtnPressed && !whirlwinding && !dashing && myAnimator.GetBool("Alive")) //If btn is pressed, not whirlwinding and alive
         {
+                imbool2 = false;
+                dashCD.fillAmount = 1;
             dashing = true; //Now currently Dashing
             angleBeforeAttackMove = Vector3.Normalize(transform.forward); //Save the character view angle (Where he is pointing) for later reference
             AttackMoveSaveY = transform.eulerAngles.y; //Save the Y axe specificly
@@ -217,6 +235,7 @@ public class PlayerController : MonoBehaviour
                 myAnimator.SetTrigger("DashStanceEnd"); //Starts the end animation for Whirlwind
                 dashing = false; //Sets player out of dashing action
                 transform.rotation = Quaternion.Euler(transform.rotation.x, AttackMoveSaveY, transform.rotation.z); //Fixes a potential rotation bug with a degree of 10-30
+                    StartCoroutine(CanAbility2()); // Sets the Cooldown for the Dash
             }
             if (moveMe)
             {
@@ -225,6 +244,7 @@ public class PlayerController : MonoBehaviour
                 transform.parent.Translate(angleBeforeAttackMove * dashRange); //Moves the parent object in the direction the player was pointing before dashing (To make the player move)
                 //transform.Rotate(0, -rotation, 0); //Rotates the player object
 
+                }
             }
         }
     }
@@ -261,11 +281,40 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public IEnumerator CanAbility1()
+    {
+        if (canWhirl)
+        {
+            canWhirl = false;
+            yield return new WaitForSeconds(4f);
+            canWhirl = true;
+        }
+    }
+
+    public IEnumerator CanAbility2()
+    {
+        if (canDash)
+        {
+            canDash = false;
+            yield return new WaitForSeconds(4f);
+            canDash = true;
+        }
+    }
+
+    void HandleCD()
+    {
+
+        if (imbool == false)
+        {
+            whirlCD.fillAmount -= 1f / waitTime * Time.deltaTime;
+        }
+        if (imbool2 == false)
+        {
+            dashCD.fillAmount -= 1f / waitTime * Time.deltaTime;
+        }
 
 
-
-
-
+    }
 
 
     //public void CollideWithEnemy(Collider other)
