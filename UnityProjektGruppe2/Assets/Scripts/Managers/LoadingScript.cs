@@ -5,11 +5,16 @@ using UnityEngine.UI;
 public class LoadingScript : MonoBehaviour {
 
     [SerializeField]
-    private Slider loadingBar;
+    private Slider loadingBar; //LoadingBar Slider - For visual % of loading
     [SerializeField]
-    private Text loadingText;
+    private Text loadingText; //LoadingText Text - For Text % of Loading
 
     private AsyncOperation async = null; // When assigned, load is in progress.
+    /// <summary>
+    /// Loads level in background (Used to make loading screen)
+    /// </summary>
+    /// <param name="levelName">LevelName to async load</param>
+    /// <returns></returns>
     private IEnumerator LoadALevel(string levelName)
     {
         async = Application.LoadLevelAsync(levelName);
@@ -23,10 +28,10 @@ public class LoadingScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (async != null)
+        if (async != null) //If async loading is in progress - Visualize the loading!
         {
-            loadingBar.value = 100 * async.progress;
-            loadingText.text = "Loading... " + (int)loadingBar.value + "%";
+            loadingBar.value = 100 * async.progress; //Makes the slider visualizing the % of loading
+            loadingText.text = "Loading... " + (int)loadingBar.value + "%"; //Writes the text in % of loading based on the fill of the bar
         }
         //loadingBar.value += 0.05f;
         //loadingText.text = "Loading... " + (int)loadingBar.value + "%";

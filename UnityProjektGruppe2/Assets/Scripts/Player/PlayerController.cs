@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    WeaponAttack weaponAttack;
-    GameObject weapon;
+    private WeaponAttack weaponAttack;
+    private GameObject weapon;
     private bool juggernaut = false;
     private bool powergiven = false;
     private bool canWhirl = true;
@@ -14,19 +14,20 @@ public class PlayerController : MonoBehaviour
     private float powerTime = 30;
     private bool imbool = true;
     private bool imbool2 = true;
-    public Image whirlCD;
-    public Image dashCD;
+    public Image whirlCD; //Whirlwind cooldown gfx
+    public Image dashCD; //Dash cooldown gfx
     public float waitTime = 5f;
-    public float moveForce = 5, boostMultiplier = 2; //Old code?
-    bool attackBtnPressed = false;
+    public float moveForce = 5, boostMultiplier = 2; //Semi old code, currently used for enhancing the values on the virtual sticks
 
-    bool whirlwindBtnPressed = false;
-    bool whirlwinding = false; //If or not the player is currently Whirlwinding
+    private bool attackBtnPressed = false; //If attack button is pressed
 
-    bool dashBtnPressed = false;
-    bool dashing = false; //If or not the playe ris currently Dashing
+    private bool whirlwindBtnPressed = false;
+    private bool whirlwinding = false; //If or not the player is currently Whirlwinding
 
-    Rigidbody myRigidBody;
+    private bool dashBtnPressed = false;
+    private bool dashing = false; //If or not the playe ris currently Dashing
+
+    private Rigidbody myRigidBody;
     public Animator myAnimator;
 
     //Sounds
@@ -39,26 +40,26 @@ public class PlayerController : MonoBehaviour
 
 
     [SerializeField]
-    CanvasGroup myAnalogStick;
+    private CanvasGroup myAnalogStick;
 
     [SerializeField]
     public BoxCollider mySwordBoxCollider; //Needed for enabling the boxCollider when starting/ending attack/s animation/s
-    float currentSpeed = 0.0f;
+    private float currentSpeed = 0.0f;
 
     //Attack Move Variables
     Vector3 angleBeforeAttackMove; ////Save the character view angle (Where he is pointing) for later reference (Before whirlwinding / dashing)
-    float AttackMoveSaveY; //Saves current Y before whirlwind/dash to resume this (2-25 degree bug fix)
+    private float AttackMoveSaveY; //Saves current Y before whirlwind/dash to resume this (2-25 degree bug fix)
 
 
     //Whirlwind Variables
-    float rotationleft = 0; //instantiates the rotationleft
-    float rotationspeed = 1440; //rotation speed
+    private float rotationleft = 0; //instantiates the rotationleft
+    private float rotationspeed = 1440; //rotation speed
 
-    float whirlwindRange = 0.1f; //How far whirlwind is moving player
+    private float whirlwindRange = 0.1f; //How far whirlwind is moving player
 
 
     //Dash Variables
-    float dashRange = 0.3f; //How far whirlwind is moving player
+    private float dashRange = 0.3f; //How far whirlwind is moving player
 
     // Use this for initialization
     void Start()
@@ -135,7 +136,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Attack()
+    private void Attack()
     {
         MeleeAttack();
         WhirlwindAttack();
@@ -262,7 +263,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void PowerUp()
+   private void PowerUp()
     {
         if (juggernaut == true)
         {
@@ -278,7 +279,7 @@ public class PlayerController : MonoBehaviour
             powergiven = false;
         }
     }
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "PowerUp")
         {
@@ -294,6 +295,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Disables the player from using whirlwind for 4 seconds
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator CanAbility1()
     {
         if (canWhirl)
@@ -304,6 +309,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Disables the player from using dash for 4 seconds
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator CanAbility2()
     {
         if (canDash)
@@ -314,7 +323,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void HandleCD()
+    /// <summary>
+    /// Visualizes the cooldown ring on UI
+    /// </summary>
+   private void HandleCD()
     {
 
         if (imbool == false)
@@ -328,17 +340,5 @@ public class PlayerController : MonoBehaviour
 
 
     }
-
-
-    //public void CollideWithEnemy(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Enemy")
-    //    {
-    //        EnemyHealth enemyHp = other.GetComponent<EnemyHealth>();
-    //        enemyHp.TakeDamage(10);
-
-    //    }
-
-    //}
 
 }
