@@ -22,6 +22,13 @@ public class PlayerHealth : MonoBehaviour
     EnemyAttack enemyAttack;
     Animator myAnimator;
 
+    [SerializeField]
+    private AudioSource playerAudio;
+
+    [SerializeField]
+    private AudioClip clipLaugh;
+
+
     #endregion
 
     #region methods
@@ -79,6 +86,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (currentHealth <= 0 || !myAnimator.GetBool("Alive"))
         {
+            //playerAudio.PlayOneShot(clipLaugh);
             GameOver();
             //Destroy(this.gameObject);
 
@@ -143,7 +151,7 @@ public class PlayerHealth : MonoBehaviour
             }
 
             scoreSet = true;
-           // ScoreManager.score = 0;
+            PlayerPrefs.SetInt("Score", ScoreManager.score);
 
         }
     }

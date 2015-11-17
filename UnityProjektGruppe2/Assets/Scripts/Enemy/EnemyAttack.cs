@@ -9,9 +9,14 @@ public class EnemyAttack : MonoBehaviour
     public bool attacking = false;
     [SerializeField]
     private int amountOfDifferentAttacks = 1;
-	
-	
-	Animator myAnimator;                              // Reference to the animator component.
+
+    [SerializeField]
+    private AudioSource enemyAudio;
+
+    [SerializeField]
+    private AudioClip clipAttack;
+
+    Animator myAnimator;                         // Reference to the animator component.
 	GameObject player;                          // Reference to the player GameObject.
 	PlayerHealth playerHealth;                  // Reference to the player's health.
 	EnemyHealth enemyHealth;                    // Reference to this enemy's health.
@@ -21,8 +26,9 @@ public class EnemyAttack : MonoBehaviour
 	
 	void Awake ()
 	{
-		// Setting up the references.
-		player = GameObject.FindGameObjectWithTag ("Player");
+        // Setting up the references.
+        enemyAudio.GetComponent<AudioSource>();
+        player = GameObject.FindGameObjectWithTag ("Player");
 		playerHealth = player.GetComponent <PlayerHealth> ();
 		enemyHealth = GetComponent<EnemyHealth>();
 		myAnimator = GetComponent <Animator> ();
@@ -68,9 +74,9 @@ public class EnemyAttack : MonoBehaviour
 		if(playerHealth.currentHealth <= 0)
 		{
             myAnimator.SetBool("Run", false);
-			// ... tell the animator the player is dead.
-			//anim.SetTrigger ("PlayerDead");
-		}
+            // ... tell the animator the player is dead.
+            //anim.SetTrigger ("PlayerDead");
+        }
 	}
 	
 	
@@ -78,10 +84,11 @@ public class EnemyAttack : MonoBehaviour
 	{
 		// Reset the timer.
 		timer = 0f;
-		
+
 		// If the player has health to lose...
 		if(playerHealth.currentHealth > 0)
 		{
+            enemyAudio.PlayOneShot(clipAttack);
             int MaxAttackMoves = Random.Range(1, amountOfDifferentAttacks + 1);
 
             myAnimator.SetFloat("AttackMove", MaxAttackMoves);

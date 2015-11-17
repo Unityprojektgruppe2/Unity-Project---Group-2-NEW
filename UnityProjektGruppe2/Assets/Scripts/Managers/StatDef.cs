@@ -6,6 +6,7 @@ public class StatDef : MonoBehaviour
 {
     Text text;
     private int def;
+    
     // Use this for initialization
     void Awake()
     {

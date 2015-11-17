@@ -5,6 +5,12 @@ public class LoadLevel : MonoBehaviour {
 
     private bool buttonPressed; //Used to check, if the button has been pressed
     private bool hasRunned; //Used to check if the stat has runned
+    public int currentHealth = 100;
+
+
+    public void Awake()
+    {
+    }
 
     // Use this for initialization
     public void Start()
@@ -64,6 +70,10 @@ public class LoadLevel : MonoBehaviour {
                         Application.LoadLevel("Level1");
                         //Application.LoadLevel("Level" + PlayerPrefs.GetInt("curLevel") + 1);
                         PlayerPrefs.SetInt("curLevel", PlayerPrefs.GetInt("curLevel") + 1);
+                        currentHealth += 10;
+                        Spawner.enemyStrengthSize++;
+                        PlayerPrefs.SetInt("EnemyHealth", currentHealth);
+                        
                     }
                 }
             }
