@@ -2,15 +2,15 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class StatDef : MonoBehaviour
+public class StatAgi : MonoBehaviour
 {
     Text text;
-    private int def;
+    private int agi;
     // Use this for initialization
     void Awake()
     {
         text = GetComponent<Text>();
-        def = PlayerPrefs.GetInt("Defence");
+        agi = PlayerPrefs.GetInt("Agility");
     }
 
     // Update is called once per frame
@@ -19,9 +19,9 @@ public class StatDef : MonoBehaviour
 
     }
 
-    public void DefStat()
+    public void AgiStat()
     {
-        def = PlayerPrefs.GetInt("Defence");
-        text.text = "Defence: " + def;
+        agi = PlayerPrefs.GetInt("Agility");
+        text.text = "Agility: " + agi;
     }
 }

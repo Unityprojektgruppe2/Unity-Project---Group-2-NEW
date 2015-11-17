@@ -11,9 +11,6 @@ public class StatIncrease : MonoBehaviour {
     [SerializeField]
     private GameObject _shopStrength;
 
-    //This finds the stat from the player, which should be increased
-    private int _addStat;
-
     //Takes the Current stat from the player and stores in a variable
     private int currentStat;
 
@@ -28,6 +25,14 @@ public class StatIncrease : MonoBehaviour {
     private bool hasRunned; //Used to check if the stat has runned
 
 
+    void Awake ()
+    {
+        //For Tests!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        PlayerPrefs.SetInt("Strength", 0);
+        PlayerPrefs.SetInt("Agility", 0);
+        PlayerPrefs.SetInt("Defence", 0);
+    }
+
     // Use this for initialization
     public void Start ()
     {
@@ -37,11 +42,6 @@ public class StatIncrease : MonoBehaviour {
         _addStr = 10;
         _addAgi = 10;
         _addDef = 10;
-
-        //For Tests!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        //PlayerPrefs.SetInt("Strength", 10);
-        //PlayerPrefs.SetInt("Agility", 10);
-        //PlayerPrefs.SetInt("Defence", 10);
     }
 	
 	// Update is called once per frame
