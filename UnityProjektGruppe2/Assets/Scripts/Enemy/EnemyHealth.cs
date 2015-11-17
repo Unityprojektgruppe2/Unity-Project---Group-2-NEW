@@ -15,9 +15,15 @@ public class EnemyHealth : MonoBehaviour
 	CapsuleCollider capsuleCollider;            // Reference to the capsule collider.
 	public bool isDead;                                // Whether the enemy is dead.
 	bool isSinking;                             // Whether the enemy has started sinking through the floor.
-	
-	
-	void Awake ()
+
+    [SerializeField]
+    private AudioClip[] myDeathSound;
+
+    [SerializeField]
+    private AudioSource enemyAudio;
+
+
+    void Awake ()
 	{
 		// Setting up the references.
 		myAnimator = GetComponent <Animator> ();
@@ -110,4 +116,9 @@ public class EnemyHealth : MonoBehaviour
 		// After 2 seconds destory the enemy.
 		Destroy (gameObject, 4f);
 	}
+
+    public void playDeathSound()
+    {
+        enemyAudio.PlayOneShot(myDeathSound[Random.Range(0, myDeathSound.Length)]);
+    }
 }

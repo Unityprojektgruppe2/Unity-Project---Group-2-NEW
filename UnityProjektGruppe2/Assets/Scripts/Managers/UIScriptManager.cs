@@ -22,6 +22,7 @@ public class UIScriptManager : MonoBehaviour {
         PlayerPrefs.SetInt("Score", 0);
         PlayerPrefs.SetInt("EnemyHealth", 0);
         PlayerPrefs.SetInt("enemyDmgModifier", 0);
+        PlayerPrefs.SetInt("curLevel", 0);
 
         Application.LoadLevel("City");
     }

@@ -302,6 +302,10 @@ MonoBehaviour:
   sinkSpeed: .100000001
   scoreValue: 10
   isDead: 0
+  myDeathSound:
+  - {fileID: 8300000, guid: 87e6118223003954c89b4dd96c37cbed, type: 3}
+  - {fileID: 8300000, guid: e34d1be4074af22428e2220e60840842, type: 3}
+  enemyAudio: {fileID: 8220190}
 --- !u!136 &13633978
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -382,6 +386,10 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: myDeathSound.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Constraints
       value: 80
       objectReference: {fileID: 0}
@@ -413,6 +421,14 @@ Prefab:
       propertyPath: attackDamage
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: myDeathSound.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 87e6118223003954c89b4dd96c37cbed, type: 3}
+    - target: {fileID: 0}
+      propertyPath: myDeathSound.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e34d1be4074af22428e2220e60840842, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 103384}

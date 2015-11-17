@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     public BoxCollider mySwordBoxCollider; //Needed for enabling the boxCollider when starting/ending attack/s animation/s
+
+    public WeaponAttack mySwordsAttack;
     private float currentSpeed = 0.0f;
 
     //Attack Move Variables

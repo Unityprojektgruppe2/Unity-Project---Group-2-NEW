@@ -11,6 +11,7 @@ public class EnemyDeathAnimationBehavoiur : StateMachineBehaviour {
         animator.SetBool("Dead", true);
         myRigidbody = animator.gameObject.GetComponent<Rigidbody>();
         myGameObject = animator.gameObject;
+        myGameObject.GetComponent<EnemyHealth>().playDeathSound();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

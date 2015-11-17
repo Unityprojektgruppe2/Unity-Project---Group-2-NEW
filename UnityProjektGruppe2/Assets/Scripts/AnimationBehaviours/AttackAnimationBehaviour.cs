@@ -4,11 +4,14 @@ using System.Collections;
 public class AttackAnimationBehaviour : StateMachineBehaviour {
 
     BoxCollider myBoxCollider;
+    WeaponAttack myWeaponAttack;
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         //myBoxCollider = animator.transform.FindChild("Sword").GetComponent<BoxCollider>();
         myBoxCollider = animator.GetComponent<PlayerController>().mySwordBoxCollider;
-        
+        myWeaponAttack = animator.GetComponent<PlayerController>().mySwordsAttack;
+
+        myWeaponAttack.damage += 20;
         myBoxCollider.enabled = true;
 	}
 
@@ -21,6 +24,7 @@ public class AttackAnimationBehaviour : StateMachineBehaviour {
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         myBoxCollider.enabled = false;
+        myWeaponAttack.damage -= 20;
         animator.SetBool("dAttackSecurity", false);
     }
 

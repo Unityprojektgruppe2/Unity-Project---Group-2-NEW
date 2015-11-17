@@ -2483,14 +2483,6 @@ Prefab:
       value: 
       objectReference: {fileID: 1203520473}
     - target: {fileID: 11482782, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
-      propertyPath: myAnalogStick
-      value: 
-      objectReference: {fileID: 1511734191}
-    - target: {fileID: 11445560, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
-      propertyPath: healthSlider
-      value: 
-      objectReference: {fileID: 1383390271}
-    - target: {fileID: 11482782, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
       propertyPath: attackSnd
       value: 
       objectReference: {fileID: 697761790}
@@ -2502,14 +2494,14 @@ Prefab:
       propertyPath: dashSnd
       value: 
       objectReference: {fileID: 235194394}
-    - target: {fileID: 8284528, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
-      propertyPath: m_audioClip
+    - target: {fileID: 11482782, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
+      propertyPath: myAnalogStick
       value: 
-      objectReference: {fileID: 8300000, guid: e2ac8f8a58b5fa14988b0eb44e73ff4a, type: 3}
-    - target: {fileID: 8284528, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1511734191}
+    - target: {fileID: 11445560, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1383390271}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
   m_IsPrefabParent: 0
@@ -2799,6 +2791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesInScene: 0
+  enemyStrengthSize: 0
   gizmoColor: {r: 1, g: 0, b: 0, a: 1}
   enemyLevel: 0
   EasyEnemy: {fileID: 123854, guid: f6816a2072ac36c41b5768d3cc97c1ee, type: 2}

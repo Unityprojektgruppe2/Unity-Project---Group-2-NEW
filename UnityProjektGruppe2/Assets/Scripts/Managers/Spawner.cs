@@ -35,7 +35,7 @@ public class Spawner : MonoBehaviour
 {
     EnemyHealth enemyhealth;
     public int enemiesInScene;
-    public static int enemyStrengthSize;
+    public int enemyStrengthSize; //Enemy level!
     // Color of the gizmo
     public Color gizmoColor = Color.red;
 
@@ -128,6 +128,8 @@ public class Spawner : MonoBehaviour
         Enemies.Add(EnemyLevels.Boss, BossEnemy);
         Enemies.Add(EnemyLevels.Medium, MediumEnemy);
         Enemies.Add(EnemyLevels.Hard, HardEnemy);
+
+        enemyStrengthSize = PlayerPrefs.GetInt("curLevel");
     }
     // Draws a cube to show where the spawn point is... Useful if you don't have a object that show the spawn point
     void OnDrawGizmos()

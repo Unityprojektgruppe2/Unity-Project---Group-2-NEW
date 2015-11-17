@@ -273,8 +273,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: e2ac8f8a58b5fa14988b0eb44e73ff4a, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -414,6 +414,7 @@ MonoBehaviour:
   currentHealth: 100
   timesMaxHealth: .100000001
   defensestat: 0
+  agilityStat: 0
   healthSlider: {fileID: 0}
   playerAudio: {fileID: 8284528}
   clipLaugh: {fileID: 8300000, guid: 6cdcfcaafb1348e4a940ade660e7dfd6, type: 3}
@@ -446,8 +447,12 @@ MonoBehaviour:
   moveForce: 5
   boostMultiplier: 2
   myAnimator: {fileID: 0}
+  attackSnd: {fileID: 0}
+  whirlwindSnd: {fileID: 0}
+  dashSnd: {fileID: 0}
   myAnalogStick: {fileID: 0}
   mySwordBoxCollider: {fileID: 6568532}
+  mySwordsAttack: {fileID: 11478190}
 --- !u!137 &13788476
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

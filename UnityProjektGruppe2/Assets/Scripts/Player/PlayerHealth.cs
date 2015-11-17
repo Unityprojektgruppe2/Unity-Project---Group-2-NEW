@@ -60,7 +60,15 @@ public class PlayerHealth : MonoBehaviour
     {
         if (!myAnimator.GetBool("Whirlwinding"))
         {
-            amount -= defensestat;
+            if (amount - defensestat < 5)
+            {
+                amount = 5;
+            }
+            else
+            {
+                amount -= defensestat;
+            }
+            
             currentHealth -= amount;
             healthSlider.value = currentHealth;
         }
