@@ -15,9 +15,9 @@ public class CameraManager : MonoBehaviour {
 
     private void DisableOrientation()
     {
-        Screen.autorotateToPortrait = false;
-        Screen.autorotateToPortraitUpsideDown = false;
-        Screen.orientation = ScreenOrientation.Landscape;
-        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        Screen.autorotateToPortrait = false; //No auto rotation to portrait
+        Screen.autorotateToPortraitUpsideDown = false; //No auto rotation to portrait (inverse)
+        Screen.orientation = ScreenOrientation.Landscape; //Sets orientation to landscape
+        Screen.sleepTimeout = SleepTimeout.NeverSleep; //Sets the screen timeout to neversleep (Keep Awake)
     }
 }

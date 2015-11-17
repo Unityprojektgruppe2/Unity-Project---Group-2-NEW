@@ -73,8 +73,7 @@ public class PlayerHealth : MonoBehaviour
     #endregion
 
     #region Death
-    //destroys gameobject if health is below certain number.
-
+    //Checks highscore and alters the scored values if highscore is beaten
     public void Death()
     {
         if (currentHealth <= 0 || !myAnimator.GetBool("Alive"))
