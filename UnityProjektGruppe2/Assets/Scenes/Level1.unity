@@ -42,7 +42,7 @@ LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
   m_GIWorkflowMode: 1
-  m_LightmapsMode: 1
+  m_LightmapsMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -86,6 +86,76 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 23800000, guid: e4b98a4863ae8d245836be1199572742, type: 2}
+--- !u!1 &62055058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 191174, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 62055059}
+  - 222: {fileID: 62055061}
+  - 114: {fileID: 62055060}
+  m_Layer: 5
+  m_Name: WhirlwindCD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &62055059
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22474192, guid: 9529ecc3d479da5499993355e6c2cb4f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62055058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 603329583}
+  m_RootOrder: 0
+  m_AnchorMin: {x: .779999971, y: .00999999978}
+  m_AnchorMax: {x: .99000001, y: .150000006}
+  m_AnchoredPosition: {x: -51.7441978, y: 24.8999996}
+  m_SizeDelta: {x: 106.176003, y: 29.8107033}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &62055060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11461556, guid: 9529ecc3d479da5499993355e6c2cb4f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62055058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .544117689, g: .544117689, b: .544117689, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 41f0a4cafc0e15749a3a14e418e9a756, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 0
+  m_FillClockwise: 0
+  m_FillOrigin: 2
+--- !u!222 &62055061
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22240922, guid: 9529ecc3d479da5499993355e6c2cb4f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62055058}
 --- !u!1 &189946963
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +245,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .5, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1203520472}
   m_Father: {fileID: 823678868}
   m_RootOrder: 3
   m_AnchorMin: {x: .779999971, y: .00999999978}
@@ -714,7 +785,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .5, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 62055059}
   m_Father: {fileID: 823678868}
   m_RootOrder: 2
   m_AnchorMin: {x: .779999971, y: .00999999978}
@@ -1631,6 +1703,76 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!1 &1203520471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1203520472}
+  - 222: {fileID: 1203520474}
+  - 114: {fileID: 1203520473}
+  m_Layer: 5
+  m_Name: DashCD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1203520472
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22400004, guid: 9529ecc3d479da5499993355e6c2cb4f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1203520471}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 235194389}
+  m_RootOrder: 0
+  m_AnchorMin: {x: .779999971, y: .00999999978}
+  m_AnchorMax: {x: .99000001, y: .150000006}
+  m_AnchoredPosition: {x: -51.7440796, y: 23.5199966}
+  m_SizeDelta: {x: 106.175987, y: 48.159996}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1203520473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 9529ecc3d479da5499993355e6c2cb4f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1203520471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .541176498, g: .541176498, b: .541176498, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ce3f85430c57b0244a486d0b2ae737e6, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 0
+  m_FillClockwise: 0
+  m_FillOrigin: 2
+--- !u!222 &1203520474
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22200000, guid: 9529ecc3d479da5499993355e6c2cb4f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1203520471}
 --- !u!1 &1243402823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,14 +2168,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11445560, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
-      propertyPath: healthSlider
+    - target: {fileID: 11482782, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
+      propertyPath: whirlCD
       value: 
-      objectReference: {fileID: 1383390271}
+      objectReference: {fileID: 62055060}
+    - target: {fileID: 11482782, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
+      propertyPath: dashCD
+      value: 
+      objectReference: {fileID: 1203520473}
     - target: {fileID: 11482782, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
       propertyPath: myAnalogStick
       value: 
       objectReference: {fileID: 1511734191}
+    - target: {fileID: 11445560, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1383390271}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
   m_IsPrefabParent: 0
