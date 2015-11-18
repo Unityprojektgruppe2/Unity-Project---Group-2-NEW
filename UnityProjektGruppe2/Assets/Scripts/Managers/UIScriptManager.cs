@@ -19,7 +19,7 @@ public class UIScriptManager : MonoBehaviour {
         PlayerPrefs.SetInt("Agility", 10);
         PlayerPrefs.SetInt("Strength", 10);
         PlayerPrefs.SetInt("Defence", 10);
-        PlayerPrefs.SetInt("Score", 0);
+        PlayerPrefs.SetInt("Score", 50);
         PlayerPrefs.SetInt("EnemyHealth", 0);
         PlayerPrefs.SetInt("enemyDmgModifier", 0);
         PlayerPrefs.SetInt("curLevel", 0);

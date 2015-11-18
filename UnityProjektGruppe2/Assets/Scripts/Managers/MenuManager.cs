@@ -10,8 +10,8 @@ public class MenuManager : MonoBehaviour {
 	void Start ()
     {
         ShowMenu(currentMenu);
-        PlayerPrefs.SetInt("Strength", 10);
-        PlayerPrefs.SetInt("Defence", 10);
+        //PlayerPrefs.SetInt("Strength", 10);
+        //PlayerPrefs.SetInt("Defence", 10);
 	}
 	
 	// Update is called once per frame

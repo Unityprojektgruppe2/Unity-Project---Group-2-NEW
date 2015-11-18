@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
     private int tempscore2 = 0;
     public static int maxHealth = 100;
     public float currentHealth = 100;
-    public float timesMaxHealth = 0.2f;
+    public float timesMaxHealth = 0.35f;
     public int defensestat;
     public float agilityStat;
     public Slider healthSlider;   // Reference to the UI's health bar.
@@ -40,6 +40,7 @@ public class PlayerHealth : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         agilityStat = (float)((float)PlayerPrefs.GetInt("Agility") / 100) + 1;
         myAnimator.SetFloat("SpeedModifier", agilityStat);
+        defensestat = PlayerPrefs.GetInt("Defence") / 4;
     }
 
     #region Awake method
@@ -48,7 +49,6 @@ public class PlayerHealth : MonoBehaviour
     {
         enemy = GameObject.FindGameObjectWithTag("Enemy");
         enemyAttack = enemy.GetComponent<EnemyAttack>();
-        defensestat = PlayerPrefs.GetInt("Defence");
     }
     #endregion
 
@@ -60,9 +60,9 @@ public class PlayerHealth : MonoBehaviour
     {
         if (!myAnimator.GetBool("Whirlwinding"))
         {
-            if (amount - defensestat < 5)
+            if (amount - defensestat < 1)
             {
-                amount = 5;
+                amount = 1;
             }
             else
             {

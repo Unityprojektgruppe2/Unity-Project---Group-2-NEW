@@ -2474,6 +2474,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11445560, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1383390271}
     - target: {fileID: 11482782, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
       propertyPath: whirlCD
       value: 
@@ -2498,10 +2502,6 @@ Prefab:
       propertyPath: myAnalogStick
       value: 
       objectReference: {fileID: 1511734191}
-    - target: {fileID: 11445560, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
-      propertyPath: healthSlider
-      value: 
-      objectReference: {fileID: 1383390271}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bafe9d640d99064eb6d5698892c4a69, type: 2}
   m_IsPrefabParent: 0
@@ -2805,7 +2805,7 @@ MonoBehaviour:
   totalEnemy: 10
   Spawn: 1
   spawnType: 3
-  waveTimer: 10
+  waveTimer: 20
   totalWaves: 5
 --- !u!4 &2013992459
 Transform:

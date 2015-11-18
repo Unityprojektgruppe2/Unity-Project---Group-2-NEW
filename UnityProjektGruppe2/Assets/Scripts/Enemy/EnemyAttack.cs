@@ -99,7 +99,15 @@ public class EnemyAttack : MonoBehaviour
 
             myAnimator.SetTrigger("Attack");
             // ... damage the player.
-            playerHealth.TakeDamage(attackDamage + attackModifier);
+            if ((attackDamage + attackModifier) - 10 < 5 )
+            {
+                playerHealth.TakeDamage(5);
+            }
+            else
+            {
+                playerHealth.TakeDamage(Random.Range((attackDamage + attackModifier) - 10, attackDamage + attackModifier));
+            }
+            //playerHealth.TakeDamage(attackDamage + attackModifier);
 		}
 	}
 }

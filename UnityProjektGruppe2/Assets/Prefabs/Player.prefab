@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 100
-  timesMaxHealth: .100000001
+  timesMaxHealth: .200000003
   defensestat: 0
   agilityStat: 0
   healthSlider: {fileID: 0}
