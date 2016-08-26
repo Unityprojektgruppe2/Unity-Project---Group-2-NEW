@@ -213,7 +213,11 @@ public class Spawner : MonoBehaviour
                         spawnEnemy();
                     }
                     // checks if the time is equal to the time required for a new wave
-                    if (timeTillWave >= waveTimer || enemiesInScene == 0 && numWaves <= totalWaves)
+                    //if (timeTillWave >= waveTimer)
+
+                    //Alternate option if (timeTillWave >= waveTimer || enemiesInScene == 0 && timeTillWave >= waveTimer / 4)
+                    //if (timeTillWave >= waveTimer || enemiesInScene == 0 && numWaves <= totalWaves)
+                    if (timeTillWave >= waveTimer || enemiesInScene == 0 && timeTillWave >= waveTimer / 4)
                     {
                         // enables the wave spawner
                         waveSpawn = true;
@@ -237,7 +241,7 @@ public class Spawner : MonoBehaviour
                 }
             }
         }
-        if (numWaves > totalWaves && enemiesInScene == 0)
+        else if (numWaves > totalWaves && enemiesInScene == 0)
         {
             PlayerPrefs.SetInt("Score", ScoreManager.score);
             Application.LoadLevel("City");

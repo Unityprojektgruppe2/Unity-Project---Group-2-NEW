@@ -110,7 +110,7 @@ public class PlayerHealth : MonoBehaviour
                         tempscore = PlayerPrefs.GetInt("Highscore");
                         PlayerPrefs.SetInt("Highscore", ScoreManager.score);
                         highcal1 = true;
-                        Debug.Log(PlayerPrefs.GetInt("Highscore"));
+                        //Debug.Log(PlayerPrefs.GetInt("Highscore"));
                     }
 
                 }
@@ -132,7 +132,7 @@ public class PlayerHealth : MonoBehaviour
                             highcal2 = true;
                         }
 
-                        Debug.Log(PlayerPrefs.GetInt("Highscore2"));
+                        //Debug.Log(PlayerPrefs.GetInt("Highscore2"));
                     }
 
                 }
@@ -151,7 +151,7 @@ public class PlayerHealth : MonoBehaviour
                         {
                             PlayerPrefs.SetInt("Highscore3", ScoreManager.score);
                         }
-                        Debug.Log(PlayerPrefs.GetInt("Highscore3"));
+                        //Debug.Log(PlayerPrefs.GetInt("Highscore3"));
                     }
 
                 }
